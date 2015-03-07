@@ -31,8 +31,16 @@ max-height:100%;
   -moz-background-size: cover !important;
   -o-background-size: cover !important;
   background-size: cover !important;
+  background-position: center !important;
   height: 33.33%;
   display: block;
+  background: #fff;
+}
+
+#left> div > p {
+   background: #fff;
+   display: block;
+   padding: 1em;
 }
 
 #left> div:nth-child(1) {
@@ -49,6 +57,37 @@ max-height:100%;
 }
 #left> div:nth-child(5) {
   background: #b3d4e6;
+}
+
+#left > div:hover{
+    animation-duration: 0.5s;
+    animation-name: zoomin;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: zoomin;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes zoomin {
+  from {
+      background-size: 100%;
+
+  }
+
+  to {
+      background-size: 110%;
+      
+  }
+}
+
+@-webkit-keyframes zoomin {
+  from {
+      background-size: 100%;
+  }
+
+  to {
+      background-size: 110%;
+  }
 }
 
 #left::-webkit-scrollbar {
@@ -70,6 +109,9 @@ max-height:100%;
 .right {
   float: right;
 }
+
+/*hover effects*/
+
 
 /*buttons*/
 
