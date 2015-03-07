@@ -29,8 +29,7 @@
       <a href="#">Dandelion bunya</a>
       <a href="#">Rutabaga</a>
     </nav>
-    
-      
+          
       <div class="main">
         
         <section class="buttonset">
@@ -40,8 +39,14 @@
       </div>
 
 
-    <div id="left"> <section id="photos"></section>
-      <button class="full-width">More</button>
+    <div id="left"> 
+      <!-- <section id="photos"></section> -->
+      <div></div>
+      <div></div>
+      <div></div>
+
+
+      <!-- <button class="full-width">More</button> -->
     </div>
 
     <div id="right">
@@ -89,15 +94,12 @@
         }
       }
 
- 
-
- 
 $(document).ready(function() {
 
   for (var i = 0; i < 3; i++) {
     var width = 800;
     var height =  400;
-    $('#photos').append('<img src="http://www.lorempixel.com/'+width+'/'+height+'/cats" alt="pretty kitty">');
+    $('#photos').append('<div><img src="http://www.lorempixel.com/'+width+'/'+height+'/cats" alt="pretty kitty"></div>');
   }
 
 
