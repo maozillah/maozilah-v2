@@ -40,7 +40,10 @@
       </div>
 
 
-    <div id="left"> <section id="photos"></section></div>
+    <div id="left"> <section id="photos"></section>
+      <button class="full-width">More</button>
+    </div>
+
     <div id="right">
 
       <p class="typl8-drop-cap"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius. Proin quis auctor odio. Donec consectetur massa nec ante finibus, id ultrices velit posuere. Sed efficitur quam in est ullamcorper tempor. Nam suscipit accumsan erat, nec aliquet massa iaculis id. Duis faucibus, risus quis bibendum maximus, libero elit sagittis sem, quis convallis quam augue vitae nibh. Fusce id mi nunc. Nulla facilisi.</p>
@@ -85,15 +88,23 @@
           classie.toggle( showRightPush, 'disabled' );
         }
       }
+
+ 
+
  
 $(document).ready(function() {
 
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 3; i++) {
     var width = 800;
     var height =  400;
     $('#photos').append('<img src="http://www.lorempixel.com/'+width+'/'+height+'/cats" alt="pretty kitty">');
   }
-});
+
+
+  });
+
+
+
     </script>
   </body>
 </html>
