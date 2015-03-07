@@ -6,14 +6,44 @@
     <title>fuck this</title>
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="js/modernizr.js"></script>
   </head>
-  <body>
+  <body class="cbp-spmenu-push">
+
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+      <h3>Menu</h3>
+      <a href="#">Celery seakale</a>
+      <a href="#">Dulse daikon</a>
+      <a href="#">Zucchini garlic</a>
+      <a href="#">Catsear azuki bean</a>
+      <a href="#">Dandelion bunya</a>
+      <a href="#">Rutabaga</a>
+    </nav>
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+      <h3>Menu</h3>
+      <a href="#">Celery seakale</a>
+      <a href="#">Dulse daikon</a>
+      <a href="#">Zucchini garlic</a>
+      <a href="#">Catsear azuki bean</a>
+      <a href="#">Dandelion bunya</a>
+      <a href="#">Rutabaga</a>
+    </nav>
+    
+      
+      <div class="main">
+        
+        <section class="buttonset">
+          <button id="showLeftPush" class="left">left</button>
+          <button id="showRightPush" class="right"><i class="fa fa-bars fa-2x"></i> </button>
+        </section>
+      </div>
 
 
     <div id="left"> <section id="photos"></section></div>
     <div id="right">
-      <p class="typl8-drop-cap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius. Proin quis auctor odio. Donec consectetur massa nec ante finibus, id ultrices velit posuere. Sed efficitur quam in est ullamcorper tempor. Nam suscipit accumsan erat, nec aliquet massa iaculis id. Duis faucibus, risus quis bibendum maximus, libero elit sagittis sem, quis convallis quam augue vitae nibh. Fusce id mi nunc. Nulla facilisi.</p>
+
+      <p class="typl8-drop-cap"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius. Proin quis auctor odio. Donec consectetur massa nec ante finibus, id ultrices velit posuere. Sed efficitur quam in est ullamcorper tempor. Nam suscipit accumsan erat, nec aliquet massa iaculis id. Duis faucibus, risus quis bibendum maximus, libero elit sagittis sem, quis convallis quam augue vitae nibh. Fusce id mi nunc. Nulla facilisi.</p>
 
 <p>Nunc ultrices euismod mattis. Etiam et eros faucibus, maximus dui consequat, blandit enim. Quisque nec fringilla felis. Duis vulputate posuere neque, sit amet imperdiet nibh ornare quis. Etiam mattis felis vitae neque maximus, et posuere sapien finibus. Etiam facilisis condimentum justo, ut facilisis leo suscipit non. Proin blandit justo nec tempus aliquam.</p>
 
@@ -24,7 +54,38 @@
 
 
     <script src="js/jquery.js"></script>
+    <script src="js/classie.js"></script>
     <script>
+      var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+        menuRight = document.getElementById( 'cbp-spmenu-s2' ),       
+        showLeftPush = document.getElementById( 'showLeftPush' ),
+        showRightPush = document.getElementById( 'showRightPush' ),
+        body = document.body;
+
+      
+      showLeftPush.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toright' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeftPush' );
+      };
+      showRightPush.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toleft' );
+        classie.toggle( menuRight, 'cbp-spmenu-open' );
+        disableOther( 'showRightPush' );
+      };
+
+      function disableOther( button ) {
+        
+        if( button !== 'showLeftPush' ) {
+          classie.toggle( showLeftPush, 'disabled' );
+        }
+        if( button !== 'showRightPush' ) {
+          classie.toggle( showRightPush, 'disabled' );
+        }
+      }
+ 
 $(document).ready(function() {
 
   for (var i = 0; i < 4; i++) {
