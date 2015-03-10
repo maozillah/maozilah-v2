@@ -1,6 +1,10 @@
 #center {
   max-width: 523px;
-  margin: 0 auto;
+  margin: 0 auto 12% auto;
+}
+
+nav.projects{
+  margin: 10% 0;
 }
 
 .container, .header {
@@ -60,7 +64,6 @@
   color: #fff;
   padding: 0 0 0.6em;
   font-weight: 300;
-  font-size: 0.85em;
   margin: 0 auto;
 }
 
@@ -77,22 +80,12 @@
 /* Conent */
 .content {
   margin: 0 auto;
-  padding: 0 0 3em;
 }
 
 .content > div:not(.title) {
-  margin: -80px auto 0;
-  max-width: 900px;
-  padding: 0 1.25em;
+  margin: -420px auto 0;
 }
 
-.content > div:not(.title) p {
-  margin: 0 auto 1.5em auto;
-}
-
-.content > div:not(.title) p:first-child {
-  font-size: 1.35em;
-}
 
 /* -------------------------- */
 /* Faded gradient */
