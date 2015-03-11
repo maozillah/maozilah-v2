@@ -5,22 +5,13 @@
     <meta name="viewport" />
     <title>fuck this</title>
     <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" href="css/typography.css" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="js/modernizr.js"></script>
   </head>
   <body class="cbp-spmenu-push">
 
-    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-      <h3>Menu</h3>
-      <a href="#">Celery seakale</a>
-      <a href="#">Dulse daikon</a>
-      <a href="#">Zucchini garlic</a>
-      <a href="#">Catsear azuki bean</a>
-      <a href="#">Dandelion bunya</a>
-      <a href="#">Rutabaga</a>
-    </nav>
+   
     <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
       <h3>Menu</h3>
       <a href="#">Celery seakale</a>
@@ -34,7 +25,7 @@
       <div class="main">
         
         <section class="buttonset">
-          <button id="showLeftPush" class="left">left</button>
+        
           <button id="showRightPush" class="right"><i class="fa fa-bars fa-2x"></i> </button>
         </section>
       </div>
@@ -63,7 +54,9 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius.
   </figcaption>
 </div>
-      <!-- <button class="full-width">More</button> -->
+      <button class="full-width left">Show More</button>
+
+
     </div>
 
     <div id="right">
@@ -81,19 +74,23 @@
     <script src="js/jquery.js"></script>
     <script src="js/classie.js"></script>
     <script>
-      var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+
+    // no left button
+
+      var 
+      // menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
         menuRight = document.getElementById( 'cbp-spmenu-s2' ),       
         showLeftPush = document.getElementById( 'showLeftPush' ),
         showRightPush = document.getElementById( 'showRightPush' ),
         body = document.body;
 
       
-      showLeftPush.onclick = function() {
-        classie.toggle( this, 'active' );
-        classie.toggle( body, 'cbp-spmenu-push-toright' );
-        classie.toggle( menuLeft, 'cbp-spmenu-open' );
-        disableOther( 'showLeftPush' );
-      };
+      // showLeftPush.onclick = function() {
+      //   classie.toggle( this, 'active' );
+      //   classie.toggle( body, 'cbp-spmenu-push-toright' );
+      //   classie.toggle( menuLeft, 'cbp-spmenu-open' );
+      //   disableOther( 'showLeftPush' );
+      // };
       showRightPush.onclick = function() {
         classie.toggle( this, 'active' );
         classie.toggle( body, 'cbp-spmenu-push-toleft' );
@@ -103,26 +100,31 @@
 
       function disableOther( button ) {
         
-        if( button !== 'showLeftPush' ) {
-          classie.toggle( showLeftPush, 'disabled' );
-        }
+        // if( button !== 'showLeftPush' ) {
+        //   classie.toggle( showLeftPush, 'disabled' );
+        // }
         if( button !== 'showRightPush' ) {
           classie.toggle( showRightPush, 'disabled' );
         }
-      }
+      };
 
-$(document).ready(function() {
+      // slide down
 
-  for (var i = 0; i < 3; i++) {
-    var width = 800;
-    var height =  400;
-    $('#photos').append('<div><img src="http://www.lorempixel.com/'+width+'/'+height+'/cats" alt="pretty kitty"></div>');
-  }
+      $(document).ready(function() {
+  $("#accordion").hide().find("li:gt(3)").hide();
 
-
+  $('#acc').click(function() {
+    if ($("#accordion").is(":hidden")) {
+    $("#accordion").slideDown("fast");
+    } 
+    else {  $("#accordion").hide(); }       
   });
 
-
+  $("#more").click(function(){
+    $(this).remove();
+    $("#accordion li").show();
+  });
+});
 
     </script>
   </body>

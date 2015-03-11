@@ -44,7 +44,7 @@ nav.projects{
   margin: 0 auto;
   padding: 0 1.25em;
   width: 100%;
-  text-align: center;
+  text-align: center !important;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -83,7 +83,7 @@ nav.projects{
 }
 
 .content > div:not(.title) {
-  margin: -420px auto 0;
+  margin: -390px auto 0;
 }
 
 
@@ -148,7 +148,6 @@ nav.projects{
 }
 
 .intro-effect-fadeout .title {
-  text-align: left;
   max-width: 900px;
 }
 
