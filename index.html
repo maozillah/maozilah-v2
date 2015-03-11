@@ -66,19 +66,19 @@
 
     <div id="right">
 
-      <div id="accordion">
-<ul>
-<li>Link1</li>
-<li>Link2</li>
-<li>Link3</li>
-<li>Link4</li>
-<li>Link5</li>
-<li>Link6</li>
-<li>Link7</li>
-<li>Link8</li>
+<ul id="myList">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+    <li>Five</li>
+    <li>Six</li>
+    <li>Seven</li>
+    <li>Eight</li>
+    <li>Nine</li>
+    <li>Ten</li>
 </ul>
-<span id="more"><a href="#">More</a></span>
-</div>
+<div id="loadMore">Load more</div>
 
         <p class="typl8-drop-cap"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius. Proin quis auctor odio. Donec consectetur massa nec ante finibus, id ultrices velit posuere. Sed efficitur quam in est ullamcorper tempor. Nam suscipit accumsan erat, nec aliquet massa iaculis id. Duis faucibus, risus quis bibendum maximus, libero elit sagittis sem, quis convallis quam augue vitae nibh. Fusce id mi nunc. Nulla facilisi.</p>
 
@@ -130,13 +130,22 @@
       // slide down
 
 $(document).ready(function() {
-  $("#accordion").find("li:gt(3)").hide();
+
+    size_li = $("#myList li").size();
+    console.log(size_li);
+    x=3;
+    $('#myList li:lt('+x+')').show();
+
+    $('#loadMore').click(function () {
+        x= (x+3 <= size_li) ? x+3 : size_li;
+        $('#myList li:lt('+x+')').slideDown();
+
+        if (x >= size_li) {
+          $('#loadMore').hide();
+        }
+    });
 
 
-  $("#more").click(function(){
-    $(this).remove();
-    $("#accordion li").slideDown("fast");
-  });
 });
 
     </script>
