@@ -59,26 +59,35 @@
     </figcaption>
   </a>
 </div>
-      <button class="full-width left">Show More</button>
+
+<!-- extra -->
+
+<div>
+  <a href="project.html">
+    <figcaption>
+     <h4>Data visualization</h4>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius. 
+    </figcaption>
+  </a>
+</div>
+
+<div>
+  <a href="project.html">
+    <figcaption>
+     <h4>Data visualization</h4>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius. 
+    </figcaption>
+  </a>
+</div>
+      <button id="loadMore" class="full-width left">Show More</button>
 
 
     </div>
 
     <div id="right">
 
-<ul id="myList">
-    <li>One</li>
-    <li>Two</li>
-    <li>Three</li>
-    <li>Four</li>
-    <li>Five</li>
-    <li>Six</li>
-    <li>Seven</li>
-    <li>Eight</li>
-    <li>Nine</li>
-    <li>Ten</li>
-</ul>
-<div id="loadMore">Load more</div>
+
+<!-- <div id="loadMore">Load more</div> -->
 
         <p class="typl8-drop-cap"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius. Proin quis auctor odio. Donec consectetur massa nec ante finibus, id ultrices velit posuere. Sed efficitur quam in est ullamcorper tempor. Nam suscipit accumsan erat, nec aliquet massa iaculis id. Duis faucibus, risus quis bibendum maximus, libero elit sagittis sem, quis convallis quam augue vitae nibh. Fusce id mi nunc. Nulla facilisi.</p>
 
@@ -127,18 +136,18 @@
         }
       };
 
-      // slide down
+      // slide down to show more projects
 
 $(document).ready(function() {
 
-    size_li = $("#myList li").size();
+    size_li = $("#left div").size();
     console.log(size_li);
     x=3;
-    $('#myList li:lt('+x+')').show();
+    $('#left div:lt('+x+')').show();
 
     $('#loadMore').click(function () {
         x= (x+3 <= size_li) ? x+3 : size_li;
-        $('#myList li:lt('+x+')').slideDown();
+        $('#left div:lt('+x+')').slideDown();
 
         if (x >= size_li) {
           $('#loadMore').hide();
