@@ -61,6 +61,20 @@
 
     <div id="right">
 
+      <div id="accordion">
+<ul>
+<li>Link1</li>
+<li>Link2</li>
+<li>Link3</li>
+<li>Link4</li>
+<li>Link5</li>
+<li>Link6</li>
+<li>Link7</li>
+<li>Link8</li>
+</ul>
+<span id="more"><a href="#">More</a></span>
+</div>
+
         <p class="typl8-drop-cap"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius. Proin quis auctor odio. Donec consectetur massa nec ante finibus, id ultrices velit posuere. Sed efficitur quam in est ullamcorper tempor. Nam suscipit accumsan erat, nec aliquet massa iaculis id. Duis faucibus, risus quis bibendum maximus, libero elit sagittis sem, quis convallis quam augue vitae nibh. Fusce id mi nunc. Nulla facilisi.</p>
 
 <p>Nunc ultrices euismod mattis. Etiam et eros faucibus, maximus dui consequat, blandit enim. Quisque nec fringilla felis. Duis vulputate posuere neque, sit amet imperdiet nibh ornare quis. Etiam mattis felis vitae neque maximus, et posuere sapien finibus. Etiam facilisis condimentum justo, ut facilisis leo suscipit non. Proin blandit justo nec tempus aliquam.</p>
@@ -110,19 +124,13 @@
 
       // slide down
 
-      $(document).ready(function() {
-  $("#accordion").hide().find("li:gt(3)").hide();
+$(document).ready(function() {
+  $("#accordion").find("li:gt(3)").hide();
 
-  $('#acc').click(function() {
-    if ($("#accordion").is(":hidden")) {
-    $("#accordion").slideDown("fast");
-    } 
-    else {  $("#accordion").hide(); }       
-  });
 
   $("#more").click(function(){
     $(this).remove();
-    $("#accordion li").show();
+    $("#accordion li").slideDown("fast");
   });
 });
 
