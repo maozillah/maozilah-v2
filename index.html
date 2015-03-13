@@ -60,7 +60,7 @@
   </a>
 </div>
 
-<!-- extra -->
+<!-- extra projects-->
 
 <div>
   <a href="project.html">
@@ -98,7 +98,7 @@
 <p>Suspendisse nec mollis nulla. Curabitur augue tellus, ullamcorper ac vestibulum at, ullamcorper at quam. Maecenas elit erat, finibus id consectetur a, rhoncus vulputate ipsum. Suspendisse ac erat tincidunt, feugiat ipsum ac, vehicula eros. Curabitur porta massa et facilisis ultricies. Phasellus ac mollis est. Praesent dui elit, aliquam ut interdum et, gravida mattis nibh. Sed eu neque aliquet, vehicula elit id, pellentesque lorem. Vestibulum efficitur facilisis pellentesque. Nam tempus blandit auctor. Fusce interdum nulla eget tristique lobortis. Donec velit nisi, tempor nec ante eget, tempor commodo ipsum. Nam non massa vel quam sollicitudin euismod ac ut tellus. Nullam faucibus mauris at porta interdum. Donec consectetur maximus aliquam.</p>
     </div>
 
-
+  
     <script src="js/jquery.js"></script>
     <script src="js/classie.js"></script>
     <script>
@@ -141,7 +141,7 @@
 $(document).ready(function() {
 
     size_li = $("#left div").size();
-    console.log(size_li);
+    // console.log(size_li);
     x=3;
     $('#left div:lt('+x+')').show();
 
@@ -152,6 +152,8 @@ $(document).ready(function() {
         if (x >= size_li) {
           $('#loadMore').hide();
         }
+
+        $("#left").animate({ scrollTop: $(document).height() }, 3000);
     });
 
 
