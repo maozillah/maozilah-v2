@@ -1,5 +1,6 @@
 #center {
-  max-width: 523px;
+  max-width: 563px;
+  padding: 20px;
   margin: 0 auto 12% auto;
 }
 
@@ -76,16 +77,29 @@ nav.projects{
   font-size: 1.75em;
 }
 
-
 /* Conent */
 .content {
   margin: 0 auto;
 }
 
+/*aligning images*/
+.content img {
+  max-width: 120%;
+}
+
+.content img:nth-child(even){ 
+  margin: 1em 1em 1em -10%;
+  float: left;
+  }
+
+.content img:nth-child(odd){ 
+   margin: 1em -10% 1em 1em;
+  float: right;
+  }
+
 .content > div:not(.title) {
   margin: -390px auto 0;
 }
-
 
 /* -------------------------- */
 /* Faded gradient */
