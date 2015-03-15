@@ -35,6 +35,23 @@ html, body {
   display:none;
 }
 
+/*links*/
+
+a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:    all 0.5s ease;
+  -o-transition:      all 0.5s ease;
+}
+
+
 /*caption hover*/
 
 div:hover > a >figcaption {
@@ -49,6 +66,10 @@ a > figcaption {
   padding: 2.5%;
   width: 95%;
 
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: none;
+
+
   opacity: 0;
   left: 0; 
   bottom: -10%;
@@ -60,6 +81,7 @@ a > figcaption {
 figcaption > h4 {
   margin-bottom: 0.3em;
   color: #fff;
+  font-family: georgia, serif;
 }
 
 #left> div:nth-child(1) {
@@ -116,14 +138,6 @@ figcaption > h4 {
     overflow: hidden;
     outline:none;
     padding: 15px;
-    -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.buttonset > button:hover {
-    color: red;
 }
 
 button.full-width {
@@ -135,8 +149,18 @@ button.full-width {
   cursor:pointer;
   background-color: black;
   text-transform: uppercase;
+  font-size: 0.8em;
   font-weight: bold;
   color: #fff;
+
+      -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#left button:hover {
+    background-color: red;
 }
 
 /*menu button*/
@@ -148,6 +172,7 @@ button.full-width {
   width: 30px;
   height: 30px;
 }
+
 .menu span {
   margin: 0 auto;
   position: relative;
@@ -221,33 +246,52 @@ button.full-width {
 }
 
 .cbp-spmenu {
-  background: #47a3da;
+  background: #fafafa ;
   position: fixed;
+  overflow: auto;
+  font-family: 'Source Sans Pro', sans-serif;
+
 }
 
-.cbp-spmenu h3 {
-  color: #afdefa;
-  font-size: 1.9em;
+.cbp-spmenu::-webkit-scrollbar {
+            display: none;
+          }
+
+.cbp-spmenu img {
+  width: 100%;
+}
+
+.cbp-spmenu p{
   padding: 20px;
+  }
+
+.cbp-spmenu h3 {
+  color: #000;
+  font-size: 1.9em;
+  padding: 20px 20px 0 20px;
   margin: 0;
-  font-weight: 300;
-  background: #0d77b6;
+  font-weight: bold;
+  border-bottom: 5px solid red;
+  font-family: serif;
 }
 
 .cbp-spmenu a {
   display: block;
-  color: #fff;
+  color: #000;
   font-size: 1.1em;
-  font-weight: 300;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .cbp-spmenu a:hover {
-  background: #258ecd;
+  background: red;
+  color: #fff;
 }
 
 .cbp-spmenu a:active {
-  background: #afdefa;
-  color: #47a3da;
+  background: red;
+  opacity: 0.8;
+  color: #fff;
 }
 
 /* Orientation-dependent styles for the content of the menu */
@@ -260,7 +304,9 @@ button.full-width {
 }
 
 .cbp-spmenu-vertical a {
-  border-bottom: 1px solid #258ecd;
+  /*border-bottom: 1px solid red;*/
+  text-transform: uppercase;
+  font-weight: bold;
   padding: 1em;
 }
 
