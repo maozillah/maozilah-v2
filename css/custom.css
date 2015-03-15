@@ -37,14 +37,28 @@ html, body {
 
 /*links*/
 
-a {
+.content a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid red;
+}
+
+ a:hover {
+  color: red;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:    all 0.5s ease;
+  -o-transition:      all 0.5s ease;
+}
+
+.projects a {
   color: #000;
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
 }
 
-a:hover {
+.projects a:hover {
   color: red;
   -webkit-transition: all 0.5s ease;
   -moz-transition:    all 0.5s ease;
@@ -284,6 +298,10 @@ button.full-width {
 }
 
 .cbp-spmenu a:hover {
+  -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
   background: red;
   color: #fff;
 }
