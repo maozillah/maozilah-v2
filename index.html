@@ -25,8 +25,10 @@
       <div class="main">
         
         <section class="buttonset">
+
+          <a href="#" id="showRightPush" class="menu example5 right"><span></span></a>
         
-          <button id="showRightPush" class="right"><i class="fa fa-bars fa-2x"></i> </button>
+         
         </section>
       </div>
 
@@ -87,8 +89,9 @@
     <div id="right">
 
 
-<!-- <div id="loadMore">Load more</div> -->
+<div class="type">
 
+<h1 class="typl8-alpha">Heading Alpha</h1>
         <p class="typl8-drop-cap"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius. Proin quis auctor odio. Donec consectetur massa nec ante finibus, id ultrices velit posuere. Sed efficitur quam in est ullamcorper tempor. Nam suscipit accumsan erat, nec aliquet massa iaculis id. Duis faucibus, risus quis bibendum maximus, libero elit sagittis sem, quis convallis quam augue vitae nibh. Fusce id mi nunc. Nulla facilisi.</p>
 
 <p>Nunc ultrices euismod mattis. Etiam et eros faucibus, maximus dui consequat, blandit enim. Quisque nec fringilla felis. Duis vulputate posuere neque, sit amet imperdiet nibh ornare quis. Etiam mattis felis vitae neque maximus, et posuere sapien finibus. Etiam facilisis condimentum justo, ut facilisis leo suscipit non. Proin blandit justo nec tempus aliquam.</p>
@@ -97,6 +100,8 @@
 
 <p>Suspendisse nec mollis nulla. Curabitur augue tellus, ullamcorper ac vestibulum at, ullamcorper at quam. Maecenas elit erat, finibus id consectetur a, rhoncus vulputate ipsum. Suspendisse ac erat tincidunt, feugiat ipsum ac, vehicula eros. Curabitur porta massa et facilisis ultricies. Phasellus ac mollis est. Praesent dui elit, aliquam ut interdum et, gravida mattis nibh. Sed eu neque aliquet, vehicula elit id, pellentesque lorem. Vestibulum efficitur facilisis pellentesque. Nam tempus blandit auctor. Fusce interdum nulla eget tristique lobortis. Donec velit nisi, tempor nec ante eget, tempor commodo ipsum. Nam non massa vel quam sollicitudin euismod ac ut tellus. Nullam faucibus mauris at porta interdum. Donec consectetur maximus aliquam.</p>
     </div>
+
+  </div>
 
   
     <script src="js/jquery.js"></script>
@@ -156,6 +161,9 @@ $(document).ready(function() {
         $("#left").animate({ scrollTop: $(document).height() }, 3000);
     });
 
+    // menu animation
+
+$(".example5").click(function(){ $(this).toggleClass("open"); });
 
 });
 

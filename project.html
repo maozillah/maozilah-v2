@@ -40,8 +40,9 @@
       <div class="main">
         
         <section class="buttonset">
-          <button id="showLeftPush" class="left">left</button>
-          <button id="showRightPush" class="right"><i class="fa fa-bars fa-2x"></i> </button>
+          <!-- <button id="showLeftPush" class="left">left</button> -->
+          <a href="#" id="showLeftPush" class="menu example5 left"><span></span></a>
+          <a href="#" id="showRightPush" class="menu example5 right"><span></span></a>
         </section>
       </div>
 
@@ -260,6 +261,48 @@
         
         window.addEventListener( 'scroll', scrollPage );
 
+
+$(document).ready(function() {
+    // menu animation
+
+$(".example5").click(function(){ $(this).toggleClass("open"); });
+
+});
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var navbarHeight = $('.main').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('.main').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('.main').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
 
 
 
