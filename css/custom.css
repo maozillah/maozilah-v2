@@ -94,7 +94,7 @@ figcaption > h4 {
 }
 
 .type{
-  max-width: 523px;
+  max-width: 515px;
   margin: auto;
 }
 
@@ -147,7 +147,6 @@ button.full-width {
   display:  inline-block;
   width: 30px;
   height: 30px;
-  margin: 25px;
 }
 .menu span {
   margin: 0 auto;

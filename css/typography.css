@@ -17,7 +17,7 @@ LICENSE URL ... https://github.com/typeplate/starter-kit/blob/master/license.txt
  */
 
 @font-face {
-  font-family: "Ampersand";
+  font-family: "Georgia";
   src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
   unicode-range: U+0026;
 }
@@ -102,7 +102,7 @@ LICENSE URL ... https://github.com/typeplate/starter-kit/blob/master/license.txt
   margin: 10px 10px 0 0;
   padding: 0 20px;
   font-size: 4em;
-  font-family: inherit;
+  font-family: Georgia, serif;
   line-height: 1;
   text-indent: 0;
   background: transparent;
@@ -272,6 +272,7 @@ h6,
 
 p {
   margin: auto auto 1.5em; /* bottom margin for paragraphs */
+font-family: 'Source Sans Pro', sans-serif;
 }
 
 p + p {
@@ -485,10 +486,10 @@ abbr[title]:hover {
 .typl8-pull-quote:before,
 .typl8-pull-quote:after {
   height: 1em;
-  opacity: 0.15;
+  /*opacity: 0.5;*/
   position: absolute;
   font-size: 4em;
-  color: #dc976e;
+  color: red;
 }
 .typl8-pull-quote:before {
   content: '“';
