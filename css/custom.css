@@ -1,403 +1,417 @@
-/*basics*/
-
-html, body {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
 /*loader*/
 
-.js div#preloader { 
-  position: fixed; 
-  left: 0; 
-  top: 0; 
-  z-index: 3000; 
-  width: 100%; 
-  height: 100%; 
-  overflow: visible; 
-  background: #fff url('../img/heart.gif') no-repeat center center; 
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3000;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url(../img/heart.gif) no-repeat center center
 }
+/*basics*/
 
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0
+}
 #left {
-  width: 55%;
-  overflow-y: auto;
-  height: 100%;
-  position: fixed;
-  background-color: #eee;
+    width: 55%;
+    overflow-y: auto;
+    height: 100%;
+    position: fixed;
+    background-color: #eee
 }
-
 #left > div {
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  -o-background-size: cover !important;
-  background-size: cover !important;
-  background-position: center !important;
-  height: 31%;
-  display: block;
-  background: #fff;
-  overflow: hidden; 
-  position: relative;
-
-  background-size: 100% !important;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition:    all 0.5s ease;
-  -o-transition:      all 0.5s ease;
-
-  display:none;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 31%;
+    display: block;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    -webkit-background-size: 100% !important;
+    background-size: 100% !important;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    display: none
 }
-
 /*links*/
 
 .content a {
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-  border-bottom: 2px solid red;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid red
 }
-
- a:hover {
-  color: red;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition:    all 0.5s ease;
-  -o-transition:      all 0.5s ease;
+a:hover {
+    color: red;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease
 }
-
 .projects a {
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none
 }
-
 .projects a:hover {
-  color: red;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition:    all 0.5s ease;
-  -o-transition:      all 0.5s ease;
+    color: red;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease
 }
-
-
 /*caption hover*/
 
-div:hover > a >figcaption {
-  opacity: 1;
-  bottom: 0%;
+div:hover > a > figcaption {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    bottom: 0
 }
-
-a > figcaption { 
-  position: absolute; 
-  background: rgba(0,0,0,0.75); 
-  color: white !important; 
-  padding: 2.5%;
-  width: 95%;
-
-  font-family: 'Source Sans Pro', sans-serif;
-  text-transform: none;
-
-
-  opacity: 0;
-  left: 0; 
-  bottom: -10%;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition:    all 0.6s ease;
-  -o-transition:      all 0.6s ease;
+a > figcaption {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    color: white !important;
+    padding: 2.5%;
+    width: 95%;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: none;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    left: 0;
+    bottom: -10%;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease
 }
-
 figcaption > h4 {
-  margin-bottom: 0.3em;
-  color: #fff;
-  font-family: georgia, serif;
+    margin-bottom: 0.3em;
+    color: #fff;
+    font-family: georgia, serif
 }
-
-#left> div:nth-child(1) {
-  background: url(http://www.lorempixel.com/800/600/cats) no-repeat;
+#left > div:nth-child(1) {
+    background: url(http://www.lorempixel.com/800/600/cats) no-repeat
 }
-#left> div:nth-child(2) {
-  background: url(http://www.lorempixel.com/700/600/cats) no-repeat;
+#left > div:nth-child(2) {
+    background: url(http://www.lorempixel.com/700/600/cats) no-repeat
 }
-#left> div:nth-child(3) {
-  background: url(http://www.lorempixel.com/900/600/cats) no-repeat;
+#left > div:nth-child(3) {
+    background: url(http://www.lorempixel.com/900/600/cats) no-repeat
 }
-#left> div:nth-child(4) {
-  background: #9fcadf;
+#left > div:nth-child(4) {
+    background: #9fcadf
 }
-#left> div:nth-child(5) {
-  background: #b3d4e6;
+#left > div:nth-child(5) {
+    background: #b3d4e6
 }
-
-#left > div:hover{
-  background-size: 105% !important;
+#left > div:hover {
+    -webkit-background-size: 105% !important;
+    background-size: 105% !important
 }
-
 #left::-webkit-scrollbar {
-            display: none;
-          }
-
+    display: none
+}
 #right {
     float: right;
     width: 39%;
-    padding: 3% ; 
-    max-height:100%;
+    padding: 3%;
+    max-height: 100%
 }
-
-.type{
-  max-width: 515px;
-  margin: auto;
+.type {
+    max-width: 515px;
+    margin: auto
 }
-
 .left {
-  float: left;
+    float: left
 }
-
 .right {
-  float: right;
+    float: right
 }
-
 /*buttons*/
 
 .buttonset > button {
     background-color: Transparent;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     overflow: hidden;
-    outline:none;
-    padding: 15px;
+    outline: none;
+    padding: 15px
 }
-
 button.full-width {
-  display: block; 
-  width: 100%;
-  height: 7%;
-  border: none;
-  outline:none;
-  cursor:pointer;
-  background-color: black;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  font-weight: bold;
-  color: #fff;
-
-      -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+    display: block;
+    width: 100%;
+    height: 7%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #fff;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out
 }
-
 #left button:hover {
-    background-color: red;
+    background-color: red
 }
-
 /*menu button*/
-
 /* btn */
-.menu {
-  position: relative;
-  display:  inline-block;
-  width: 30px;
-  height: 30px;
-}
 
+.menu {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px
+}
 .menu span {
-  margin: 0 auto;
-  position: relative;
-  top: 12px;
+    margin: 0 auto;
+    position: relative;
+    top: 12px
 }
-.menu span:before, .menu span:after {
-  position: absolute;
-  content: '';
+.menu span:before,
+.menu span:after {
+    position: absolute;
+    content: ""
 }
-.menu span, .menu span:before, .menu span:after {
-  width: 30px;
-  height: 6px;
-  background-color: #000;
-  display: block;
+.menu span,
+.menu span:before,
+.menu span:after {
+    width: 30px;
+    height: 6px;
+    background-color: #000;
+    display: block
 }
 .menu span:before {
-  margin-top: -12px;
+    margin-top: -12px
 }
 .menu span:after {
-  margin-top: 12px;
+    margin-top: 12px
 }
-
 /* example 5 */
+
 .example5 span {
-  -webkit-transition-duration: 0s;
-  -webkit-transition-delay: .2s;
+    -moz-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s
 }
 .example5.open span {
-  background-color: rgba(0,0,0,0.0);
-  -webkit-transition-delay: .2s;
+    background-color: rgba(0, 0, 0, 0);
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s
 }
 .example5 span:before {
-  -webkit-transition-property: margin, -webkit-transform;
-  -webkit-transition-duration: .2s;
-  -webkit-transition-delay: .2s, 0;
+    -moz-transition-property: margin, -moz-transform;
+    -o-transition-property: margin, -o-transform;
+    -webkit-transition-property: margin, -webkit-transform;
+    transition-property: margin, transform;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-delay: 0.2s, 0;
+    -o-transition-delay: 0.2s, 0;
+    -webkit-transition-delay: 0.2s, 0;
+    transition-delay: 0.2s, 0
 }
 .example5.open span:before {
-  margin-top: 0;
-  -webkit-transform: rotate(45deg);
-  -webkit-transition-delay: 0, .2s;
+    margin-top: 0;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -moz-transition-delay: 0, 0.2s;
+    -o-transition-delay: 0, 0.2s;
+    -webkit-transition-delay: 0, 0.2s;
+    transition-delay: 0, 0.2s
 }
 .example5 span:after {
-  -webkit-transition-property: margin, -webkit-transform;
-  -webkit-transition-duration: .2s;
-  -webkit-transition-delay: .2s, 0;
+    -moz-transition-property: margin, -moz-transform;
+    -o-transition-property: margin, -o-transform;
+    -webkit-transition-property: margin, -webkit-transform;
+    transition-property: margin, transform;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-delay: 0.2s, 0;
+    -o-transition-delay: 0.2s, 0;
+    -webkit-transition-delay: 0.2s, 0;
+    transition-delay: 0.2s, 0
 }
 .example5.open span:after {
-  margin-top: 0;
-  -webkit-transform: rotate(-45deg);
-  -webkit-transition-delay: 0, .2s;
+    margin-top: 0;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -moz-transition-delay: 0, 0.2s;
+    -o-transition-delay: 0, 0.2s;
+    -webkit-transition-delay: 0, 0.2s;
+    transition-delay: 0, 0.2s
 }
-
 /* General styles for all menus */
 
 .main {
-  position: fixed;
-  z-index: 2000;
-  margin: auto;
-  width: 100%;
-  opacity: 1;
-  transition: all 0.5s ease-in-out;
+    position: fixed;
+    z-index: 2000;
+    margin: auto;
+    width: 100%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out
 }
-
 .nav-up {
-  opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0
 }
-
 .main > section button.disabled {
-  background: #aaa;
-  pointer-events: none;
+    background: #aaa;
+    pointer-events: none
 }
-
 .cbp-spmenu {
-  background: #fafafa ;
-  position: fixed;
-  overflow: auto;
-  font-family: 'Source Sans Pro', sans-serif;
-
+    background: #fafafa;
+    position: fixed;
+    overflow: auto;
+    font-family: "Source Sans Pro", sans-serif
 }
-
 .cbp-spmenu::-webkit-scrollbar {
-            display: none;
-          }
-
+    display: none
+}
 .cbp-spmenu img {
-  width: 100%;
+    width: 100%
 }
-
-.cbp-spmenu p{
-  padding: 20px;
-  }
-
+.cbp-spmenu p {
+    padding: 20px
+}
 .cbp-spmenu h3 {
-  color: #000;
-  font-size: 1.9em;
-  padding: 20px 20px 0 20px;
-  margin: 0;
-  font-weight: bold;
-  border-bottom: 5px solid red;
-  font-family: serif;
+    color: #000;
+    font-size: 1.9em;
+    padding: 20px 20px 0 20px;
+    margin: 0;
+    font-weight: bold;
+    border-bottom: 5px solid red;
+    font-family: serif
 }
-
 .cbp-spmenu a {
-  display: block;
-  color: #000;
-  font-size: 1.1em;
-  font-weight: bold;
-  text-decoration: none;
+    display: block;
+    color: #000;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none
 }
-
 .cbp-spmenu a:hover {
-  -moz-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
     -webkit-transition: none;
-    -o-transition: color 0 ease-in;
     transition: none;
-  background: red;
-  color: #fff;
+    -moz-transition: color 0 ease-in;
+    -o-transition: color 0 ease-in;
+    -webkit-transition: color 0 ease-in;
+    transition: color 0 ease-in;
+    background: red;
+    color: #fff
 }
-
 .cbp-spmenu a:active {
-  background: red;
-  opacity: 0.8;
-  color: #fff;
+    background: red;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    color: #fff
 }
-
 /* Orientation-dependent styles for the content of the menu */
 
 .cbp-spmenu-vertical {
-  width: 240px;
-  height: 100%;
-  top: 0;
-  z-index: 1000;
+    width: 240px;
+    height: 100%;
+    top: 0;
+    z-index: 1000
 }
-
 .cbp-spmenu-vertical a {
-  /*border-bottom: 1px solid red;*/
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 1em;
+    /*border-bottom: 1px solid red;*/
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1em
 }
-
 /* Vertical menu that slides from the left or right */
 
 .cbp-spmenu-left {
-  left: -240px;
+    left: -240px
 }
-
 .cbp-spmenu-right {
-  right: -240px;
+    right: -240px
 }
-
 .cbp-spmenu-left.cbp-spmenu-open {
-  left: 0px;
+    left: 0
 }
-
 .cbp-spmenu-right.cbp-spmenu-open {
-  right: 0px;
+    right: 0
 }
-
 /* Push classes applied to the body */
 
 .cbp-spmenu-push {
-  overflow-x: hidden;
-  position: relative;
-  left: 0;
+    overflow-x: hidden;
+    position: relative;
+    left: 0
 }
-
 .cbp-spmenu-push-toright {
-  left: 240px;
+    left: 240px
 }
-
 .cbp-spmenu-push-toleft {
-  left: -240px;
+    left: -240px
 }
-
 /* Transitions */
 
 .cbp-spmenu,
 .cbp-spmenu-push {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease
 }
-
 /* Example media queries */
 
-@media screen and (max-height: 26.375em){
-
-  .cbp-spmenu-vertical {
-    font-size: 90%;
-    width: 190px;
-  }
-
-  .cbp-spmenu-left,
-  .cbp-spmenu-push-toleft {
-    left: -190px;
-  }
-
-  .cbp-spmenu-right {
-    right: -190px;
-  }
+@media screen and (max-height: 26.375em) {
+    .cbp-spmenu-vertical {
+        font-size: 90%;
+        width: 190px
+    }
+    .cbp-spmenu-left,
+    .cbp-spmenu-push-toleft {
+        left: -190px
+    }
+    .cbp-spmenu-right {
+        right: -190px
+    }
+}
