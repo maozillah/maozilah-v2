@@ -18,6 +18,14 @@
 
   $(document).ready(function() {
 
+    $('html').flowtype({
+ minimum   : 500,
+ maximum   : 1200,
+ minFont   : 12,
+ maxFont   : 40,
+ fontRatio : 60
+});
+
       // preloader
 
       $(window).load(function() {

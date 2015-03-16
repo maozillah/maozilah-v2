@@ -24,7 +24,6 @@ body {
     overflow-y: auto;
     height: 100%;
     position: fixed;
-    background-color: #eee
 }
 #left > div {
     -webkit-background-size: cover !important;
