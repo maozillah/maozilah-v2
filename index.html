@@ -116,61 +116,11 @@
   
     <script src="js/jquery.js"></script>
     <script src="js/classie.js"></script>
+     <script src="js/maozillah.js"></script>
     <script>
-
-    // no left button
-
-      var 
-      // menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
-        menuRight = document.getElementById( 'cbp-spmenu-s2' ),       
-        showLeftPush = document.getElementById( 'showLeftPush' ),
-        showRightPush = document.getElementById( 'showRightPush' ),
-        body = document.body;
-
-      
-      // showLeftPush.onclick = function() {
-      //   classie.toggle( this, 'active' );
-      //   classie.toggle( body, 'cbp-spmenu-push-toright' );
-      //   classie.toggle( menuLeft, 'cbp-spmenu-open' );
-      //   disableOther( 'showLeftPush' );
-      // };
-      showRightPush.onclick = function() {
-        classie.toggle( this, 'active' );
-        classie.toggle( body, 'cbp-spmenu-push-toleft' );
-        classie.toggle( menuRight, 'cbp-spmenu-open' );
-        disableOther( 'showRightPush' );
-      };
-
-      function disableOther( button ) {
-        
-        // if( button !== 'showLeftPush' ) {
-        //   classie.toggle( showLeftPush, 'disabled' );
-        // }
-        if( button !== 'showRightPush' ) {
-          classie.toggle( showRightPush, 'disabled' );
-        }
-      };
-
       // slide down to show more projects
 
 $(document).ready(function() {
-
-  // preloader
-
-  $(window).load(function(){
-  $('#preloader').fadeOut('slow',function(){$(this).remove();});
-});
-
-
-// bind scrolling to div left
-
-$( '#left' ).bind( 'mousewheel DOMMouseScroll', function ( e ) {
-    var e0 = e.originalEvent,
-        delta = e0.wheelDelta || -e0.detail;
-
-    this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-    e.preventDefault();
-});
 
 // show more
     size_li = $("#left div").size();
@@ -188,51 +138,7 @@ $( '#left' ).bind( 'mousewheel DOMMouseScroll', function ( e ) {
 
         $("#left").animate({ scrollTop: $(document).height() }, 3000);
     });
-
-    // menu animation
-
-$(".example5").click(function(){ $(this).toggleClass("open"); });
-
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var navbarHeight = $('.main').outerHeight();
-
-$(window).scroll(function(event){
-    didScroll = true;
 });
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('.main').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('.main').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-    
-    lastScrollTop = st;
-}
-
-
-});
-
-
-
     </script>
   </body>
 </html>
