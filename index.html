@@ -161,6 +161,18 @@ $(document).ready(function() {
   $('#preloader').fadeOut('slow',function(){$(this).remove();});
 });
 
+
+// bind scrolling to div left
+
+$( '#left' ).bind( 'mousewheel DOMMouseScroll', function ( e ) {
+    var e0 = e.originalEvent,
+        delta = e0.wheelDelta || -e0.detail;
+
+    this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+    e.preventDefault();
+});
+
+// show more
     size_li = $("#left div").size();
     // console.log(size_li);
     x=3;
