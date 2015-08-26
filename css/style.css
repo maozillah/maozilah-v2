@@ -372,33 +372,59 @@ button.full-width {
     right: -190px;
   }
 }
-/* line 1, ../scss/_layout.scss */
+/* line 14, ../scss/_layout.scss */
 #left {
   width: 45%;
   overflow-y: auto;
   height: 100%;
   position: fixed;
 }
-/* line 6, ../scss/_layout.scss */
-#left > div {
-  -webkit-background-size: cover !important;
-  background-size: cover !important;
-  background-position: center !important;
+/* line 19, ../scss/_layout.scss */
+#left .featureImg {
   height: 31%;
   display: block;
-  background: #fff;
+  background-position: center !important;
   overflow: hidden;
   position: relative;
-  -webkit-background-size: 100% !important;
-  background-size: 100% !important;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 28, ../scss/_layout.scss */
+#left .featureImg:nth-child(1) {
+  background: url(http://www.lorempixel.com/800/1100/cats) no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+/* line 32, ../scss/_layout.scss */
+#left .featureImg:hover {
+  -moz-background-size: 105%;
+  -o-background-size: 105%;
+  -webkit-background-size: 105%;
+  background-size: 105%;
+}
+/* line 37, ../scss/_layout.scss */
+#left::-webkit-scrollbar {
+  display: none;
 }
 
 /*links*/
-/* line 26, ../scss/_layout.scss */
+/* line 44, ../scss/_layout.scss */
 .content a {
   color: #000;
   font-weight: bold;
@@ -406,41 +432,39 @@ button.full-width {
   border-bottom: 2px solid red;
 }
 
-/* line 33, ../scss/_layout.scss */
-a:hover {
+/* line 51, ../scss/_layout.scss */
+a:hover, .projects a:hover {
   color: red;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
 }
 
-/* line 41, ../scss/_layout.scss */
+/* line 56, ../scss/_layout.scss */
 .projects a {
   color: #000;
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 46, ../scss/_layout.scss */
-.projects a:hover {
-  color: red;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
 
 /*caption hover*/
-/* line 57, ../scss/_layout.scss */
+/* line 68, ../scss/_layout.scss */
 div:hover > a > figcaption {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
   opacity: 1;
   bottom: 0;
 }
 
-/* line 64, ../scss/_layout.scss */
+/* line 73, ../scss/_layout.scss */
 a > figcaption {
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
@@ -449,50 +473,26 @@ a > figcaption {
   width: 95%;
   font-family: "Source Sans Pro", sans-serif;
   text-transform: none;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   opacity: 0;
   left: 0;
   bottom: -10%;
-  -moz-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
 }
 
-/* line 83, ../scss/_layout.scss */
+/* line 87, ../scss/_layout.scss */
 figcaption > h4 {
   margin-bottom: 0.3em;
   color: #fff;
   font-family: georgia, serif;
-}
-
-/* line 91, ../scss/_layout.scss */
-#left > div:nth-child(1) {
-  background: url(http://www.lorempixel.com/800/1100/cats) no-repeat;
-}
-/* line 94, ../scss/_layout.scss */
-#left > div:nth-child(2) {
-  background: url(http://www.lorempixel.com/700/600/cats) no-repeat;
-}
-/* line 97, ../scss/_layout.scss */
-#left > div:nth-child(3) {
-  background: url(http://www.lorempixel.com/900/600/cats) no-repeat;
-}
-/* line 100, ../scss/_layout.scss */
-#left > div:nth-child(4) {
-  background: #9fcadf;
-}
-/* line 103, ../scss/_layout.scss */
-#left > div:nth-child(5), #left > div:nth-child(6) {
-  background: #b3d4e6;
-}
-/* line 106, ../scss/_layout.scss */
-#left > div:hover {
-  -webkit-background-size: 105% !important;
-  background-size: 105% !important;
-}
-/* line 111, ../scss/_layout.scss */
-#left::-webkit-scrollbar {
-  display: none;
 }

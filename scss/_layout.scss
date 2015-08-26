@@ -1,0 +1,91 @@
+@import "compass/css3";
+
+@mixin transition {
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease);
+}
+
+@mixin backgrounds {
+   @include background-size(cover);
+   @include background-size(100%);
+}
+
+#left {
+  width: 45%;
+  overflow-y: auto;
+  height: 100%;
+  position: fixed;
+  .featureImg {
+
+    height: 31%;
+    display: block;
+    background-position: center !important;
+    overflow: hidden;
+    position: relative;
+    @include transition;
+
+    &:nth-child(1) {
+      background: url(http://www.lorempixel.com/800/1100/cats) no-repeat;
+      @include backgrounds;
+    }
+    &:hover {
+      @include background-size(105%);
+    }
+  }
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/*links*/
+
+.content a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid red;
+}
+
+a:hover {
+  color: red;
+  @include transition;
+}
+
+.projects a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    @extend a:hover;    
+  }
+}
+
+/*caption hover*/
+
+div:hover > a > figcaption {
+  opacity: 1;
+  bottom: 0;
+}
+
+a > figcaption {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: white !important;
+  padding: 2.5%;
+  width: 95%;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: none;
+  opacity: 0;
+  left: 0;
+  bottom: -10%;
+  @include transition;
+}
+
+figcaption > h4 {
+  margin-bottom: 0.3em;
+  color: #fff;
+  font-family: georgia, serif;
+}
