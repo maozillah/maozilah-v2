@@ -19,14 +19,13 @@
 
     <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
         <h3>Navigation</h3>
-        <a href="#">Home</a>
         <a href="#">About Me</a>
         <a href="#">Blog</a>
-        <a href="#">Portfolio</a>
+<!--         <a href="#">Portfolio</a> -->
         <a href="#">Github</a>
-        <a href="#">Linkedin</a>
 
         <h3>Social</h3>
+        <a href="#">Linkedin</a>
         <a href="#">Twitter</a>
         <a href="#">Tumblr</a>
         <a href="#">Facebook</a>
@@ -67,7 +66,7 @@
     </div>
 
     <div id="left">
-
+        
         <div>
             <a href="project.html">
                 <figcaption>
@@ -92,8 +91,6 @@
             </a>
         </div>
 
-        <!-- extra projects-->
-
         <div>
             <a href="project.html">
                 <figcaption>
@@ -109,8 +106,14 @@
                 </figcaption>
             </a>
         </div>
-        <button id="loadMore" class="full-width left">Show More</button>
 
+        <div>
+            <a href="project.html">
+                <figcaption>
+                    <h4>Data visualization</h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius.
+                </figcaption>
+            </a>
+        </div>
 
     </div>
 
@@ -118,31 +121,6 @@
     <script src="js/classie.js"></script>
     <script src="js/maozillah.js"></script>
     <script src="js/flowtype.js"></script>
-    <script>
-        // slide down to show more projects
-
-        $(document).ready(function() {
-
-            // show more
-            size_li = $("#left div").size();
-            // console.log(size_li);
-            x = 3;
-            $('#left div:lt(' + x + ')').show();
-
-            $('#loadMore').click(function() {
-                x = (x + 3 <= size_li) ? x + 3 : size_li;
-                $('#left div:lt(' + x + ')').slideDown();
-
-                if (x >= size_li) {
-                    $('#loadMore').hide();
-                }
-
-                $("#left").animate({
-                    scrollTop: $(document).height()
-                }, 3000);
-            });
-        });
-    </script>
 </body>
 
 </html>

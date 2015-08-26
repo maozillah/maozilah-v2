@@ -42,13 +42,13 @@
 
       // bind scrolling to div left
 
-      $('#left, #cbp-spmenu-s1').bind('mousewheel DOMMouseScroll', function(e) {
-          var e0 = e.originalEvent,
-              delta = e0.wheelDelta || -e0.detail;
+      // $('#left, #cbp-spmenu-s1').bind('mousewheel DOMMouseScroll', function(e) {
+      //     var e0 = e.originalEvent,
+      //         delta = e0.wheelDelta || -e0.detail;
 
-          this.scrollTop += (delta < 0 ? 1 : -1) * 30;
-          e.preventDefault();
-      });
+      //     this.scrollTop += (delta < 0 ? 1 : -1) * 30;
+      //     e.preventDefault();
+      // });
 
       // Hide Header on on scroll down
       var didScroll;
