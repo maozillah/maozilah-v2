@@ -386,6 +386,10 @@ button.full-width {
   display: none;
 }
 /* line 25, ../scss/_layout.scss */
+#left a, .projectOne a {
+  color: white;
+}
+/* line 29, ../scss/_layout.scss */
 #left h6, .projectOne h6 {
   text-transform: uppercase;
   font-size: 0.7rem !important;
@@ -394,7 +398,7 @@ button.full-width {
   font-family: sans-serif;
 }
 
-/* line 34, ../scss/_layout.scss */
+/* line 38, ../scss/_layout.scss */
 .featureImg {
   height: 31%;
   display: block;
@@ -413,7 +417,7 @@ button.full-width {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 41, ../scss/_layout.scss */
+/* line 45, ../scss/_layout.scss */
 .featureImg figcaption {
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
@@ -437,27 +441,14 @@ button.full-width {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 54, ../scss/_layout.scss */
+/* line 58, ../scss/_layout.scss */
 .featureImg figcaption h4 {
   font-family: georgia, serif;
   margin-bottom: 0.3rem;
 }
-/* line 60, ../scss/_layout.scss */
-.featureImg:nth-child(1) {
-  background: url('../img/cat1.jpg?1441818201') no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  -webkit-background-size: 100%;
-  background-size: 100%;
-  background-position: center;
-}
 /* line 64, ../scss/_layout.scss */
-.featureImg:nth-child(2) {
-  background: url('../img/cat2.jpg?1441818201') no-repeat;
+.featureImg:nth-child(1) {
+  background: url('../img/cat1.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -469,8 +460,8 @@ button.full-width {
   background-position: center;
 }
 /* line 68, ../scss/_layout.scss */
-.featureImg:nth-child(3) {
-  background: url('../img/cat3.jpg?1441818201') no-repeat;
+.featureImg:nth-child(2) {
+  background: url('../img/cat2.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -482,8 +473,8 @@ button.full-width {
   background-position: center;
 }
 /* line 72, ../scss/_layout.scss */
-.featureImg:nth-child(4) {
-  background: url('../img/cat4.jpg?1441818201') no-repeat;
+.featureImg:nth-child(3) {
+  background: url('../img/cat3.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -494,14 +485,27 @@ button.full-width {
   background-size: 100%;
   background-position: center;
 }
-/* line 77, ../scss/_layout.scss */
+/* line 76, ../scss/_layout.scss */
+.featureImg:nth-child(4) {
+  background: url('../img/cat4.jpg?1441818331') no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-position: center;
+}
+/* line 81, ../scss/_layout.scss */
 .featureImg:hover {
   -moz-background-size: 105%;
   -o-background-size: 105%;
   -webkit-background-size: 105%;
   background-size: 105%;
 }
-/* line 80, ../scss/_layout.scss */
+/* line 84, ../scss/_layout.scss */
 .featureImg:hover figcaption {
   opacity: 1;
   bottom: 0;
@@ -516,7 +520,7 @@ button.full-width {
 
 /* line 7, ../scss/_project.scss */
 .projectOne {
-  background: url('../img/cat1.jpg?1441818201') no-repeat;
+  background: url('../img/cat1.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
