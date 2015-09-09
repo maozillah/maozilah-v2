@@ -1,0 +1,53 @@
+.projectMeta {
+  margin: 8%;
+  position: relative;
+  height: 85%;
+}
+
+.projectOne {
+  @extend #left;
+  background: image-url("cat1.jpg") no-repeat;
+  @include backgrounds;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    @include background-image(linear-gradient(rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 90%));
+  }
+}
+
+/*links*/
+
+a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  @include transition;
+}
+
+.type a {
+  border-bottom: 2px solid red;
+}
+
+.projects {
+  position:absolute; 
+  bottom: 0;
+  width: 100%;
+
+  a {
+    text-transform: uppercase;
+    color: white;
+
+    &:hover {
+      @extend a:hover;    
+    }
+  }
+}

@@ -37,14 +37,15 @@ html, body {
 .type {
   max-width: 650px;
   margin: auto;
+  padding-bottom: 12%;
 }
 
-/* line 37, ../scss/_base.scss */
+/* line 38, ../scss/_base.scss */
 .left {
   float: left;
 }
 
-/* line 41, ../scss/_base.scss */
+/* line 42, ../scss/_base.scss */
 .right {
   float: right;
 }
@@ -81,7 +82,7 @@ button.full-width {
 }
 
 /* line 31, ../scss/_menu.scss */
-#left button:hover, .projectImg button:hover {
+#left button:hover, .projectOne button:hover {
   background-color: red;
 }
 
@@ -373,18 +374,27 @@ button.full-width {
   }
 }
 /* line 15, ../scss/_layout.scss */
-#left, .projectImg {
+#left, .projectOne {
   width: 45%;
   overflow-y: auto;
   height: 100%;
   position: fixed;
+  color: white;
 }
-/* line 20, ../scss/_layout.scss */
-#left::-webkit-scrollbar, .projectImg::-webkit-scrollbar {
+/* line 21, ../scss/_layout.scss */
+#left::-webkit-scrollbar, .projectOne::-webkit-scrollbar {
   display: none;
 }
-
 /* line 25, ../scss/_layout.scss */
+#left h6, .projectOne h6 {
+  text-transform: uppercase;
+  font-size: 0.7rem !important;
+  margin-bottom: 0.5rem !important;
+  letter-spacing: 0.07rem;
+  font-family: sans-serif;
+}
+
+/* line 34, ../scss/_layout.scss */
 .featureImg {
   height: 31%;
   display: block;
@@ -403,11 +413,10 @@ button.full-width {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 32, ../scss/_layout.scss */
+/* line 41, ../scss/_layout.scss */
 .featureImg figcaption {
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
-  color: white;
   padding: 2.5%;
   width: 95%;
   font-family: "Source Sans Pro", sans-serif;
@@ -428,35 +437,40 @@ button.full-width {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 46, ../scss/_layout.scss */
-.featureImg:nth-child(1) {
-  background: url(http://www.lorempixel.com/800/1000/cats) no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  -webkit-background-size: 100%;
-  background-size: 100%;
-  background-position: center;
-}
-/* line 50, ../scss/_layout.scss */
-.featureImg:nth-child(2) {
-  background: url(http://www.lorempixel.com/900/1100/cats) no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  -webkit-background-size: 100%;
-  background-size: 100%;
-  background-position: center;
-}
 /* line 54, ../scss/_layout.scss */
+.featureImg figcaption h4 {
+  font-family: georgia, serif;
+  margin-bottom: 0.3rem;
+}
+/* line 60, ../scss/_layout.scss */
+.featureImg:nth-child(1) {
+  background: url('../img/cat1.jpg?1441808639') no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-position: center;
+}
+/* line 64, ../scss/_layout.scss */
+.featureImg:nth-child(2) {
+  background: url('../img/cat2.jpg?1441808649') no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-position: center;
+}
+/* line 68, ../scss/_layout.scss */
 .featureImg:nth-child(3) {
-  background: url(http://www.lorempixel.com/500/900/cats) no-repeat;
+  background: url('../img/cat3.jpg?1441808662') no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -467,9 +481,9 @@ button.full-width {
   background-size: 100%;
   background-position: center;
 }
-/* line 58, ../scss/_layout.scss */
+/* line 72, ../scss/_layout.scss */
 .featureImg:nth-child(4) {
-  background: url(http://www.lorempixel.com/600/700/cats) no-repeat;
+  background: url('../img/cat4.jpg?1441808671') no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -480,35 +494,64 @@ button.full-width {
   background-size: 100%;
   background-position: center;
 }
-/* line 63, ../scss/_layout.scss */
+/* line 77, ../scss/_layout.scss */
 .featureImg:hover {
   -moz-background-size: 105%;
   -o-background-size: 105%;
   -webkit-background-size: 105%;
   background-size: 105%;
 }
-/* line 66, ../scss/_layout.scss */
+/* line 80, ../scss/_layout.scss */
 .featureImg:hover figcaption {
   opacity: 1;
   bottom: 0;
 }
-/* line 70, ../scss/_layout.scss */
-.featureImg:hover figcaption h4 {
-  margin-bottom: 0.3em;
-  color: #fff;
-  font-family: georgia, serif;
+
+/* line 1, ../scss/_project.scss */
+.projectMeta {
+  margin: 8%;
+  position: relative;
+  height: 85%;
+}
+
+/* line 7, ../scss/_project.scss */
+.projectOne {
+  background: url('../img/cat1.jpg?1441808639') no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-position: center;
+}
+/* line 12, ../scss/_project.scss */
+.projectOne:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4zIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI5MCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4zIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(10%, rgba(0, 0, 0, 0.3)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(90%, rgba(0, 0, 0, 0.3)));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 90%);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 90%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 90%);
 }
 
 /*links*/
-/* line 86, ../scss/_layout.scss */
-.content a {
+/* line 25, ../scss/_project.scss */
+a {
   color: #000;
   font-weight: bold;
   text-decoration: none;
-  border-bottom: 2px solid red;
 }
 
-/* line 93, ../scss/_layout.scss */
+/* line 31, ../scss/_project.scss */
 a:hover, .projects a:hover {
   color: red;
   -moz-transition-property: all;
@@ -525,10 +568,19 @@ a:hover, .projects a:hover {
   transition-timing-function: ease;
 }
 
-/* line 98, ../scss/_layout.scss */
+/* line 36, ../scss/_project.scss */
+.type a {
+  border-bottom: 2px solid red;
+}
+
+/* line 40, ../scss/_project.scss */
+.projects {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/* line 45, ../scss/_project.scss */
 .projects a {
-  color: #000;
   text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
+  color: white;
 }
