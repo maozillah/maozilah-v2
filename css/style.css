@@ -444,7 +444,7 @@ button.full-width {
 }
 /* line 60, ../scss/_layout.scss */
 .featureImg:nth-child(1) {
-  background: url('../img/cat1.jpg?1441808639') no-repeat;
+  background: url('../img/cat1.jpg?1441818201') no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -457,7 +457,7 @@ button.full-width {
 }
 /* line 64, ../scss/_layout.scss */
 .featureImg:nth-child(2) {
-  background: url('../img/cat2.jpg?1441808649') no-repeat;
+  background: url('../img/cat2.jpg?1441818201') no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -470,7 +470,7 @@ button.full-width {
 }
 /* line 68, ../scss/_layout.scss */
 .featureImg:nth-child(3) {
-  background: url('../img/cat3.jpg?1441808662') no-repeat;
+  background: url('../img/cat3.jpg?1441818201') no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -483,7 +483,7 @@ button.full-width {
 }
 /* line 72, ../scss/_layout.scss */
 .featureImg:nth-child(4) {
-  background: url('../img/cat4.jpg?1441808671') no-repeat;
+  background: url('../img/cat4.jpg?1441818201') no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -516,7 +516,7 @@ button.full-width {
 
 /* line 7, ../scss/_project.scss */
 .projectOne {
-  background: url('../img/cat1.jpg?1441808639') no-repeat;
+  background: url('../img/cat1.jpg?1441818201') no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
