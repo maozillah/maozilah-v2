@@ -9,6 +9,7 @@
 @mixin backgrounds {
    @include background-size(cover);
    @include background-size(100%);
+   background-position: center;
 }
 
 #left {
@@ -16,27 +17,68 @@
   overflow-y: auto;
   height: 100%;
   position: fixed;
-  .featureImg {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
 
+.featureImg {
     height: 31%;
     display: block;
-    background-position: center !important;
     overflow: hidden;
     position: relative;
     @include transition;
 
+    figcaption {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 2.5%;
+      width: 95%;
+      font-family: "Source Sans Pro", sans-serif;
+      text-transform: none;
+      opacity: 0;
+      left: 0;
+      bottom: -10%;
+      @include transition;
+    }
+
     &:nth-child(1) {
-      background: url(http://www.lorempixel.com/800/1100/cats) no-repeat;
+      background: url(http://www.lorempixel.com/800/1000/cats) no-repeat;
       @include backgrounds;
     }
+    &:nth-child(2) {
+      background: url(http://www.lorempixel.com/900/1100/cats) no-repeat;
+      @include backgrounds;
+    }
+    &:nth-child(3) {
+      background: url(http://www.lorempixel.com/500/900/cats) no-repeat;
+      @include backgrounds;
+    }
+    &:nth-child(4) {
+      background: url(http://www.lorempixel.com/600/700/cats) no-repeat;
+      @include backgrounds;
+    }
+
     &:hover {
       @include background-size(105%);
+      
+      figcaption {
+        opacity: 1;
+        bottom: 0;
+
+        h4 {
+          margin-bottom: 0.3em;
+          color: #fff;
+          font-family: georgia, serif;
+        }
+
+      }
     }
   }
-  
-  &::-webkit-scrollbar {
-    display: none;
-  }
+
+.projectImg {
+  @extend #left;
 }
 
 /*links*/
@@ -61,31 +103,4 @@ a:hover {
   &:hover {
     @extend a:hover;    
   }
-}
-
-/*caption hover*/
-
-div:hover > a > figcaption {
-  opacity: 1;
-  bottom: 0;
-}
-
-a > figcaption {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  color: white !important;
-  padding: 2.5%;
-  width: 95%;
-  font-family: "Source Sans Pro", sans-serif;
-  text-transform: none;
-  opacity: 0;
-  left: 0;
-  bottom: -10%;
-  @include transition;
-}
-
-figcaption > h4 {
-  margin-bottom: 0.3em;
-  color: #fff;
-  font-family: georgia, serif;
 }

@@ -81,7 +81,7 @@ button.full-width {
 }
 
 /* line 31, ../scss/_menu.scss */
-#left button:hover {
+#left button:hover, .projectImg button:hover {
   background-color: red;
 }
 
@@ -372,18 +372,22 @@ button.full-width {
     right: -190px;
   }
 }
-/* line 14, ../scss/_layout.scss */
-#left {
+/* line 15, ../scss/_layout.scss */
+#left, .projectImg {
   width: 45%;
   overflow-y: auto;
   height: 100%;
   position: fixed;
 }
-/* line 19, ../scss/_layout.scss */
-#left .featureImg {
+/* line 20, ../scss/_layout.scss */
+#left::-webkit-scrollbar, .projectImg::-webkit-scrollbar {
+  display: none;
+}
+
+/* line 25, ../scss/_layout.scss */
+.featureImg {
   height: 31%;
   display: block;
-  background-position: center !important;
   overflow: hidden;
   position: relative;
   -moz-transition-property: all;
@@ -399,76 +403,11 @@ button.full-width {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 28, ../scss/_layout.scss */
-#left .featureImg:nth-child(1) {
-  background: url(http://www.lorempixel.com/800/1100/cats) no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  -webkit-background-size: 100%;
-  background-size: 100%;
-}
 /* line 32, ../scss/_layout.scss */
-#left .featureImg:hover {
-  -moz-background-size: 105%;
-  -o-background-size: 105%;
-  -webkit-background-size: 105%;
-  background-size: 105%;
-}
-/* line 37, ../scss/_layout.scss */
-#left::-webkit-scrollbar {
-  display: none;
-}
-
-/*links*/
-/* line 44, ../scss/_layout.scss */
-.content a {
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-  border-bottom: 2px solid red;
-}
-
-/* line 51, ../scss/_layout.scss */
-a:hover, .projects a:hover {
-  color: red;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -moz-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  -webkit-transition-timing-function: ease;
-  transition-timing-function: ease;
-}
-
-/* line 56, ../scss/_layout.scss */
-.projects a {
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/*caption hover*/
-/* line 68, ../scss/_layout.scss */
-div:hover > a > figcaption {
-  opacity: 1;
-  bottom: 0;
-}
-
-/* line 73, ../scss/_layout.scss */
-a > figcaption {
+.featureImg figcaption {
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
-  color: white !important;
+  color: white;
   padding: 2.5%;
   width: 95%;
   font-family: "Source Sans Pro", sans-serif;
@@ -489,10 +428,107 @@ a > figcaption {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-
-/* line 87, ../scss/_layout.scss */
-figcaption > h4 {
+/* line 46, ../scss/_layout.scss */
+.featureImg:nth-child(1) {
+  background: url(http://www.lorempixel.com/800/1000/cats) no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-position: center;
+}
+/* line 50, ../scss/_layout.scss */
+.featureImg:nth-child(2) {
+  background: url(http://www.lorempixel.com/900/1100/cats) no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-position: center;
+}
+/* line 54, ../scss/_layout.scss */
+.featureImg:nth-child(3) {
+  background: url(http://www.lorempixel.com/500/900/cats) no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-position: center;
+}
+/* line 58, ../scss/_layout.scss */
+.featureImg:nth-child(4) {
+  background: url(http://www.lorempixel.com/600/700/cats) no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-position: center;
+}
+/* line 63, ../scss/_layout.scss */
+.featureImg:hover {
+  -moz-background-size: 105%;
+  -o-background-size: 105%;
+  -webkit-background-size: 105%;
+  background-size: 105%;
+}
+/* line 66, ../scss/_layout.scss */
+.featureImg:hover figcaption {
+  opacity: 1;
+  bottom: 0;
+}
+/* line 70, ../scss/_layout.scss */
+.featureImg:hover figcaption h4 {
   margin-bottom: 0.3em;
   color: #fff;
   font-family: georgia, serif;
+}
+
+/*links*/
+/* line 86, ../scss/_layout.scss */
+.content a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid red;
+}
+
+/* line 93, ../scss/_layout.scss */
+a:hover, .projects a:hover {
+  color: red;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+/* line 98, ../scss/_layout.scss */
+.projects a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
 }

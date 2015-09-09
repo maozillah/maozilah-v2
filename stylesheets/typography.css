@@ -165,7 +165,6 @@ h6 {
   line-height: 1;
   margin-top: 0;
   text-rendering: optimizeLegibility; /*  voodoo to enable ligatures and kerning | https://developer.mozilla.org/en-US/docs/CSS/text-rendering */
-  color: #222222;
 }
 
 
