@@ -1,6 +1,367 @@
+@charset "UTF-8";
 /* Vendor */
 /* Override */
 /* Base */
+/*********************
+BREAKPOINTS
+*********************/
+/*!
+Typeplate : Starter Kit
+URL ........... http://typeplate.com
+Version ....... 2.1.0
+Github ........ https://github.com/typeplate/starter-kit
+Authors ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+License ....... Creative Commmons Attribution 3.0
+License URL ... https://github.com/typeplate/starter-kit/blob/master/license.txt
+*/
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
+  unicode-range: U+0026;
+}
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia");
+  unicode-range: U+270C;
+}
+/* line 36, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-tera, .typl8-giga, .typl8-mega, h1, .typl8-alpha, h2, .typl8-beta, h3, .typl8-gamma, h4, .typl8-delta, h5, .typl8-epsilon, .typl8-zeta, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+  color: #222;
+}
+
+/* line 19, ../scss/typeplate/_typeplate-extends.scss */
+blockquote + figcaption cite {
+  display: block;
+  font-size: inherit;
+  text-align: right;
+}
+
+/* line 33, ../scss/typeplate/_typeplate-extends.scss */
+body {
+  word-wrap: break-word;
+}
+
+/* line 37, ../scss/typeplate/_typeplate-extends.scss */
+pre code {
+  word-wrap: normal;
+}
+
+/* line 4, ../scss/typeplate/_typeplate-styles.scss */
+html {
+  font: normal 112.5%/1.65 serif;
+}
+
+/* line 12, ../scss/typeplate/_typeplate-styles.scss */
+body {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  color: #444;
+}
+
+/* line 45, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-tera {
+  font-size: 117px;
+  font-size: 6.5rem;
+  margin-bottom: 70.90909px;
+  margin-bottom: 3.93939rem;
+}
+
+/* line 45, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-giga {
+  font-size: 90px;
+  font-size: 5rem;
+  margin-bottom: 54.54545px;
+  margin-bottom: 3.0303rem;
+}
+
+/* line 45, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-mega, h1 {
+  font-size: 72px;
+  font-size: 4rem;
+  margin-bottom: 43.63636px;
+  margin-bottom: 2.42424rem;
+}
+
+/* line 45, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-alpha, h2 {
+  font-size: 60px;
+  font-size: 3.33333rem;
+  margin-bottom: 36.36364px;
+  margin-bottom: 2.0202rem;
+}
+
+/* line 45, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-beta, h3 {
+  font-size: 48px;
+  font-size: 2.66667rem;
+  margin-bottom: 29.09091px;
+  margin-bottom: 1.61616rem;
+}
+
+/* line 45, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-gamma, h4 {
+  font-size: 36px;
+  font-size: 2rem;
+  margin-bottom: 21.81818px;
+  margin-bottom: 1.21212rem;
+}
+
+/* line 45, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-delta, h5 {
+  font-size: 24px;
+  font-size: 1.33333rem;
+  margin-bottom: 14.54545px;
+  margin-bottom: 0.80808rem;
+}
+
+/* line 45, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-epsilon {
+  font-size: 21px;
+  font-size: 1.16667rem;
+  margin-bottom: 12.72727px;
+  margin-bottom: 0.70707rem;
+}
+
+/* line 45, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-zeta, h6 {
+  font-size: 18px;
+  font-size: 1rem;
+  margin-bottom: 10.90909px;
+  margin-bottom: 0.60606rem;
+}
+
+/* line 30, ../scss/typeplate/_typeplate-styles.scss */
+p {
+  margin: auto auto 1.5em;
+}
+/* line 33, ../scss/typeplate/_typeplate-styles.scss */
+p + p {
+  text-indent: 1.5em;
+  margin-top: -1.5em;
+}
+
+/* line 53, ../scss/typeplate/_typeplate-styles.scss */
+small {
+  font-size: 65%;
+}
+
+/* line 63, ../scss/typeplate/_typeplate-styles.scss */
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* line 79, ../scss/typeplate/_typeplate-styles.scss */
+pre {
+  white-space: pre;
+}
+/* line 82, ../scss/typeplate/_typeplate-styles.scss */
+pre code {
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+}
+
+/* line 88, ../scss/typeplate/_typeplate-styles.scss */
+code {
+  white-space: pre;
+  font-family: monospace;
+}
+
+/* line 97, ../scss/typeplate/_typeplate-styles.scss */
+abbr {
+  -webkit-font-variant: small-caps;
+  -moz-font-variant: small-caps;
+  -ms-font-variant: small-caps;
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: gray;
+}
+/* line 99, ../scss/typeplate/_typeplate-styles.scss */
+abbr[title]:hover {
+  cursor: help;
+}
+
+/* line 200, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-drop-cap:first-letter {
+  float: left;
+  margin: 10px 10px 0 0;
+  padding: 0 20px;
+  font-size: 4em;
+  font-family: inherit;
+  line-height: 1;
+  text-indent: 0;
+  background: transparent;
+  color: inherit;
+}
+
+/* line 20, ../scss/typeplate/_typeplate-helpers.scss */
+p + .typl8-drop-cap {
+  text-indent: 0;
+  margin-top: 0;
+}
+
+/**
+ * Lining Definition Style Markup
+ *
+  <dl class="typl8-lining">
+    <dt><b></b></dt>
+    <dd></dd>
+  </dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/* line 235, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-lining dt,
+.typl8-lining dd {
+  display: inline;
+  margin: 0;
+}
+/* line 244, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-lining dt + dt:before,
+.typl8-lining dd + dt:before {
+  content: "\A";
+  white-space: pre;
+}
+/* line 253, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-lining dd + dd:before {
+  content: ", ";
+}
+/* line 257, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-lining dd:before {
+  content: ": ";
+  margin-left: -0.2rem;
+}
+
+/**
+ * Dictionary Definition Style Markup
+ *
+  <dl class="typl8-dictionary-style">
+    <dt><b></b></dt>
+    <dd></dd>
+  </dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/* line 265, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-dictionary-style dt {
+  display: inline;
+  counter-reset: definitions;
+}
+/* line 269, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-dictionary-style dt + dt:before {
+  content: ", ";
+  margin-left: -0.2rem;
+}
+/* line 276, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-dictionary-style dd {
+  display: block;
+  counter-increment: definitions;
+}
+/* line 279, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-dictionary-style dd:before {
+  content: counter(definitions,decimal) ". ";
+}
+
+/**
+ * Blockquote Markup
+ *
+    <figure>
+      <blockquote cite="">
+        <p></p>
+      </blockquote>
+      <figcaption>
+        <cite>
+          <small><a href=""></a></small>
+        </cite>
+      </figcaption>
+    </figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/**
+ * Pull Quotes Markup
+ *
+  <aside class="typl8-pull-quote">
+    <blockquote>
+      <p></p>
+    </blockquote>
+  </aside>
+ *
+ * Extend this object into your custom stylesheet.
+ *
+ */
+/* line 100, ../scss/typeplate/_typeplate-helpers.scss */
+.typl8-pull-quote {
+  position: relative;
+  padding: 1em;
+}
+/* line 159, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-pull-quote:before, .typl8-pull-quote:after {
+  height: 1em;
+  opacity: 0.5;
+  position: absolute;
+  font-size: 4em;
+  color: #dc976e;
+}
+/* line 168, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-pull-quote:before {
+  content: 'ÔÇ£';
+  top: 0;
+  left: 0;
+}
+/* line 174, ../scss/typeplate/_typeplate-mixins.scss */
+.typl8-pull-quote:after {
+  content: 'ÔÇØ';
+  bottom: 0;
+  right: 0;
+}
+
+/**
+ * Figures Markup
+ *
+  <figure>
+    <figcaption>
+      <strong>Fig. X.X | </strong><cite title=""></cite>
+    </figcaption>
+  </figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/**
+ * Footnote Markup : Replace 'X' with your unique number for each footnote
+ *
+  <article>
+    <p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
+    <footer>
+      <ol class="foot-notes">
+        <li id="fn-itemX"><a href="#fn-returnX">Ôå®</a></li>
+      </ol>
+    </footer>
+  </article>
+ *
+ * Extend this object into your markup.
+ *
+ */
 /* ===========================
    Base
    =========================== */
@@ -30,22 +391,29 @@ html, body {
   float: right;
   width: 45%;
   padding: 4%;
-  max-height: 100%;
+}
+@media (max-width: 37.5em) {
+  /* line 25, ../scss/_base.scss */
+  #right {
+    width: 90%;
+    float: none;
+    padding: 5%;
+  }
 }
 
-/* line 32, ../scss/_base.scss */
+/* line 38, ../scss/_base.scss */
 .type {
   max-width: 650px;
   margin: auto;
   padding-bottom: 12%;
 }
 
-/* line 38, ../scss/_base.scss */
+/* line 44, ../scss/_base.scss */
 .left {
   float: left;
 }
 
-/* line 42, ../scss/_base.scss */
+/* line 48, ../scss/_base.scss */
 .right {
   float: right;
 }
@@ -373,7 +741,7 @@ button.full-width {
     right: -190px;
   }
 }
-/* line 15, ../scss/_layout.scss */
+/* line 20, ../scss/_layout.scss */
 #left, .projectOne {
   width: 45%;
   overflow-y: auto;
@@ -381,15 +749,29 @@ button.full-width {
   position: fixed;
   color: white;
 }
-/* line 21, ../scss/_layout.scss */
+@media (max-width: 37.5em) {
+  /* line 20, ../scss/_layout.scss */
+  #left, .projectOne {
+    width: 100%;
+    position: static;
+    height: 90%;
+  }
+}
+/* line 31, ../scss/_layout.scss */
 #left::-webkit-scrollbar, .projectOne::-webkit-scrollbar {
   display: none;
 }
-/* line 25, ../scss/_layout.scss */
+@media (max-width: 37.5em) {
+  /* line 31, ../scss/_layout.scss */
+  #left::-webkit-scrollbar, .projectOne::-webkit-scrollbar {
+    display: initial;
+  }
+}
+/* line 37, ../scss/_layout.scss */
 #left a, .projectOne a {
   color: white;
 }
-/* line 29, ../scss/_layout.scss */
+/* line 41, ../scss/_layout.scss */
 #left h6, .projectOne h6 {
   text-transform: uppercase;
   font-size: 0.7rem !important;
@@ -398,7 +780,7 @@ button.full-width {
   font-family: sans-serif;
 }
 
-/* line 38, ../scss/_layout.scss */
+/* line 50, ../scss/_layout.scss */
 .featureImg {
   height: 31%;
   display: block;
@@ -417,7 +799,7 @@ button.full-width {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 45, ../scss/_layout.scss */
+/* line 57, ../scss/_layout.scss */
 .featureImg figcaption {
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
@@ -441,12 +823,12 @@ button.full-width {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 58, ../scss/_layout.scss */
+/* line 70, ../scss/_layout.scss */
 .featureImg figcaption h4 {
   font-family: georgia, serif;
   margin-bottom: 0.3rem;
 }
-/* line 64, ../scss/_layout.scss */
+/* line 76, ../scss/_layout.scss */
 .featureImg:nth-child(1) {
   background: url('../img/cat1.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -459,7 +841,7 @@ button.full-width {
   background-size: 100%;
   background-position: center;
 }
-/* line 68, ../scss/_layout.scss */
+/* line 80, ../scss/_layout.scss */
 .featureImg:nth-child(2) {
   background: url('../img/cat2.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -472,7 +854,7 @@ button.full-width {
   background-size: 100%;
   background-position: center;
 }
-/* line 72, ../scss/_layout.scss */
+/* line 84, ../scss/_layout.scss */
 .featureImg:nth-child(3) {
   background: url('../img/cat3.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -485,7 +867,7 @@ button.full-width {
   background-size: 100%;
   background-position: center;
 }
-/* line 76, ../scss/_layout.scss */
+/* line 88, ../scss/_layout.scss */
 .featureImg:nth-child(4) {
   background: url('../img/cat4.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -498,14 +880,14 @@ button.full-width {
   background-size: 100%;
   background-position: center;
 }
-/* line 81, ../scss/_layout.scss */
+/* line 93, ../scss/_layout.scss */
 .featureImg:hover {
   -moz-background-size: 105%;
   -o-background-size: 105%;
   -webkit-background-size: 105%;
   background-size: 105%;
 }
-/* line 84, ../scss/_layout.scss */
+/* line 96, ../scss/_layout.scss */
 .featureImg:hover figcaption {
   opacity: 1;
   bottom: 0;
@@ -515,23 +897,30 @@ button.full-width {
 .projectMeta {
   margin: 8%;
   position: relative;
-  height: 85%;
+}
+@media (max-width: 37.5em) {
+  /* line 1, ../scss/_project.scss */
+  .projectMeta {
+    margin: 20% 8% 0% 8%;
+  }
 }
 
-/* line 7, ../scss/_project.scss */
+/* line 9, ../scss/_project.scss */
 .projectOne {
   background: url('../img/cat1.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  -webkit-background-size: 100%;
-  background-size: 100%;
   background-position: center;
 }
-/* line 12, ../scss/_project.scss */
+@media (max-width: 37.5em) {
+  /* line 9, ../scss/_project.scss */
+  .projectOne {
+    height: 100%;
+  }
+}
+/* line 18, ../scss/_project.scss */
 .projectOne:before {
   content: '';
   position: absolute;
@@ -546,16 +935,22 @@ button.full-width {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 90%);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 90%);
 }
+@media (max-width: 37.5em) {
+  /* line 18, ../scss/_project.scss */
+  .projectOne:before {
+    bottom: 10%;
+  }
+}
 
 /*links*/
-/* line 25, ../scss/_project.scss */
+/* line 34, ../scss/_project.scss */
 a {
   color: #000;
   font-weight: bold;
   text-decoration: none;
 }
 
-/* line 31, ../scss/_project.scss */
+/* line 40, ../scss/_project.scss */
 a:hover, .projects a:hover {
   color: red;
   -moz-transition-property: all;
@@ -572,19 +967,37 @@ a:hover, .projects a:hover {
   transition-timing-function: ease;
 }
 
-/* line 36, ../scss/_project.scss */
+/* line 45, ../scss/_project.scss */
 .type a {
   border-bottom: 2px solid red;
 }
 
-/* line 40, ../scss/_project.scss */
-.projects {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+/* line 49, ../scss/_project.scss */
+.padding {
+  padding: 8%;
 }
-/* line 45, ../scss/_project.scss */
+
+/* line 53, ../scss/_project.scss */
+.projects {
+  width: 45%;
+  position: fixed;
+  bottom: 0;
+}
+@media (max-width: 37.5em) {
+  /* line 53, ../scss/_project.scss */
+  .projects {
+    width: 100%;
+    position: static;
+  }
+}
+/* line 63, ../scss/_project.scss */
 .projects a {
   text-transform: uppercase;
   color: white;
+}
+@media (max-width: 37.5em) {
+  /* line 63, ../scss/_project.scss */
+  .projects a {
+    color: black;
+  }
 }

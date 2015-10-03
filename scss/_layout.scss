@@ -12,14 +12,26 @@
    background-position: center;
 }
 
+@mixin projectBg {
+   @include background-size(cover);
+   background-position: center;
+}
+
 #left {
   width: 45%;
+  @include breakpoint(mobileonly) { 
+    width: 100%; 
+    position: static;
+    height: 90%;
+  }
   overflow-y: auto;
   height: 100%;
   position: fixed;
   color: white;
   &::-webkit-scrollbar {
     display: none;
+
+     @include breakpoint(mobileonly) { display: initial; }
   }
 
   a {
