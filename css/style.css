@@ -823,12 +823,25 @@ button.full-width {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 67, ../scss/_layout.scss */
+@media (max-width: 37.5em) {
+  /* line 54, ../scss/_layout.scss */
+  .featureImg figcaption {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+/* line 73, ../scss/_layout.scss */
 .featureImg figcaption h4 {
   font-family: georgia, serif;
   margin-bottom: 0.3rem;
 }
-/* line 73, ../scss/_layout.scss */
+@media (max-width: 37.5em) {
+  /* line 79, ../scss/_layout.scss */
+  .featureImg span {
+    display: none;
+  }
+}
+/* line 85, ../scss/_layout.scss */
 .featureImg:nth-child(1) {
   background: url('../img/cat1.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -841,7 +854,7 @@ button.full-width {
   background-size: 100%;
   background-position: center;
 }
-/* line 77, ../scss/_layout.scss */
+/* line 89, ../scss/_layout.scss */
 .featureImg:nth-child(2) {
   background: url('../img/cat2.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -854,7 +867,7 @@ button.full-width {
   background-size: 100%;
   background-position: center;
 }
-/* line 81, ../scss/_layout.scss */
+/* line 93, ../scss/_layout.scss */
 .featureImg:nth-child(3) {
   background: url('../img/cat3.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -867,7 +880,7 @@ button.full-width {
   background-size: 100%;
   background-position: center;
 }
-/* line 85, ../scss/_layout.scss */
+/* line 97, ../scss/_layout.scss */
 .featureImg:nth-child(4) {
   background: url('../img/cat4.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -880,14 +893,14 @@ button.full-width {
   background-size: 100%;
   background-position: center;
 }
-/* line 90, ../scss/_layout.scss */
+/* line 102, ../scss/_layout.scss */
 .featureImg:hover {
   -moz-background-size: 105%;
   -o-background-size: 105%;
   -webkit-background-size: 105%;
   background-size: 105%;
 }
-/* line 93, ../scss/_layout.scss */
+/* line 105, ../scss/_layout.scss */
 .featureImg:hover figcaption {
   opacity: 1;
   bottom: 0;
