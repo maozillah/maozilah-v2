@@ -17,21 +17,18 @@
    background-position: center;
 }
 
-#left {
-  width: 45%;
+.left {
   @include breakpoint(mobileonly) { 
-    width: 100%; 
-    position: static;
-    height: 90%;
-  }
+    width: 100%; }
+
+  width: 45%;
   overflow-y: auto;
-  height: 100%;
   position: fixed;
+  height: 100%;
+  
   color: white;
   &::-webkit-scrollbar {
     display: none;
-
-     @include breakpoint(mobileonly) { display: initial; }
   }
 
   a {
