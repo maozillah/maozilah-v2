@@ -399,29 +399,30 @@ html, body {
     width: 90%;
     float: none;
     padding: 5%;
+    overflow: hidden;
   }
 }
 
 @media (max-width: 37.5em) {
-  /* line 41, ../scss/_base.scss */
+  /* line 42, ../scss/_base.scss */
   .mobileHide {
     display: none;
   }
 }
 
-/* line 48, ../scss/_base.scss */
+/* line 49, ../scss/_base.scss */
 .type {
   max-width: 650px;
   margin: auto;
   padding-bottom: 12%;
 }
 
-/* line 54, ../scss/_base.scss */
+/* line 55, ../scss/_base.scss */
 .align_left {
   float: left;
 }
 
-/* line 58, ../scss/_base.scss */
+/* line 59, ../scss/_base.scss */
 .align_right {
   float: right;
 }
