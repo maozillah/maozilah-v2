@@ -759,14 +759,10 @@ html, body {
   display: none;
 }
 /* line 162, ../scss/_menu.scss */
-.cbp-spmenu img {
-  width: 100%;
-}
-/* line 165, ../scss/_menu.scss */
 .cbp-spmenu p {
   padding: 20px;
 }
-/* line 168, ../scss/_menu.scss */
+/* line 165, ../scss/_menu.scss */
 .cbp-spmenu h3 {
   color: #000;
   font-size: 1.3em;
@@ -775,29 +771,29 @@ html, body {
   font-weight: bold;
   font-family: serif;
 }
-/* line 177, ../scss/_menu.scss */
+/* line 174, ../scss/_menu.scss */
 .cbp-spmenu ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 180, ../scss/_menu.scss */
+/* line 177, ../scss/_menu.scss */
 .cbp-spmenu ul li:first-child {
   border: none;
 }
-/* line 183, ../scss/_menu.scss */
+/* line 180, ../scss/_menu.scss */
 .cbp-spmenu ul li {
   border-top: solid 1px rgba(0, 0, 0, 0.125);
   margin: 0.5em 0 0 0;
   padding: 0.5em 0 0 0;
 }
-/* line 190, ../scss/_menu.scss */
+/* line 187, ../scss/_menu.scss */
 .cbp-spmenu .margin {
   padding: 0em 2em;
 }
 
 /* Orientation-dependent styles for the content of the menu */
-/* line 219, ../scss/_menu.scss */
+/* line 198, ../scss/_menu.scss */
 .sidemenu {
   width: 15%;
   height: 100%;
@@ -805,92 +801,92 @@ html, body {
   z-index: 1000;
 }
 @media (max-width: 37.5em) {
-  /* line 219, ../scss/_menu.scss */
+  /* line 198, ../scss/_menu.scss */
   .sidemenu {
     width: 80%;
   }
 }
-/* line 228, ../scss/_menu.scss */
+/* line 207, ../scss/_menu.scss */
 .sidemenu a {
   text-transform: uppercase;
 }
 
-/* line 236, ../scss/_menu.scss */
+/* line 215, ../scss/_menu.scss */
 .leftmenu {
   width: 35%;
 }
 @media (max-width: 37.5em) {
-  /* line 236, ../scss/_menu.scss */
+  /* line 215, ../scss/_menu.scss */
   .leftmenu {
-    width: 80%;
+    width: 44.5%;
   }
 }
 
 /* Vertical menu that slides from the left or right */
-/* line 247, ../scss/_menu.scss */
+/* line 226, ../scss/_menu.scss */
 .cbp-spmenu-left {
   left: -35%;
 }
 @media (max-width: 37.5em) {
-  /* line 247, ../scss/_menu.scss */
+  /* line 226, ../scss/_menu.scss */
   .cbp-spmenu-left {
     left: -80%;
   }
 }
 
-/* line 254, ../scss/_menu.scss */
+/* line 233, ../scss/_menu.scss */
 .cbp-spmenu-right {
   right: -15%;
 }
 @media (max-width: 37.5em) {
-  /* line 254, ../scss/_menu.scss */
+  /* line 233, ../scss/_menu.scss */
   .cbp-spmenu-right {
     right: -80%;
   }
 }
 
-/* line 261, ../scss/_menu.scss */
+/* line 240, ../scss/_menu.scss */
 .cbp-spmenu-left.cbp-spmenu-open {
   left: 0;
 }
 
-/* line 265, ../scss/_menu.scss */
+/* line 244, ../scss/_menu.scss */
 .cbp-spmenu-right.cbp-spmenu-open {
   right: 0;
 }
 
 /* Push classes applied to the body */
-/* line 271, ../scss/_menu.scss */
+/* line 250, ../scss/_menu.scss */
 .cbp-spmenu-push {
   overflow-x: hidden;
   position: relative;
   left: 0;
 }
 
-/* line 277, ../scss/_menu.scss */
+/* line 256, ../scss/_menu.scss */
 .cbp-spmenu-push-toright {
   left: 35%;
 }
 @media (max-width: 37.5em) {
-  /* line 277, ../scss/_menu.scss */
+  /* line 256, ../scss/_menu.scss */
   .cbp-spmenu-push-toright {
     left: 80%;
   }
 }
 
-/* line 284, ../scss/_menu.scss */
+/* line 263, ../scss/_menu.scss */
 .cbp-spmenu-push-toleft {
   left: -15%;
 }
 @media (max-width: 37.5em) {
-  /* line 284, ../scss/_menu.scss */
+  /* line 263, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
     left: -80%;
   }
 }
 
 /* Transitions */
-/* line 293, ../scss/_menu.scss */
+/* line 272, ../scss/_menu.scss */
 .cbp-spmenu, .cbp-spmenu-push {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
