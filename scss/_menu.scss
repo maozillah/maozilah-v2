@@ -221,8 +221,10 @@ button.full-width {
 
 /* Orientation-dependent styles for the content of the menu */
 
+$menu-width: 15rem;
+
 .cbp-spmenu-vertical {
-  width: 240px;
+  width: $menu-width;
   height: 100%;
   top: 0;
   z-index: 1000;
@@ -237,11 +239,11 @@ button.full-width {
 /* Vertical menu that slides from the left or right */
 
 .cbp-spmenu-left {
-  left: -240px;
+  left: -$menu-width;
 }
 
 .cbp-spmenu-right {
-  right: -240px;
+  right: -$menu-width;
 }
 
 .cbp-spmenu-left.cbp-spmenu-open {
@@ -261,11 +263,11 @@ button.full-width {
 }
 
 .cbp-spmenu-push-toright {
-  left: 240px;
+  left: $menu-width;
 }
 
 .cbp-spmenu-push-toleft {
-  left: -240px;
+  left: -$menu-width;
 }
 
 /* Transitions */
