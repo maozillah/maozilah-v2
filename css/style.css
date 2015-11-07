@@ -797,7 +797,7 @@ html, body {
 }
 
 /* Orientation-dependent styles for the content of the menu */
-/* line 201, ../scss/_menu.scss */
+/* line 202, ../scss/_menu.scss */
 .sidemenu {
   width: 15%;
   height: 100%;
@@ -805,92 +805,92 @@ html, body {
   z-index: 1000;
 }
 @media (max-width: 37.5em) {
-  /* line 201, ../scss/_menu.scss */
+  /* line 202, ../scss/_menu.scss */
   .sidemenu {
-    width: 80%;
+    width: 16rem;
   }
 }
-/* line 210, ../scss/_menu.scss */
+/* line 211, ../scss/_menu.scss */
 .sidemenu a {
   text-transform: uppercase;
 }
 
-/* line 218, ../scss/_menu.scss */
+/* line 216, ../scss/_menu.scss */
 .leftmenu {
   width: 35%;
 }
 @media (max-width: 37.5em) {
-  /* line 218, ../scss/_menu.scss */
+  /* line 216, ../scss/_menu.scss */
   .leftmenu {
-    width: 44.5%;
+    width: 16rem;
   }
 }
 
 /* Vertical menu that slides from the left or right */
-/* line 229, ../scss/_menu.scss */
+/* line 228, ../scss/_menu.scss */
 .cbp-spmenu-left {
   left: -35%;
 }
 @media (max-width: 37.5em) {
-  /* line 229, ../scss/_menu.scss */
+  /* line 228, ../scss/_menu.scss */
   .cbp-spmenu-left {
-    left: -80%;
+    left: -16rem;
   }
 }
 
-/* line 236, ../scss/_menu.scss */
+/* line 235, ../scss/_menu.scss */
 .cbp-spmenu-right {
   right: -15%;
 }
 @media (max-width: 37.5em) {
-  /* line 236, ../scss/_menu.scss */
+  /* line 235, ../scss/_menu.scss */
   .cbp-spmenu-right {
-    right: -80%;
+    right: -16rem;
   }
 }
 
-/* line 243, ../scss/_menu.scss */
+/* line 242, ../scss/_menu.scss */
 .cbp-spmenu-left.cbp-spmenu-open {
   left: 0;
 }
 
-/* line 247, ../scss/_menu.scss */
+/* line 246, ../scss/_menu.scss */
 .cbp-spmenu-right.cbp-spmenu-open {
   right: 0;
 }
 
 /* Push classes applied to the body */
-/* line 253, ../scss/_menu.scss */
+/* line 252, ../scss/_menu.scss */
 .cbp-spmenu-push {
   overflow-x: hidden;
   position: relative;
   left: 0;
 }
 
-/* line 259, ../scss/_menu.scss */
+/* line 258, ../scss/_menu.scss */
 .cbp-spmenu-push-toright {
   left: 35%;
 }
 @media (max-width: 37.5em) {
-  /* line 259, ../scss/_menu.scss */
+  /* line 258, ../scss/_menu.scss */
   .cbp-spmenu-push-toright {
-    left: 80%;
+    left: 16rem;
   }
 }
 
-/* line 266, ../scss/_menu.scss */
+/* line 265, ../scss/_menu.scss */
 .cbp-spmenu-push-toleft {
   left: -15%;
 }
 @media (max-width: 37.5em) {
-  /* line 266, ../scss/_menu.scss */
+  /* line 265, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
-    left: -80%;
+    left: -16rem;
   }
 }
 
 /* Transitions */
-/* line 275, ../scss/_menu.scss */
+/* line 274, ../scss/_menu.scss */
 .cbp-spmenu, .cbp-spmenu-push {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -898,7 +898,6 @@ html, body {
   transition: all 0.3s ease;
 }
 
-/* Example media queries */
 /* line 1, ../scss/_project.scss */
 .projectMeta {
   margin: 8%;

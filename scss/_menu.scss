@@ -195,8 +195,9 @@
 /* Orientation-dependent styles for the content of the menu */
 
 $menu-size: 15%;
-$mobilemenu-size: 80%;
+$mobilemenu-size: 16rem;
 $leftmenu-size: 35%;
+
 
 .sidemenu {
   width: $menu-size;
@@ -208,10 +209,7 @@ $leftmenu-size: 35%;
   top: 0;
   z-index: 1000;
   a {
-    // border-bottom: 1px solid red;
     text-transform: uppercase;
-    // font-weight: bold;
-    // padding: 0.5em 0 0.5em 1em;
   }
 }
 
@@ -220,7 +218,8 @@ $leftmenu-size: 35%;
   @include breakpoint(mobileonly) {
 
   // why does it slide and get larger? 
-    width: 44.5%;
+    // width: 44.5%;
+    width: $mobilemenu-size;
   } 
 }
 
@@ -278,18 +277,3 @@ $leftmenu-size: 35%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
-/* Example media queries */
-
-// @media screen and (max-height: 26.375em) {
-//   .sidemenu {
-//     font-size: 90%;
-//     width: 200px;
-//   }
-//   .cbp-spmenu-left, .cbp-spmenu-push-toleft {
-//     left: -200;
-//   }
-//   .cbp-spmenu-right {
-//     right: -200;
-//   }
-// }
