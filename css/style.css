@@ -389,8 +389,8 @@ html, body {
 /* line 26, ../scss/_base.scss */
 .right {
   float: right;
-  width: 45%;
-  padding: 4%;
+  width: 55%;
+  padding: 4% 0 4% 0;
 }
 
 @media (max-width: 37.5em) {
@@ -482,7 +482,6 @@ html, body {
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
   padding: 2.5%;
-  width: 95%;
   font-family: "Source Sans Pro", sans-serif;
   text-transform: none;
   opacity: 0;
@@ -508,18 +507,18 @@ html, body {
     opacity: 1;
   }
 }
-/* line 73, ../scss/_layout.scss */
+/* line 72, ../scss/_layout.scss */
 .featureImg figcaption h4 {
   font-family: georgia, serif;
   margin-bottom: 0.3rem;
 }
 @media (max-width: 37.5em) {
-  /* line 79, ../scss/_layout.scss */
+  /* line 78, ../scss/_layout.scss */
   .featureImg span {
     display: none;
   }
 }
-/* line 85, ../scss/_layout.scss */
+/* line 84, ../scss/_layout.scss */
 .featureImg:nth-child(1) {
   background: url('../img/cat1.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -532,7 +531,7 @@ html, body {
   background-size: 100%;
   background-position: center;
 }
-/* line 89, ../scss/_layout.scss */
+/* line 88, ../scss/_layout.scss */
 .featureImg:nth-child(2) {
   background: url('../img/cat2.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -545,7 +544,7 @@ html, body {
   background-size: 100%;
   background-position: center;
 }
-/* line 93, ../scss/_layout.scss */
+/* line 92, ../scss/_layout.scss */
 .featureImg:nth-child(3) {
   background: url('../img/cat3.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -558,7 +557,7 @@ html, body {
   background-size: 100%;
   background-position: center;
 }
-/* line 97, ../scss/_layout.scss */
+/* line 96, ../scss/_layout.scss */
 .featureImg:nth-child(4) {
   background: url('../img/cat4.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -571,14 +570,14 @@ html, body {
   background-size: 100%;
   background-position: center;
 }
-/* line 102, ../scss/_layout.scss */
+/* line 101, ../scss/_layout.scss */
 .featureImg:hover {
   -moz-background-size: 105%;
   -o-background-size: 105%;
   -webkit-background-size: 105%;
   background-size: 105%;
 }
-/* line 105, ../scss/_layout.scss */
+/* line 104, ../scss/_layout.scss */
 .featureImg:hover figcaption {
   opacity: 1;
   bottom: 0;
@@ -751,7 +750,7 @@ html, body {
 .cbp-spmenu {
   background: #fafafa;
   position: fixed;
-  overflow: auto;
+  overflow-y: auto;
   font-family: "Source Sans Pro", sans-serif;
 }
 /* line 159, ../scss/_menu.scss */
@@ -824,73 +823,77 @@ html, body {
   .leftmenu {
     width: 16rem;
   }
+  /* line 223, ../scss/_menu.scss */
+  .leftmenu .featureImg {
+    height: 20%;
+  }
 }
 
 /* Vertical menu that slides from the left or right */
-/* line 228, ../scss/_menu.scss */
+/* line 231, ../scss/_menu.scss */
 .cbp-spmenu-left {
   left: -35%;
 }
 @media (max-width: 37.5em) {
-  /* line 228, ../scss/_menu.scss */
+  /* line 231, ../scss/_menu.scss */
   .cbp-spmenu-left {
     left: -16rem;
   }
 }
 
-/* line 235, ../scss/_menu.scss */
+/* line 238, ../scss/_menu.scss */
 .cbp-spmenu-right {
   right: -15%;
 }
 @media (max-width: 37.5em) {
-  /* line 235, ../scss/_menu.scss */
+  /* line 238, ../scss/_menu.scss */
   .cbp-spmenu-right {
     right: -16rem;
   }
 }
 
-/* line 242, ../scss/_menu.scss */
+/* line 245, ../scss/_menu.scss */
 .cbp-spmenu-left.cbp-spmenu-open {
   left: 0;
 }
 
-/* line 246, ../scss/_menu.scss */
+/* line 249, ../scss/_menu.scss */
 .cbp-spmenu-right.cbp-spmenu-open {
   right: 0;
 }
 
 /* Push classes applied to the body */
-/* line 252, ../scss/_menu.scss */
+/* line 255, ../scss/_menu.scss */
 .cbp-spmenu-push {
   overflow-x: hidden;
   position: relative;
   left: 0;
 }
 
-/* line 258, ../scss/_menu.scss */
+/* line 261, ../scss/_menu.scss */
 .cbp-spmenu-push-toright {
   left: 35%;
 }
 @media (max-width: 37.5em) {
-  /* line 258, ../scss/_menu.scss */
+  /* line 261, ../scss/_menu.scss */
   .cbp-spmenu-push-toright {
     left: 16rem;
   }
 }
 
-/* line 265, ../scss/_menu.scss */
+/* line 268, ../scss/_menu.scss */
 .cbp-spmenu-push-toleft {
   left: -15%;
 }
 @media (max-width: 37.5em) {
-  /* line 265, ../scss/_menu.scss */
+  /* line 268, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
     left: -16rem;
   }
 }
 
 /* Transitions */
-/* line 274, ../scss/_menu.scss */
+/* line 277, ../scss/_menu.scss */
 .cbp-spmenu, .cbp-spmenu-push {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
