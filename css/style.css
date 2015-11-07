@@ -671,7 +671,7 @@ button.full-width {
 /* Orientation-dependent styles for the content of the menu */
 /* line 226, ../scss/_menu.scss */
 .cbp-spmenu-vertical {
-  width: 15rem;
+  width: 16rem;
   height: 100%;
   top: 0;
   z-index: 1000;
@@ -687,12 +687,12 @@ button.full-width {
 /* Vertical menu that slides from the left or right */
 /* line 241, ../scss/_menu.scss */
 .cbp-spmenu-left {
-  left: -15rem;
+  left: -16rem;
 }
 
 /* line 245, ../scss/_menu.scss */
 .cbp-spmenu-right {
-  right: -15rem;
+  right: -16rem;
 }
 
 /* line 249, ../scss/_menu.scss */
@@ -715,12 +715,12 @@ button.full-width {
 
 /* line 265, ../scss/_menu.scss */
 .cbp-spmenu-push-toright {
-  left: 15rem;
+  left: 16rem;
 }
 
 /* line 269, ../scss/_menu.scss */
 .cbp-spmenu-push-toleft {
-  left: -15rem;
+  left: -16rem;
 }
 
 /* Transitions */
