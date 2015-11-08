@@ -677,7 +677,7 @@ html, body {
     width: 80%;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   /* line 217, ../scss/_menu.scss */
   .leftmenu {
     width: 40%;

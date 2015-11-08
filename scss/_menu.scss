@@ -226,7 +226,7 @@ $leftmenu-size: 35%;
     width: $mobilemenu-size;
   } 
 
-   @include breakpoint(tablet) { 
+   @include breakpoint(mintablet) { 
     width: $tabletmenu-size;
     span {
       display: none;
