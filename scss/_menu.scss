@@ -193,7 +193,7 @@
 /* Orientation-dependent styles for the content of the menu */
 
 $menu-size: 15%;
-$mobilemenu-size: 15rem;
+$mobilemenu-size: 80%;
 $leftmenu-size: 35%;
 
 .sidemenu {
@@ -216,10 +216,7 @@ $leftmenu-size: 35%;
   }
   width: $leftmenu-size;
   @include breakpoint(mobileonly) {
-
-  // why does it slide and get larger? 
-    // width: 44.5%;
-    width: $mobilemenu-size;
+    width: 44.5%;
   } 
 }
 

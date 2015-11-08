@@ -633,7 +633,7 @@ html, body {
 @media (max-width: 37.5em) {
   /* line 199, ../scss/_menu.scss */
   .sidemenu {
-    width: 15rem;
+    width: 80%;
   }
 }
 /* line 208, ../scss/_menu.scss */
@@ -652,75 +652,75 @@ html, body {
 @media (max-width: 37.5em) {
   /* line 213, ../scss/_menu.scss */
   .leftmenu {
-    width: 15rem;
+    width: 44.5%;
   }
 }
 
 /* Vertical menu that slides from the left or right */
-/* line 228, ../scss/_menu.scss */
+/* line 225, ../scss/_menu.scss */
 .cbp-spmenu-left {
   left: -35%;
 }
 @media (max-width: 37.5em) {
-  /* line 228, ../scss/_menu.scss */
+  /* line 225, ../scss/_menu.scss */
   .cbp-spmenu-left {
-    left: -15rem;
+    left: -80%;
   }
 }
 
-/* line 235, ../scss/_menu.scss */
+/* line 232, ../scss/_menu.scss */
 .cbp-spmenu-right {
   right: -15%;
 }
 @media (max-width: 37.5em) {
-  /* line 235, ../scss/_menu.scss */
+  /* line 232, ../scss/_menu.scss */
   .cbp-spmenu-right {
-    right: -15rem;
+    right: -80%;
   }
 }
 
-/* line 242, ../scss/_menu.scss */
+/* line 239, ../scss/_menu.scss */
 .cbp-spmenu-left.cbp-spmenu-open {
   left: 0;
 }
 
-/* line 246, ../scss/_menu.scss */
+/* line 243, ../scss/_menu.scss */
 .cbp-spmenu-right.cbp-spmenu-open {
   right: 0;
 }
 
 /* Push classes applied to the body */
-/* line 252, ../scss/_menu.scss */
+/* line 249, ../scss/_menu.scss */
 .cbp-spmenu-push {
   overflow-x: hidden;
   position: relative;
   left: 0;
 }
 
-/* line 258, ../scss/_menu.scss */
+/* line 255, ../scss/_menu.scss */
 .cbp-spmenu-push-toright {
   left: 35%;
 }
 @media (max-width: 37.5em) {
-  /* line 258, ../scss/_menu.scss */
+  /* line 255, ../scss/_menu.scss */
   .cbp-spmenu-push-toright {
-    left: 15rem;
+    left: 80%;
   }
 }
 
-/* line 265, ../scss/_menu.scss */
+/* line 262, ../scss/_menu.scss */
 .cbp-spmenu-push-toleft {
   left: -15%;
 }
 @media (max-width: 37.5em) {
-  /* line 265, ../scss/_menu.scss */
+  /* line 262, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
-    left: -15rem;
+    left: -80%;
   }
 }
 
 /* Transitions */
-/* line 274, ../scss/_menu.scss */
+/* line 271, ../scss/_menu.scss */
 .cbp-spmenu, .cbp-spmenu-push {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
