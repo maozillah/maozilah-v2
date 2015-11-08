@@ -27,15 +27,36 @@ html, body {
   width: 55%;
   padding: 5% 0 5% 0;
 
-}
-
-.projectDescr {
   @include breakpoint(mobileonly) {
     width: 90%;
     float: none;
     padding: 6% 5% 5% 5%;
     overflow: hidden;
    }
+
+   img {
+    max-width: 100%;
+    padding: 1em;
+
+    @include breakpoint(mobileonly) { 
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1em 0 1em 0;
+      float: initial !important;
+    }
+
+    &:nth-child(odd) {
+      float: left;
+      padding-left: 0;
+    }
+    &:nth-child(even) {
+      float:right;
+      padding-right: 0;
+    }
+   }
+
 }
 
 .mobileHide {

@@ -16,10 +16,16 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif;
-  margin: 0;
+  margin: 0 0 0.1em 0;
 }
 
 .left, .leftmenu {
+  h1 {
+    font-size: 3em;
+    @include breakpoint(mobileonly) { 
+      font-size: 2em;}
+  }
+
   h6, h3 {
       text-transform: uppercase;
       margin-bottom: 0.5rem;
@@ -65,7 +71,11 @@ p       {   line-height: 1.5;
             -moz-hyphens: auto;
             -ms-hyphens: auto;
             hyphens: auto;  
-            text-indent: 2em; }
+            // text-indent: 2em; 
+          }
+p:first-child { 
+  text-indent: 2em; 
+}
 
 code,
 pre     {   font-family: monospace, serif;
@@ -73,13 +83,13 @@ pre     {   font-family: monospace, serif;
 
 blockquote {
   background: #f9f9f9;
-  border-left: 10px solid #ccc;
+  border-left: 10px solid red;
   margin: 1.5em 10px;
   padding:2em;
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before{
-  color: #ccc;
+  color: red;
   font-family: georgia;
   content: open-quote;
   font-size: 4em;
