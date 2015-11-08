@@ -192,10 +192,10 @@
 
 /* Orientation-dependent styles for the content of the menu */
 
-$menu-size: 25%;
-$mobilemenu-size: 80%;
-$tabletmenu-size: 40%;
-$leftmenu-size: 35%;
+$menu-size: 25vw;
+$mobilemenu-size: 80vw;
+$tabletmenu-size: 40vw;
+$leftmenu-size: 35vw;
 
 .sidemenu {
   @include breakpoint(mobileonly) { 

@@ -647,19 +647,19 @@ html, body {
 @media (max-width: 480px) {
   /* line 200, ../scss/_menu.scss */
   .sidemenu {
-    width: 80%;
+    width: 80vw;
   }
 }
 @media (min-width: 768px) {
   /* line 200, ../scss/_menu.scss */
   .sidemenu {
-    width: 40%;
+    width: 40vw;
   }
 }
 @media (min-width: 1024px) {
   /* line 200, ../scss/_menu.scss */
   .sidemenu {
-    width: 25%;
+    width: 25vw;
   }
 }
 /* line 212, ../scss/_menu.scss */
@@ -674,13 +674,13 @@ html, body {
 @media (max-width: 480px) {
   /* line 217, ../scss/_menu.scss */
   .leftmenu {
-    width: 80%;
+    width: 80vw;
   }
 }
 @media (min-width: 768px) {
   /* line 217, ../scss/_menu.scss */
   .leftmenu {
-    width: 40%;
+    width: 40vw;
   }
   /* line 231, ../scss/_menu.scss */
   .leftmenu span {
@@ -690,7 +690,7 @@ html, body {
 @media (min-width: 1024px) {
   /* line 217, ../scss/_menu.scss */
   .leftmenu {
-    width: 35%;
+    width: 35vw;
   }
   /* line 237, ../scss/_menu.scss */
   .leftmenu span {
@@ -702,38 +702,38 @@ html, body {
 @media (max-width: 480px) {
   /* line 245, ../scss/_menu.scss */
   .cbp-spmenu-left {
-    left: -80%;
+    left: -80vw;
   }
 }
 @media (min-width: 768px) {
   /* line 245, ../scss/_menu.scss */
   .cbp-spmenu-left {
-    left: -40%;
+    left: -40vw;
   }
 }
 @media (min-width: 1024px) {
   /* line 245, ../scss/_menu.scss */
   .cbp-spmenu-left {
-    left: -35%;
+    left: -35vw;
   }
 }
 
 @media (max-width: 480px) {
   /* line 258, ../scss/_menu.scss */
   .cbp-spmenu-right {
-    right: -80%;
+    right: -80vw;
   }
 }
 @media (min-width: 768px) {
   /* line 258, ../scss/_menu.scss */
   .cbp-spmenu-right {
-    right: -40%;
+    right: -40vw;
   }
 }
 @media (min-width: 1024px) {
   /* line 258, ../scss/_menu.scss */
   .cbp-spmenu-right {
-    right: -25%;
+    right: -25vw;
   }
 }
 
@@ -758,38 +758,38 @@ html, body {
 @media (max-width: 480px) {
   /* line 287, ../scss/_menu.scss */
   .cbp-spmenu-push-toright {
-    left: 80%;
+    left: 80vw;
   }
 }
 @media (min-width: 768px) {
   /* line 287, ../scss/_menu.scss */
   .cbp-spmenu-push-toright {
-    left: 40%;
+    left: 40vw;
   }
 }
 @media (min-width: 1024px) {
   /* line 287, ../scss/_menu.scss */
   .cbp-spmenu-push-toright {
-    left: 35%;
+    left: 35vw;
   }
 }
 
 @media (max-width: 480px) {
   /* line 300, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
-    left: -80%;
+    left: -80vw;
   }
 }
 @media (min-width: 768px) {
   /* line 300, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
-    left: -40%;
+    left: -40vw;
   }
 }
 @media (min-width: 1024px) {
   /* line 300, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
-    left: -25%;
+    left: -25vw;
   }
 }
 
