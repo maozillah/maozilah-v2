@@ -344,7 +344,7 @@ $leftmenu-size: 35vw;
 
 
     @include breakpoint(laptop) {
-        left: $leftmenu-size;
+        left: $leftmenu-size !important;
     }
 }
 
@@ -365,7 +365,7 @@ $leftmenu-size: 35vw;
 
 
     @include breakpoint(desktop) {
-        left: -$largemenu-size;
+        left: -$largemenu-size !important;
     }
 }
 

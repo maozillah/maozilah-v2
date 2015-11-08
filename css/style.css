@@ -1379,7 +1379,7 @@ html, body {
 @media (min-width: 1024px) {
   /* line 335, ../scss/_menu.scss */
   .cbp-spmenu-push-toright {
-    left: 35vw;
+    left: 35vw !important;
   }
 }
 
@@ -1404,7 +1404,7 @@ html, body {
 @media (min-width: 1224px) {
   /* line 351, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
-    left: -18vw;
+    left: -18vw !important;
   }
 }
 
