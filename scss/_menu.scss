@@ -193,6 +193,7 @@
 /* Orientation-dependent styles for the content of the menu */
 
 $menu-size: 25vw;
+$largemenu-size: 18vw;
 $mobilemenu-size: 80vw;
 $tabletmenu-size: 40vw;
 $leftmenu-size: 35vw;
@@ -206,6 +207,10 @@ $leftmenu-size: 35vw;
   } 
   @include breakpoint(laptop) { 
   width: $menu-size;}
+
+  @include breakpoint(desktop) { 
+  width: $largemenu-size;}
+
   height: 100vh;
   top: 0;
   z-index: 1000;
@@ -237,6 +242,7 @@ $leftmenu-size: 35vw;
   span {
       display: initial;
     }
+
   }
 }
 
@@ -253,6 +259,7 @@ $leftmenu-size: 35vw;
    @include breakpoint(laptop) { 
   left: -$leftmenu-size;
 }
+
 }
 
 .cbp-spmenu-right {
@@ -266,6 +273,8 @@ $leftmenu-size: 35vw;
    @include breakpoint(laptop) { 
   right: -$menu-size;
 }
+@include breakpoint(desktop) { 
+  right: -$largemenu-size;}
 }
 
 .cbp-spmenu-left.cbp-spmenu-open {
@@ -308,6 +317,8 @@ $leftmenu-size: 35vw;
    @include breakpoint(laptop) { 
   left: -$menu-size;
 }
+@include breakpoint(desktop) { 
+  left: -$largemenu-size;}
 }
 
 /* Transitions */
