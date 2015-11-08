@@ -2,43 +2,51 @@
 
 @mixin transition {
     @include transition-property(all);
+
     @include transition-duration(0.5s);
+
     @include transition-timing-function(ease);
 }
 
 @mixin backgrounds {
-   @include background-size(cover);
-   @include background-size(100%);
-   background-position: center;
+    @include background-size(cover);
+
+    @include background-size(100%);
+
+    background-position: center;
 }
 
 @mixin projectBg {
-   @include background-size(cover);
-   background-position: center;
+    @include background-size(cover);
+
+    background-position: center;
 }
 
+// #hideScroll {
+//   width: 45vw;
+//   overflow: hidden;
+// }
+
 .left {
-  @include breakpoint(tablet) { 
-    width: 100%; }
+    @include breakpoint(tablet) {
+        width: 100%;
+    }
+    width: 46vw;
+    overflow: auto;
 
-  // @include breakpoint(tablet) {
-  //   width: 50%;  
-  // }
-
-  width: 45vw;
-  overflow-y: auto;
-  position: fixed;
-  height: 100vh;
-  
-  color: white;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
-  a {
+    position: fixed;
+    // float: left;
+    height: 100vh;
     color: white;
-  }
- 
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    a {
+        color: white;
+    }
 }
 
 .featureImg {
@@ -46,60 +54,71 @@
     display: block;
     overflow: hidden;
     position: relative;
+
     @include transition;
 
     figcaption {
-      position: absolute;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 2.5%;
-      text-transform: none;
-      opacity: 0;
-      left: 0;
-      bottom: -10%;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 2.5%;
+        text-transform: none;
+        opacity: 0;
+        left: 0;
+        bottom: -10%;
+
+        @include breakpoint(tablet) {
+            bottom: 0;
+            opacity: 1;
+            width: 100%;
+        }
 
 
-      @include breakpoint(tablet) { 
-        bottom: 0;
-        opacity: 1;
-        width: 100%;
-      }
+        @include breakpoint(mobileonly) {
+            padding: 1% 2% 0 2%;
+        }
 
-      @include breakpoint(mobileonly) { 
-        padding: 1% 2% 0 2%;
-      }
 
-      @include transition;
+        @include transition;
     }
 
     span {
-      @include breakpoint(mobileonly) { 
-        display: none;
-      }
+        @include breakpoint(mobileonly) {
+            display: none;
+        }
     }
 
     &:nth-child(1) {
-      background: image-url("cat1.jpg") no-repeat;
-      @include backgrounds;
+        background: image-url("cat1.jpg") no-repeat;
+
+        @include backgrounds;
     }
+
     &:nth-child(2) {
-      background: image-url("cat2.jpg") no-repeat;
-      @include backgrounds;
+        background: image-url("cat2.jpg") no-repeat;
+
+        @include backgrounds;
     }
+
     &:nth-child(3) {
-      background: image-url("cat3.jpg") no-repeat;
-      @include backgrounds;
+        background: image-url("cat3.jpg") no-repeat;
+
+        @include backgrounds;
     }
+
     &:nth-child(4) {
-      background: image-url("cat4.jpg") no-repeat;
-      @include backgrounds;
+        background: image-url("cat4.jpg") no-repeat;
+
+        @include backgrounds;
     }
 
     &:hover {
-      @include background-size(105%);
-      color: white;
-      figcaption {
-        opacity: 1;
-        bottom: 0;
-      }
+        @include background-size(105%);
+
+        color: white;
+
+        figcaption {
+            opacity: 1;
+            bottom: 0;
+        }
     }
-  }
+}

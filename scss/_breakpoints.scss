@@ -2,21 +2,30 @@
 BREAKPOINTS
 *********************/
 
- @mixin breakpoint($point) {
-   @if $point == desktop {
-     @media (min-width: 1224px) { @content ; }
-  }
-   @else if $point == laptop {
-     @media (min-width: 1024px) { @content ; }
-  }
-  @else if $point == mintablet {
-     @media (min-width: 768px) { @content ; }
-  }
-  @else if $point == tablet {
-     @media (max-width: 768px) { @content ; }
-  }
-  @else if $point == mobileonly {
-     @media (max-width: 480px)  { @content ; }
-
-  }
+@mixin breakpoint($point) {
+    @if $point == desktop {
+        @media (min-width: 1224px) {
+            @content;
+        }
+    }
+    @else if $point == laptop {
+        @media (min-width: 1024px) {
+            @content;
+        }
+    }
+    @else if $point == mintablet {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    @else if $point == tablet {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+    @else if $point == mobileonly {
+        @media (max-width: 480px) {
+            @content;
+        }
+    }
 }

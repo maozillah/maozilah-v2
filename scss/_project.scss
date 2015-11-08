@@ -1,83 +1,92 @@
 .projectMeta {
-  margin: 8%;
-  position: relative;
-  @include breakpoint(mobileonly) { 
-    margin: 18% 8% 0% 8%;
-  }
+    margin: 8%;
+    position: relative;
+
+    @include breakpoint(mobileonly) {
+        margin: 18% 8% 0% 8%;
+    }
 }
 
 .projectHeader {
-
-  @include breakpoint(tablet) { 
-    position: static;
-    height: 90%;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    @include background-image(linear-gradient(rgba(white, 0.1) 10%, rgba(white, 0), rgba(black, 0.4) 85%));
-    @include breakpoint(tablet) { 
-      bottom: 10%;
-       @include background-image(linear-gradient(rgba(white, 0.1) 5%, rgba(white, 0), rgba(black, 0.4) 65%));      
+    @include breakpoint(tablet) {
+        position: static;
+        height: 90%;
     }
-  }
+
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        @include background-image(linear-gradient(rgba(white, 0.1) 10%, rgba(white, 0), rgba(black, 0.4) 85%));
+
+        @include breakpoint(tablet) {
+            bottom: 10%;
+
+            @include background-image(linear-gradient(rgba(white, 0.1) 5%, rgba(white, 0), rgba(black, 0.4) 65%));
+        }
+    }
 }
 
 .projectOne {
-  background: image-url("cat1.jpg") no-repeat;
-  @include projectBg;
+    background: image-url("cat1.jpg") no-repeat;
+
+    @include projectBg;
 }
 
 /*links*/
 
 a {
-  color: #000;
-  // font-weight: bold;
-  text-decoration: none;
+    color: #000;
+
+    // font-weight: bold;
+    text-decoration: none;
 }
 
 a:hover {
-  color: red;
-  @include transition;
+    color: red;
+
+    @include transition;
 }
 
 .type a {
-  border-bottom: 2px solid red;
+    border-bottom: 2px solid red;
 }
 
 .padding-left {
-  padding: 0 0 8% 8%;
+    padding: 0 0 8% 8%;
 }
 
 .padding-right {
-  padding: 0 8% 8% 0;
+    padding: 0 8% 8% 0;
 }
 
 .projects {
-  width: 45%;
-  position:fixed; 
-  bottom: 0;
+    width: 45%;
+    position: fixed;
+    bottom: 0;
 
-  @include breakpoint(tablet) { 
-    width: 100%;
-    position: static;
-  }
-
-  a {
-    text-transform: uppercase;
-    color: white;
-
-    @include breakpoint(tablet) { 
-    color: black;
-  }
-
-    &:hover {
-      @extend a:hover;    
+    @include breakpoint(tablet) {
+        width: 100%;
+        position: static;
     }
-  }
+
+
+    a {
+        text-transform: uppercase;
+        color: white;
+
+        @include breakpoint(tablet) {
+            color: black;
+        }
+
+
+        &:hover {
+            @extend a:hover;
+        }
+    }
 }

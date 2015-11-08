@@ -7,7 +7,7 @@
       classie.toggle(body, 'cbp-spmenu-push-toleft');
       classie.toggle(menuRight, 'cbp-spmenu-open');
       disableOther('showRightPush');
-  };
+  }
 
   function disableOther(button) {
 
@@ -79,25 +79,25 @@
 
   });
 
-  // remove hovers for mobile
+   // remove hovers for mobile
 
-//   var touch = window.ontouchstart
-//             || navigator.MaxTouchPoints > 0
-//             || navigator.msMaxTouchPoints > 0;
+   //   var touch = window.ontouchstart
+   //             || navigator.MaxTouchPoints > 0
+   //             || navigator.msMaxTouchPoints > 0;
 
-// if (touch) { // remove all :hover stylesheets
-//     try { // prevent crash on browsers not supporting DOM styleSheets properly
-//         for (var si in document.styleSheets) {
-//             var styleSheet = document.styleSheets[si];
-//             if (!styleSheet.rules) continue;
+   // if (touch) { // remove all :hover stylesheets
+   //     try { // prevent crash on browsers not supporting DOM styleSheets properly
+   //         for (var si in document.styleSheets) {
+   //             var styleSheet = document.styleSheets[si];
+   //             if (!styleSheet.rules) continue;
 
-//             for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-//                 if (!styleSheet.rules[ri].selectorText) continue;
+   //             for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+   //                 if (!styleSheet.rules[ri].selectorText) continue;
 
-//                 if (styleSheet.rules[ri].selectorText.match(':hover')) {
-//                     stylesheet.deleteRule(ri);
-//                 }
-//             }
-//         }
-//     } catch (ex) {}
-// }
+   //                 if (styleSheet.rules[ri].selectorText.match(':hover')) {
+   //                     stylesheet.deleteRule(ri);
+   //                 }
+   //             }
+   //         }
+   //     } catch (ex) {}
+   // }
