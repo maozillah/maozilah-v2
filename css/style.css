@@ -1,9 +1,168 @@
+@charset "UTF-8";
 /* Vendor */
 /* Override */
 /* Base */
 /*********************
 BREAKPOINTS
 *********************/
+/* line 1, ../scss/_typography.scss */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 6, ../scss/_typography.scss */
+body,
+input,
+button {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 11, ../scss/_typography.scss */
+html {
+  font: 125%/1.5 "Source Sans Pro", sans-serif;
+  color: #262626;
+}
+
+/* line 17, ../scss/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+}
+
+/* line 23, ../scss/_typography.scss */
+.left h6, .left h3, .leftmenu h6, .leftmenu h3 {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* line 29, ../scss/_typography.scss */
+.left h6, .leftmenu h6 {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+@media (max-width: 37.5em) {
+  /* line 29, ../scss/_typography.scss */
+  .left h6, .leftmenu h6 {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+  }
+}
+/* line 40, ../scss/_typography.scss */
+.left h3, .leftmenu h3 {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+/* line 46, ../scss/_typography.scss */
+h1 {
+  font-size: 2em;
+  /* 2*16 = 32 */
+}
+
+/* line 48, ../scss/_typography.scss */
+h2 {
+  font-size: 1.5em;
+  /* 1.5*16 = 24 */
+}
+@media (max-width: 37.5em) {
+  /* line 48, ../scss/_typography.scss */
+  h2 {
+    font-size: 1.2em;
+  }
+}
+
+/* line 52, ../scss/_typography.scss */
+h3 {
+  font-size: 1.17em;
+  /* 1.17*16 = 18.72 */
+}
+
+/* line 53, ../scss/_typography.scss */
+h4 {
+  font-size: 1em;
+  /* 1*16 = 16 */
+}
+
+/* line 54, ../scss/_typography.scss */
+h5 {
+  font-size: 0.83em;
+  /* 0.83*16 = 13.28 */
+}
+
+/* line 55, ../scss/_typography.scss */
+h6 {
+  font-size: 0.75em;
+  /* 0.75*16 = 12 */
+}
+
+/* line 57, ../scss/_typography.scss */
+p {
+  line-height: 1.5;
+  margin: 0 0 1em;
+  word-break: break-all;
+  /* Non standard for webkit */
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  text-indent: 2em;
+}
+
+/* line 70, ../scss/_typography.scss */
+code,
+pre {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 74, ../scss/_typography.scss */
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 2em;
+  quotes: "“" "”" "‘" "’";
+}
+
+/* line 81, ../scss/_typography.scss */
+blockquote:before {
+  color: #ccc;
+  font-family: georgia;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+/* line 91, ../scss/_typography.scss */
+blockquote p {
+  display: inline;
+}
+
+@media print {
+  /* line 98, ../scss/_typography.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 103, ../scss/_typography.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    /* http://css-tricks.com/almanac/properties/o/orphans/ */
+    widows: 3;
+    /* http://css-tricks.com/almanac/properties/w/widows/ */
+    page-break-after: avoid;
+  }
+}
 /* ===========================
    Base
    =========================== */
@@ -28,43 +187,42 @@ html, body {
   margin: 0;
 }
 
-/* line 26, ../scss/_base.scss */
+/* line 25, ../scss/_base.scss */
 .right {
   float: right;
   width: 55%;
-  padding: 4% 0 4% 0;
+  padding: 5% 0 5% 0;
 }
 
 @media (max-width: 37.5em) {
-  /* line 33, ../scss/_base.scss */
+  /* line 32, ../scss/_base.scss */
   .projectDescr {
     width: 90%;
     float: none;
-    padding: 5%;
+    padding: 6% 5% 5% 5%;
     overflow: hidden;
   }
 }
 
 @media (max-width: 37.5em) {
-  /* line 42, ../scss/_base.scss */
+  /* line 41, ../scss/_base.scss */
   .mobileHide {
     display: none;
   }
 }
 
-/* line 48, ../scss/_base.scss */
+/* line 47, ../scss/_base.scss */
 .type {
   max-width: 650px;
   margin: auto;
-  padding-bottom: 12%;
 }
 
-/* line 54, ../scss/_base.scss */
+/* line 53, ../scss/_base.scss */
 .align_left {
   float: left;
 }
 
-/* line 58, ../scss/_base.scss */
+/* line 57, ../scss/_base.scss */
 .align_right {
   float: right;
 }
@@ -91,16 +249,8 @@ html, body {
 .left a {
   color: white;
 }
-/* line 38, ../scss/_layout.scss */
-.left h6 {
-  text-transform: uppercase;
-  font-size: 0.7rem !important;
-  margin-bottom: 0.5rem !important;
-  letter-spacing: 0.07rem;
-  font-family: sans-serif;
-}
 
-/* line 47, ../scss/_layout.scss */
+/* line 40, ../scss/_layout.scss */
 .featureImg {
   height: 31%;
   display: block;
@@ -119,12 +269,11 @@ html, body {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 54, ../scss/_layout.scss */
+/* line 47, ../scss/_layout.scss */
 .featureImg figcaption {
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
   padding: 2.5%;
-  font-family: "Source Sans Pro", sans-serif;
   text-transform: none;
   opacity: 0;
   left: 0;
@@ -143,24 +292,20 @@ html, body {
   transition-timing-function: ease;
 }
 @media (max-width: 37.5em) {
-  /* line 54, ../scss/_layout.scss */
+  /* line 47, ../scss/_layout.scss */
   .featureImg figcaption {
     bottom: 0;
     opacity: 1;
+    width: 100%;
   }
 }
-/* line 72, ../scss/_layout.scss */
-.featureImg figcaption h4 {
-  font-family: georgia, serif;
-  margin-bottom: 0.3rem;
-}
 @media (max-width: 37.5em) {
-  /* line 78, ../scss/_layout.scss */
+  /* line 65, ../scss/_layout.scss */
   .featureImg span {
     display: none;
   }
 }
-/* line 84, ../scss/_layout.scss */
+/* line 71, ../scss/_layout.scss */
 .featureImg:nth-child(1) {
   background: url('../img/cat1.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -173,7 +318,7 @@ html, body {
   background-size: 100%;
   background-position: center;
 }
-/* line 88, ../scss/_layout.scss */
+/* line 75, ../scss/_layout.scss */
 .featureImg:nth-child(2) {
   background: url('../img/cat2.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -186,7 +331,7 @@ html, body {
   background-size: 100%;
   background-position: center;
 }
-/* line 92, ../scss/_layout.scss */
+/* line 79, ../scss/_layout.scss */
 .featureImg:nth-child(3) {
   background: url('../img/cat3.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -199,7 +344,7 @@ html, body {
   background-size: 100%;
   background-position: center;
 }
-/* line 96, ../scss/_layout.scss */
+/* line 83, ../scss/_layout.scss */
 .featureImg:nth-child(4) {
   background: url('../img/cat4.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -212,14 +357,15 @@ html, body {
   background-size: 100%;
   background-position: center;
 }
-/* line 101, ../scss/_layout.scss */
+/* line 88, ../scss/_layout.scss */
 .featureImg:hover {
   -moz-background-size: 105%;
   -o-background-size: 105%;
   -webkit-background-size: 105%;
   background-size: 105%;
+  color: white;
 }
-/* line 104, ../scss/_layout.scss */
+/* line 91, ../scss/_layout.scss */
 .featureImg:hover figcaption {
   opacity: 1;
   bottom: 0;
@@ -258,7 +404,7 @@ html, body {
   top: 12px;
   width: 30px;
   height: 6px;
-  background-color: #000;
+  background-color: #262626;
   display: block;
 }
 /* line 29, ../scss/_menu.scss */
@@ -270,7 +416,7 @@ html, body {
 .menu span:before, .menu span:after {
   width: 30px;
   height: 6px;
-  background-color: #000;
+  background-color: #262626;
   display: block;
 }
 /* line 43, ../scss/_menu.scss */
@@ -437,7 +583,7 @@ html, body {
 }
 
 /* Orientation-dependent styles for the content of the menu */
-/* line 200, ../scss/_menu.scss */
+/* line 199, ../scss/_menu.scss */
 .sidemenu {
   width: 15%;
   height: 100vh;
@@ -445,92 +591,96 @@ html, body {
   z-index: 1000;
 }
 @media (max-width: 37.5em) {
-  /* line 200, ../scss/_menu.scss */
+  /* line 199, ../scss/_menu.scss */
   .sidemenu {
-    width: 16rem;
+    width: 15rem;
   }
 }
-/* line 209, ../scss/_menu.scss */
+/* line 208, ../scss/_menu.scss */
 .sidemenu a {
   text-transform: uppercase;
 }
 
-/* line 214, ../scss/_menu.scss */
+/* line 213, ../scss/_menu.scss */
 .leftmenu {
   width: 35%;
 }
+/* line 214, ../scss/_menu.scss */
+.leftmenu a {
+  color: white;
+}
 @media (max-width: 37.5em) {
-  /* line 214, ../scss/_menu.scss */
+  /* line 213, ../scss/_menu.scss */
   .leftmenu {
-    width: 16rem;
+    width: 15rem;
   }
 }
 
 /* Vertical menu that slides from the left or right */
-/* line 226, ../scss/_menu.scss */
+/* line 228, ../scss/_menu.scss */
 .cbp-spmenu-left {
   left: -35%;
 }
 @media (max-width: 37.5em) {
-  /* line 226, ../scss/_menu.scss */
+  /* line 228, ../scss/_menu.scss */
   .cbp-spmenu-left {
-    left: -16rem;
+    left: -15rem;
   }
 }
 
-/* line 233, ../scss/_menu.scss */
+/* line 235, ../scss/_menu.scss */
 .cbp-spmenu-right {
   right: -15%;
 }
 @media (max-width: 37.5em) {
-  /* line 233, ../scss/_menu.scss */
+  /* line 235, ../scss/_menu.scss */
   .cbp-spmenu-right {
-    right: -16rem;
+    right: -15rem;
   }
 }
 
-/* line 240, ../scss/_menu.scss */
+/* line 242, ../scss/_menu.scss */
 .cbp-spmenu-left.cbp-spmenu-open {
   left: 0;
 }
 
-/* line 244, ../scss/_menu.scss */
+/* line 246, ../scss/_menu.scss */
 .cbp-spmenu-right.cbp-spmenu-open {
   right: 0;
 }
 
 /* Push classes applied to the body */
-/* line 250, ../scss/_menu.scss */
+/* line 252, ../scss/_menu.scss */
 .cbp-spmenu-push {
   overflow-x: hidden;
   position: relative;
   left: 0;
 }
 
-/* line 256, ../scss/_menu.scss */
+/* line 258, ../scss/_menu.scss */
 .cbp-spmenu-push-toright {
   left: 35%;
 }
 @media (max-width: 37.5em) {
-  /* line 256, ../scss/_menu.scss */
+  /* line 258, ../scss/_menu.scss */
   .cbp-spmenu-push-toright {
-    left: 16rem;
+    left: 15rem;
   }
 }
 
-/* line 263, ../scss/_menu.scss */
+/* line 265, ../scss/_menu.scss */
 .cbp-spmenu-push-toleft {
   left: -15%;
 }
 @media (max-width: 37.5em) {
-  /* line 263, ../scss/_menu.scss */
+  /* line 265, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
-    left: -16rem;
+    left: -15rem;
   }
 }
 
 /* Transitions */
-/* line 272, ../scss/_menu.scss */
+/* line 274, ../scss/_menu.scss */
 .cbp-spmenu, .cbp-spmenu-push {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -546,7 +696,7 @@ html, body {
 @media (max-width: 37.5em) {
   /* line 1, ../scss/_project.scss */
   .projectMeta {
-    margin: 25% 8% 0% 8%;
+    margin: 18% 8% 0% 8%;
   }
 }
 

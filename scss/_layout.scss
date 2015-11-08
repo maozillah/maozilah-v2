@@ -35,13 +35,6 @@
     color: white;
   }
   
-  h6 {
-    text-transform: uppercase;
-    font-size: 0.7rem !important;
-    margin-bottom: 0.5rem !important;
-    letter-spacing: 0.07rem;
-    font-family: sans-serif;
-  }
 }
 
 .featureImg {
@@ -54,9 +47,7 @@
     figcaption {
       position: absolute;
       background: rgba(0, 0, 0, 0.5);
-
       padding: 2.5%;
-      font-family: "Source Sans Pro", sans-serif;
       text-transform: none;
       opacity: 0;
       left: 0;
@@ -65,14 +56,10 @@
       @include breakpoint(mobileonly) { 
         bottom: 0;
         opacity: 1;
+        width: 100%;
       }
 
       @include transition;
-
-      h4 {
-        font-family: georgia, serif;
-        margin-bottom: 0.3rem;
-      }
     }
 
     span {
@@ -100,7 +87,7 @@
 
     &:hover {
       @include background-size(105%);
-
+      color: white;
       figcaption {
         opacity: 1;
         bottom: 0;

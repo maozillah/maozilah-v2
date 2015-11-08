@@ -32,12 +32,12 @@
     }
     width: 30px;
     height: 6px;
-    background-color: #000;
+    background-color: #262626;
     display: block;
     &:before, &:after {
       width: 30px;
       height: 6px;
-      background-color: #000;
+      background-color: #262626;
       display: block;
     }
     &:before {
@@ -193,9 +193,8 @@
 /* Orientation-dependent styles for the content of the menu */
 
 $menu-size: 15%;
-$mobilemenu-size: 16rem;
+$mobilemenu-size: 15rem;
 $leftmenu-size: 35%;
-
 
 .sidemenu {
   width: $menu-size;
@@ -212,6 +211,9 @@ $leftmenu-size: 35%;
 }
 
 .leftmenu {
+  a {
+    color: white;
+  }
   width: $leftmenu-size;
   @include breakpoint(mobileonly) {
 
