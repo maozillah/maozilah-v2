@@ -56,6 +56,7 @@
       opacity: 0;
       left: 0;
       bottom: -10%;
+      width: 100%;
 
       @include breakpoint(tablet) { 
         bottom: 0;

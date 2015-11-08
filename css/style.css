@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 .left h1, .leftmenu h1 {
   font-size: 3em;
 }
-@media (max-width: 415px) {
+@media (max-width: 480px) {
   /* line 23, ../scss/_typography.scss */
   .left h1, .leftmenu h1 {
     font-size: 2em;
@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
 }
-@media (max-width: 415px) {
+@media (max-width: 480px) {
   /* line 35, ../scss/_typography.scss */
   .left h6, .leftmenu h6 {
     font-size: 0.7rem;
@@ -75,7 +75,7 @@ h2 {
   font-size: 1.5em;
   /* 1.5*16 = 24 */
 }
-@media (max-width: 415px) {
+@media (max-width: 480px) {
   /* line 54, ../scss/_typography.scss */
   h2 {
     font-size: 1.2em;
@@ -255,7 +255,7 @@ html, body {
   max-width: 650px;
   margin: auto;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   /* line 68, ../scss/_base.scss */
   .type {
     padding: 0 2em 0 2em;
@@ -323,6 +323,7 @@ html, body {
   opacity: 0;
   left: 0;
   bottom: -10%;
+  width: 100%;
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;
@@ -344,19 +345,19 @@ html, body {
     width: 100%;
   }
 }
-@media (max-width: 415px) {
+@media (max-width: 480px) {
   /* line 51, ../scss/_layout.scss */
   .featureImg figcaption {
     padding: 1% 2% 0 2%;
   }
 }
-@media (max-width: 415px) {
-  /* line 73, ../scss/_layout.scss */
+@media (max-width: 480px) {
+  /* line 74, ../scss/_layout.scss */
   .featureImg span {
     display: none;
   }
 }
-/* line 79, ../scss/_layout.scss */
+/* line 80, ../scss/_layout.scss */
 .featureImg:nth-child(1) {
   background: url('../img/cat1.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -369,7 +370,7 @@ html, body {
   background-size: 100%;
   background-position: center;
 }
-/* line 83, ../scss/_layout.scss */
+/* line 84, ../scss/_layout.scss */
 .featureImg:nth-child(2) {
   background: url('../img/cat2.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -382,7 +383,7 @@ html, body {
   background-size: 100%;
   background-position: center;
 }
-/* line 87, ../scss/_layout.scss */
+/* line 88, ../scss/_layout.scss */
 .featureImg:nth-child(3) {
   background: url('../img/cat3.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -395,7 +396,7 @@ html, body {
   background-size: 100%;
   background-position: center;
 }
-/* line 91, ../scss/_layout.scss */
+/* line 92, ../scss/_layout.scss */
 .featureImg:nth-child(4) {
   background: url('../img/cat4.jpg?1441818331') no-repeat;
   -moz-background-size: cover;
@@ -408,7 +409,7 @@ html, body {
   background-size: 100%;
   background-position: center;
 }
-/* line 96, ../scss/_layout.scss */
+/* line 97, ../scss/_layout.scss */
 .featureImg:hover {
   -moz-background-size: 105%;
   -o-background-size: 105%;
@@ -416,7 +417,7 @@ html, body {
   background-size: 105%;
   color: white;
 }
-/* line 99, ../scss/_layout.scss */
+/* line 100, ../scss/_layout.scss */
 .featureImg:hover figcaption {
   opacity: 1;
   bottom: 0;
@@ -636,21 +637,26 @@ html, body {
 /* Orientation-dependent styles for the content of the menu */
 /* line 200, ../scss/_menu.scss */
 .sidemenu {
-  width: 15%;
   height: 100vh;
   top: 0;
   z-index: 1000;
 }
-@media (max-width: 415px) {
+@media (max-width: 480px) {
   /* line 200, ../scss/_menu.scss */
   .sidemenu {
     width: 80%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   /* line 200, ../scss/_menu.scss */
   .sidemenu {
     width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 200, ../scss/_menu.scss */
+  .sidemenu {
+    width: 20%;
   }
 }
 /* line 212, ../scss/_menu.scss */
@@ -658,120 +664,134 @@ html, body {
   text-transform: uppercase;
 }
 
-/* line 217, ../scss/_menu.scss */
-.leftmenu {
-  width: 35%;
-}
 /* line 218, ../scss/_menu.scss */
 .leftmenu a {
   color: white;
 }
-@media (max-width: 415px) {
+@media (max-width: 480px) {
   /* line 217, ../scss/_menu.scss */
   .leftmenu {
     width: 80%;
   }
 }
-@media (min-width: 480px) {
+@media (max-width: 768px) {
   /* line 217, ../scss/_menu.scss */
   .leftmenu {
     width: 40%;
   }
-  /* line 230, ../scss/_menu.scss */
+  /* line 231, ../scss/_menu.scss */
   .leftmenu span {
     display: none;
   }
 }
+@media (min-width: 1024px) {
+  /* line 217, ../scss/_menu.scss */
+  .leftmenu {
+    width: 35%;
+  }
+  /* line 237, ../scss/_menu.scss */
+  .leftmenu span {
+    display: initial;
+  }
+}
 
 /* Vertical menu that slides from the left or right */
-/* line 238, ../scss/_menu.scss */
-.cbp-spmenu-left {
-  left: -35%;
-}
-@media (max-width: 415px) {
-  /* line 238, ../scss/_menu.scss */
+@media (max-width: 480px) {
+  /* line 245, ../scss/_menu.scss */
   .cbp-spmenu-left {
     left: -80%;
   }
 }
-@media (min-width: 480px) {
-  /* line 238, ../scss/_menu.scss */
+@media (min-width: 768px) {
+  /* line 245, ../scss/_menu.scss */
   .cbp-spmenu-left {
     left: -40%;
   }
 }
-
-/* line 248, ../scss/_menu.scss */
-.cbp-spmenu-right {
-  right: -15%;
+@media (min-width: 1024px) {
+  /* line 245, ../scss/_menu.scss */
+  .cbp-spmenu-left {
+    left: -35%;
+  }
 }
-@media (max-width: 415px) {
-  /* line 248, ../scss/_menu.scss */
+
+@media (max-width: 480px) {
+  /* line 258, ../scss/_menu.scss */
   .cbp-spmenu-right {
     right: -80%;
   }
 }
-@media (min-width: 480px) {
-  /* line 248, ../scss/_menu.scss */
+@media (min-width: 768px) {
+  /* line 258, ../scss/_menu.scss */
   .cbp-spmenu-right {
     right: -40%;
   }
 }
+@media (min-width: 1024px) {
+  /* line 258, ../scss/_menu.scss */
+  .cbp-spmenu-right {
+    right: -20%;
+  }
+}
 
-/* line 258, ../scss/_menu.scss */
+/* line 271, ../scss/_menu.scss */
 .cbp-spmenu-left.cbp-spmenu-open {
   left: 0;
 }
 
-/* line 262, ../scss/_menu.scss */
+/* line 275, ../scss/_menu.scss */
 .cbp-spmenu-right.cbp-spmenu-open {
   right: 0;
 }
 
 /* Push classes applied to the body */
-/* line 268, ../scss/_menu.scss */
+/* line 281, ../scss/_menu.scss */
 .cbp-spmenu-push {
   overflow-x: hidden;
   position: relative;
   left: 0;
 }
 
-/* line 274, ../scss/_menu.scss */
-.cbp-spmenu-push-toright {
-  left: 35%;
-}
-@media (max-width: 415px) {
-  /* line 274, ../scss/_menu.scss */
+@media (max-width: 480px) {
+  /* line 287, ../scss/_menu.scss */
   .cbp-spmenu-push-toright {
     left: 80%;
   }
 }
-@media (min-width: 480px) {
-  /* line 274, ../scss/_menu.scss */
+@media (min-width: 768px) {
+  /* line 287, ../scss/_menu.scss */
   .cbp-spmenu-push-toright {
     left: 40%;
   }
 }
-
-/* line 284, ../scss/_menu.scss */
-.cbp-spmenu-push-toleft {
-  left: -15%;
+@media (min-width: 1024px) {
+  /* line 287, ../scss/_menu.scss */
+  .cbp-spmenu-push-toright {
+    left: 35%;
+  }
 }
-@media (max-width: 415px) {
-  /* line 284, ../scss/_menu.scss */
+
+@media (max-width: 480px) {
+  /* line 300, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
     left: -80%;
   }
 }
-@media (min-width: 480px) {
-  /* line 284, ../scss/_menu.scss */
+@media (min-width: 768px) {
+  /* line 300, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
     left: -40%;
   }
 }
+@media (min-width: 1024px) {
+  /* line 300, ../scss/_menu.scss */
+  .cbp-spmenu-push-toleft {
+    left: -20%;
+  }
+}
 
 /* Transitions */
-/* line 296, ../scss/_menu.scss */
+/* line 315, ../scss/_menu.scss */
 .cbp-spmenu, .cbp-spmenu-push {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -784,7 +804,7 @@ html, body {
   margin: 8%;
   position: relative;
 }
-@media (max-width: 415px) {
+@media (max-width: 480px) {
   /* line 1, ../scss/_project.scss */
   .projectMeta {
     margin: 18% 8% 0% 8%;
