@@ -255,7 +255,7 @@ html, body {
   max-width: 650px;
   margin: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   /* line 68, ../scss/_base.scss */
   .type {
     padding: 0 2em 0 2em;
@@ -647,7 +647,7 @@ html, body {
     width: 80%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   /* line 200, ../scss/_menu.scss */
   .sidemenu {
     width: 40%;
@@ -672,7 +672,7 @@ html, body {
     width: 80%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   /* line 217, ../scss/_menu.scss */
   .leftmenu {
     width: 40%;
@@ -694,7 +694,7 @@ html, body {
     left: -80%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   /* line 238, ../scss/_menu.scss */
   .cbp-spmenu-left {
     left: -40%;
@@ -711,7 +711,7 @@ html, body {
     right: -80%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   /* line 248, ../scss/_menu.scss */
   .cbp-spmenu-right {
     right: -40%;
@@ -746,7 +746,7 @@ html, body {
     left: 80%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   /* line 274, ../scss/_menu.scss */
   .cbp-spmenu-push-toright {
     left: 40%;
@@ -763,7 +763,7 @@ html, body {
     left: -80%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   /* line 284, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
     left: -40%;
