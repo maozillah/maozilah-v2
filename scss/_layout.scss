@@ -18,8 +18,12 @@
 }
 
 .left {
-  @include breakpoint(mobileonly) { 
+  @include breakpoint(tablet) { 
     width: 100%; }
+
+  // @include breakpoint(tablet) {
+  //   width: 50%;  
+  // }
 
   width: 45%;
   overflow-y: auto;
@@ -53,10 +57,13 @@
       left: 0;
       bottom: -10%;
 
-      @include breakpoint(mobileonly) { 
+      @include breakpoint(tablet) { 
         bottom: 0;
         opacity: 1;
         width: 100%;
+      }
+
+      @include breakpoint(mobileonly) { 
         padding: 1% 2% 0 2%;
       }
 

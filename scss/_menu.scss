@@ -194,6 +194,7 @@
 
 $menu-size: 15%;
 $mobilemenu-size: 80%;
+$tabletmenu-size: 40%;
 $leftmenu-size: 35%;
 
 .sidemenu {
@@ -201,6 +202,9 @@ $leftmenu-size: 35%;
 
   @include breakpoint(mobileonly) { 
     width: $mobilemenu-size;
+  } 
+  @include breakpoint(mintablet) { 
+    width: $tabletmenu-size;
   } 
   height: 100vh;
   top: 0;
@@ -221,6 +225,12 @@ $leftmenu-size: 35%;
     // width: 44.5%;
     width: $mobilemenu-size;
   } 
+   @include breakpoint(mintablet) { 
+    width: $tabletmenu-size;
+    span {
+      display: none;
+    }
+  } 
 }
 
 /* Vertical menu that slides from the left or right */
@@ -230,12 +240,18 @@ $leftmenu-size: 35%;
   @include breakpoint(mobileonly) { 
     left: -$mobilemenu-size;
   } 
+   @include breakpoint(mintablet) { 
+    left: -$tabletmenu-size;
+  } 
 }
 
 .cbp-spmenu-right {
   right: -$menu-size;
   @include breakpoint(mobileonly) { 
     right: -$mobilemenu-size;
+  } 
+  @include breakpoint(mintablet) { 
+    right: -$tabletmenu-size;
   } 
 }
 
@@ -259,13 +275,19 @@ $leftmenu-size: 35%;
   left: $leftmenu-size;
   @include breakpoint(mobileonly) { 
     left: $mobilemenu-size;
-  } 
+  }
+  @include breakpoint(mintablet) { 
+    left: $tabletmenu-size;
+  }  
 }
 
 .cbp-spmenu-push-toleft {
   left: -$menu-size;
   @include breakpoint(mobileonly) { 
     left: -$mobilemenu-size;
+  } 
+  @include breakpoint(mintablet) { 
+    left: -$tabletmenu-size;
   } 
 }
 

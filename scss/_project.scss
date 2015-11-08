@@ -8,7 +8,7 @@
 
 .projectHeader {
 
-  @include breakpoint(mobileonly) { 
+  @include breakpoint(tablet) { 
     position: static;
     height: 90%;
   }
@@ -21,7 +21,7 @@
     bottom: 0;
     left: 0;
     @include background-image(linear-gradient(rgba(white, 0.1) 10%, rgba(white, 0), rgba(black, 0.4) 85%));
-    @include breakpoint(mobileonly) { 
+    @include breakpoint(tablet) { 
       bottom: 10%;
        @include background-image(linear-gradient(rgba(white, 0.1) 5%, rgba(white, 0), rgba(black, 0.4) 65%));      
     }
@@ -63,7 +63,7 @@ a:hover {
   position:fixed; 
   bottom: 0;
 
-  @include breakpoint(mobileonly) { 
+  @include breakpoint(tablet) { 
     width: 100%;
     position: static;
   }
@@ -72,7 +72,7 @@ a:hover {
     text-transform: uppercase;
     color: white;
 
-    @include breakpoint(mobileonly) { 
+    @include breakpoint(tablet) { 
     color: black;
   }
 

@@ -27,7 +27,7 @@ html, body {
   width: 55%;
   padding: 5% 0 5% 0;
 
-  @include breakpoint(mobileonly) {
+  @include breakpoint(tablet) {
     width: 90%;
     float: none;
     padding: 6% 5% 5% 5%;
@@ -38,7 +38,7 @@ html, body {
     max-width: 100%;
     padding: 1em;
 
-    @include breakpoint(mobileonly) { 
+    @include breakpoint(tablet) { 
       text-align: center;
       display: block;
       margin-left: auto;
@@ -60,7 +60,7 @@ html, body {
 }
 
 .mobileHide {
-  @include breakpoint(mobileonly) {
+  @include breakpoint(tablet) {
     display: none;
   }
 }
@@ -69,6 +69,10 @@ html, body {
   max-width: 650px;
   margin: auto;
   // padding-bottom: 12%;
+
+  @include breakpoint(mintablet) { 
+        padding: 0 2em 0 2em;
+  }
 }
 
 .align_left {
