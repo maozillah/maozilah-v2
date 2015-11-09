@@ -23,17 +23,19 @@
 }
 
 #hideScroll {
-  width: 45vw;
+  width: 44vw;
   overflow: hidden;
   float: left;
     height: 100vh;
 }
 
+$left-width: 45vw;
+
 .left {
     @include breakpoint(tablet) {
         width: 100%;
     }
-    width: 46vw;
+    width: $left-width;
     overflow: auto;
 
     // position: fixed;
