@@ -31,16 +31,17 @@
       });
 
       // Hide on scroll down
-      $('.right').on('DOMMouseScroll mousewheel', function(e) {
-          if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
-              //scroll down
+      var previousScroll = 0;
+      $('.right').scroll(function(event) {
+          var scroll = $(this).scrollTop();
+          if (scroll > previousScroll) {
               console.log('Down');
               $(".main").addClass("hide-nav");
           } else {
-              //scroll up
               console.log('Up');
               $(".main").removeClass("hide-nav");
           }
+          previousScroll = scroll;
       });
 
   });
