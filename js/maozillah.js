@@ -32,7 +32,7 @@
 
       // Hide on scroll down
       var previousScroll = 0;
-      $('.right').scroll(function(event) {
+      $('.right').add(window).scroll(function(event) {
           var scroll = $(this).scrollTop();
           if (scroll > previousScroll) {
               console.log('Down');
@@ -43,5 +43,17 @@
           }
           previousScroll = scroll;
       });
+
+      // $(window).scroll(function(event) {
+      //     var scroll = $(this).scrollTop();
+      //     if (scroll > previousScroll) {
+      //         console.log('Down');
+      //         $(".main").addClass("hide-nav");
+      //     } else {
+      //         console.log('Up');
+      //         $(".main").removeClass("hide-nav");
+      //     }
+      //     previousScroll = scroll;
+      // });
 
   });

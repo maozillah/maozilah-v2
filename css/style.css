@@ -455,20 +455,22 @@ html, body {
   /* line 3, ../scss/_menu.scss */
   .buttonset > button {
     margin: 0;
+    padding-left: 1em;
+    padding-top: 1em;
   }
 }
 
-/* line 18, ../scss/_menu.scss */
+/* line 20, ../scss/_menu.scss */
 #left button:hover {
   background-color: red;
 }
 
-/* line 22, ../scss/_menu.scss */
+/* line 24, ../scss/_menu.scss */
 .nav-toggle {
   padding: 10px 25px 0 0;
 }
 
-/* line 27, ../scss/_menu.scss */
+/* line 29, ../scss/_menu.scss */
 .menu-button span {
   cursor: pointer;
   border-radius: 1px;
@@ -479,7 +481,7 @@ html, body {
   display: block;
   content: '';
 }
-/* line 37, ../scss/_menu.scss */
+/* line 39, ../scss/_menu.scss */
 .menu-button span:before, .menu-button span:after {
   cursor: pointer;
   border-radius: 1px;
@@ -502,30 +504,30 @@ html, body {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 50, ../scss/_menu.scss */
+/* line 52, ../scss/_menu.scss */
 .menu-button span:before {
   top: -14px;
 }
-/* line 54, ../scss/_menu.scss */
+/* line 56, ../scss/_menu.scss */
 .menu-button span:after {
   bottom: -14px;
 }
-/* line 59, ../scss/_menu.scss */
+/* line 61, ../scss/_menu.scss */
 .menu-button.active span {
   background-color: transparent;
 }
-/* line 62, ../scss/_menu.scss */
+/* line 64, ../scss/_menu.scss */
 .menu-button.active span:before, .menu-button.active span:after {
   top: 0;
 }
-/* line 66, ../scss/_menu.scss */
+/* line 68, ../scss/_menu.scss */
 .menu-button.active span:before {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 70, ../scss/_menu.scss */
+/* line 72, ../scss/_menu.scss */
 .menu-button.active span:after {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -534,7 +536,7 @@ html, body {
 }
 
 /* General styles for all menus */
-/* line 78, ../scss/_menu.scss */
+/* line 80, ../scss/_menu.scss */
 .main {
   position: absolute;
   z-index: 2000;
@@ -557,26 +559,26 @@ html, body {
   transition-timing-function: ease-in-out;
 }
 @media (max-width: 768px) {
-  /* line 78, ../scss/_menu.scss */
+  /* line 80, ../scss/_menu.scss */
   .main {
     position: fixed;
   }
 }
 
-/* line 98, ../scss/_menu.scss */
+/* line 100, ../scss/_menu.scss */
 .hide-nav {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
 }
 
-/* line 104, ../scss/_menu.scss */
+/* line 106, ../scss/_menu.scss */
 .main > section button.disabled {
   background: #aaa;
   pointer-events: none;
 }
 
-/* line 109, ../scss/_menu.scss */
+/* line 111, ../scss/_menu.scss */
 .cbp-spmenu {
   background: #fafafa;
   position: fixed;
@@ -584,19 +586,19 @@ html, body {
   font-family: "Source Sans Pro", sans-serif;
   -ms-overflow-style: none;
 }
-/* line 116, ../scss/_menu.scss */
+/* line 118, ../scss/_menu.scss */
 .cbp-spmenu::-webkit-scrollbar {
   display: none;
 }
-/* line 120, ../scss/_menu.scss */
+/* line 122, ../scss/_menu.scss */
 .cbp-spmenu img {
   width: 100%;
 }
-/* line 124, ../scss/_menu.scss */
+/* line 126, ../scss/_menu.scss */
 .cbp-spmenu p {
   padding: 20px;
 }
-/* line 128, ../scss/_menu.scss */
+/* line 130, ../scss/_menu.scss */
 .cbp-spmenu h3 {
   color: #000;
   font-size: 1.3em;
@@ -604,89 +606,89 @@ html, body {
   margin: 0;
   font-weight: bold;
 }
-/* line 136, ../scss/_menu.scss */
+/* line 138, ../scss/_menu.scss */
 .cbp-spmenu ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 141, ../scss/_menu.scss */
+/* line 143, ../scss/_menu.scss */
 .cbp-spmenu ul li:first-child {
   border: none;
 }
-/* line 145, ../scss/_menu.scss */
+/* line 147, ../scss/_menu.scss */
 .cbp-spmenu ul li {
   border-top: solid 1px rgba(0, 0, 0, 0.125);
   margin: 0.5em 0 0 0;
   padding: 0.5em 0 0 0;
 }
-/* line 152, ../scss/_menu.scss */
+/* line 154, ../scss/_menu.scss */
 .cbp-spmenu .margin {
   padding: 0em 2em;
 }
 
 /* Orientation-dependent styles for the content of the menu */
-/* line 165, ../scss/_menu.scss */
+/* line 167, ../scss/_menu.scss */
 .sidemenu {
   height: 100vh;
   top: 0;
   z-index: 1000;
 }
 @media (max-width: 480px) {
-  /* line 165, ../scss/_menu.scss */
+  /* line 167, ../scss/_menu.scss */
   .sidemenu {
     width: 80vw;
   }
 }
 @media (min-width: 768px) {
-  /* line 165, ../scss/_menu.scss */
+  /* line 167, ../scss/_menu.scss */
   .sidemenu {
     width: 40vw;
   }
 }
 @media (min-width: 1024px) {
-  /* line 165, ../scss/_menu.scss */
+  /* line 167, ../scss/_menu.scss */
   .sidemenu {
     width: 25vw;
   }
 }
 @media (min-width: 1224px) {
-  /* line 165, ../scss/_menu.scss */
+  /* line 167, ../scss/_menu.scss */
   .sidemenu {
     width: 20vw;
   }
 }
-/* line 190, ../scss/_menu.scss */
+/* line 192, ../scss/_menu.scss */
 .sidemenu a {
   text-transform: uppercase;
 }
 
-/* line 196, ../scss/_menu.scss */
+/* line 198, ../scss/_menu.scss */
 .leftmenu a {
   color: white;
 }
 @media (max-width: 480px) {
-  /* line 195, ../scss/_menu.scss */
+  /* line 197, ../scss/_menu.scss */
   .leftmenu {
     width: 80vw;
   }
 }
 @media (min-width: 768px) {
-  /* line 195, ../scss/_menu.scss */
+  /* line 197, ../scss/_menu.scss */
   .leftmenu {
     width: 40vw;
   }
-  /* line 210, ../scss/_menu.scss */
+  /* line 212, ../scss/_menu.scss */
   .leftmenu span {
     display: none;
   }
 }
 @media (min-width: 1024px) {
-  /* line 195, ../scss/_menu.scss */
+  /* line 197, ../scss/_menu.scss */
   .leftmenu {
     width: 35vw;
   }
-  /* line 219, ../scss/_menu.scss */
+  /* line 221, ../scss/_menu.scss */
   .leftmenu span {
     display: initial;
   }
@@ -694,61 +696,61 @@ html, body {
 
 /* Vertical menu that slides from the left or right */
 @media (max-width: 480px) {
-  /* line 227, ../scss/_menu.scss */
+  /* line 229, ../scss/_menu.scss */
   .cbp-spmenu-left {
     left: -80vw;
   }
 }
 @media (min-width: 768px) {
-  /* line 227, ../scss/_menu.scss */
+  /* line 229, ../scss/_menu.scss */
   .cbp-spmenu-left {
     left: -40vw;
   }
 }
 @media (min-width: 1024px) {
-  /* line 227, ../scss/_menu.scss */
+  /* line 229, ../scss/_menu.scss */
   .cbp-spmenu-left {
     left: -35vw;
   }
 }
 
 @media (max-width: 480px) {
-  /* line 243, ../scss/_menu.scss */
+  /* line 245, ../scss/_menu.scss */
   .cbp-spmenu-right {
     right: -80vw;
   }
 }
 @media (min-width: 768px) {
-  /* line 243, ../scss/_menu.scss */
+  /* line 245, ../scss/_menu.scss */
   .cbp-spmenu-right {
     right: -40vw;
   }
 }
 @media (min-width: 1024px) {
-  /* line 243, ../scss/_menu.scss */
+  /* line 245, ../scss/_menu.scss */
   .cbp-spmenu-right {
     right: -25vw;
   }
 }
 @media (min-width: 1224px) {
-  /* line 243, ../scss/_menu.scss */
+  /* line 245, ../scss/_menu.scss */
   .cbp-spmenu-right {
     right: -20vw;
   }
 }
 
-/* line 264, ../scss/_menu.scss */
+/* line 266, ../scss/_menu.scss */
 .cbp-spmenu-left.cbp-spmenu-open {
   left: 0;
 }
 
-/* line 268, ../scss/_menu.scss */
+/* line 270, ../scss/_menu.scss */
 .cbp-spmenu-right.cbp-spmenu-open {
   right: 0;
 }
 
 /* Push classes applied to the body */
-/* line 274, ../scss/_menu.scss */
+/* line 276, ../scss/_menu.scss */
 .cbp-spmenu-push {
   overflow-x: hidden;
   position: relative !important;
@@ -756,51 +758,51 @@ html, body {
 }
 
 @media (max-width: 480px) {
-  /* line 280, ../scss/_menu.scss */
+  /* line 282, ../scss/_menu.scss */
   .cbp-spmenu-push-toright {
     left: 80vw;
   }
 }
 @media (min-width: 768px) {
-  /* line 280, ../scss/_menu.scss */
+  /* line 282, ../scss/_menu.scss */
   .cbp-spmenu-push-toright {
     left: 40vw;
   }
 }
 @media (min-width: 1024px) {
-  /* line 280, ../scss/_menu.scss */
+  /* line 282, ../scss/_menu.scss */
   .cbp-spmenu-push-toright {
     left: 35vw !important;
   }
 }
 
 @media (max-width: 480px) {
-  /* line 296, ../scss/_menu.scss */
+  /* line 298, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
     left: -80vw;
   }
 }
 @media (min-width: 768px) {
-  /* line 296, ../scss/_menu.scss */
+  /* line 298, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
     left: -40vw;
   }
 }
 @media (min-width: 1024px) {
-  /* line 296, ../scss/_menu.scss */
+  /* line 298, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
     left: -25vw;
   }
 }
 @media (min-width: 1224px) {
-  /* line 296, ../scss/_menu.scss */
+  /* line 298, ../scss/_menu.scss */
   .cbp-spmenu-push-toleft {
     left: -20vw !important;
   }
 }
 
 /* Transitions */
-/* line 319, ../scss/_menu.scss */
+/* line 321, ../scss/_menu.scss */
 .cbp-spmenu, .cbp-spmenu-push {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
