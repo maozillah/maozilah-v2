@@ -22,10 +22,12 @@
     background-position: center;
 }
 
-// #hideScroll {
-//   width: 45vw;
-//   overflow: hidden;
-// }
+#hideScroll {
+  width: 45vw;
+  overflow: hidden;
+  float: left;
+    height: 100vh;
+}
 
 .left {
     @include breakpoint(tablet) {
@@ -34,8 +36,8 @@
     width: 46vw;
     overflow: auto;
 
-    position: fixed;
-    // float: left;
+    // position: fixed;
+    float: left;
     height: 100vh;
     color: white;
     -ms-overflow-style: none;
