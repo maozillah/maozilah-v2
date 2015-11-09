@@ -2,7 +2,29 @@
    Base
    =========================== */
 
-/*loader*/
+@import "compass/css3";
+
+@mixin transition {
+    @include transition-property(all);
+
+    @include transition-duration(0.5s);
+
+    @include transition-timing-function(ease);
+}
+
+@mixin backgrounds {
+    @include background-size(cover);
+
+    @include background-size(100%);
+
+    background-position: center;
+}
+
+@mixin projectBg {
+    @include background-size(cover);
+
+    background-position: center;
+}
 
 #preloader {
     position: fixed;
@@ -28,13 +50,12 @@ html, body {
     overflow: auto;
     height: 100vh;
 
-    // padding: 5% 0 5% 0;
-
     @include breakpoint(tablet) {
         width: 90%;
         float: none;
         padding: 6% 5% 5% 5%;
         overflow: hidden;
+        height: initial;
     }
 
 
@@ -74,10 +95,8 @@ html, body {
     max-width: 650px;
     margin: auto;
 
-    // padding-bottom: 12%;
-
     @include breakpoint(mintablet) {
-        padding: 5em 2em 5em 2em;
+        padding: 4em 2em 4em 2em;
     }
 }
 

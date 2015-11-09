@@ -1,39 +1,21 @@
-@import "compass/css3";
-
-@mixin transition {
-    @include transition-property(all);
-
-    @include transition-duration(0.5s);
-
-    @include transition-timing-function(ease);
-}
-
-@mixin backgrounds {
-    @include background-size(cover);
-
-    @include background-size(100%);
-
-    background-position: center;
-}
-
-@mixin projectBg {
-    @include background-size(cover);
-
-    background-position: center;
-}
-
 #hideScroll {
-  width: 44vw;
+  width: -webkit-calc(45vw - 16px);
+  width: -moz-calc(45vw - 16px);
+  width: calc(45vw - 16px);
   overflow: hidden;
   float: left;
-    height: 100vh;
+  height: 100vh;
+
+  @include breakpoint(tablet) {
+      width: 100vw;
+  }
 }
 
 $left-width: 45vw;
 
 .left {
     @include breakpoint(tablet) {
-        width: 100%;
+        width: 100vw;
     }
     width: $left-width;
     overflow: auto;

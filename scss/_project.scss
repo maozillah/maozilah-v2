@@ -25,6 +25,7 @@
         @include background-image(linear-gradient(rgba(white, 0.1) 10%, rgba(white, 0), rgba(black, 0.4) 85%));
 
         @include breakpoint(tablet) {
+            width: 100vw;
             bottom: 10%;
 
             @include background-image(linear-gradient(rgba(white, 0.1) 5%, rgba(white, 0), rgba(black, 0.4) 65%));
@@ -66,15 +67,14 @@ a:hover {
 }
 
 .projects {
-    width: 45%;
-    position: fixed;
+    width: $left-width;
+    position: absolute;
     bottom: 0;
 
     @include breakpoint(tablet) {
         width: 100%;
         position: static;
     }
-
 
     a {
         text-transform: uppercase;
@@ -83,7 +83,6 @@ a:hover {
         @include breakpoint(tablet) {
             color: black;
         }
-
 
         &:hover {
             @extend a:hover;

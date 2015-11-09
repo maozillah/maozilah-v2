@@ -7,12 +7,12 @@ css_dir = "css"
 sass_dir = "scss" 
 images_dir = "img" 
 javascripts_dir = "js" 
-output_style = :expanded 
+# output_style = :expanded 
 relative_assets = true 
 line_comments = true
 
 # You can select your preferred output style here (can be overridden via the command line):
-# output_style = :expanded or :nested or :compact or :compressed
+output_style = :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true

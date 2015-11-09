@@ -10,7 +10,7 @@ button {
 }
 
 html {
-    font: 125%/1.5 "Source Sans Pro", sans-serif;
+    font: 120%/1.5 "Source Sans Pro", sans-serif;
     color: #262626;
 }
 
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 
     h6, h3 {
         text-transform: uppercase;
-        margin-bottom: 0.5rem;
+        // margin-bottom: 0.5rem;
         font-family: "Source Sans Pro", sans-serif;
     }
 
@@ -127,7 +127,7 @@ blockquote {
 blockquote:before {
     color: red;
     font-family: georgia;
-    content: open-quote;
+    content: "\201C";
     font-size: 4em;
     line-height: 0.1em;
     margin-right: 0.25em;
