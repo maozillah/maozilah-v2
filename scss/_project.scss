@@ -10,7 +10,7 @@
 .projectHeader {
     @include breakpoint(tablet) {
         position: static;
-        height: 90%;
+        height: 90vh;
     }
 
     &:before {
@@ -26,7 +26,7 @@
 
         @include breakpoint(tablet) {
             width: 100vw;
-            bottom: 10%;
+            bottom: 10vh;
 
             @include background-image(linear-gradient(rgba(white, 0.1) 5%, rgba(white, 0), rgba(black, 0.4) 65%));
         }

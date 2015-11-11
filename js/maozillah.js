@@ -43,17 +43,4 @@
           }
           previousScroll = scroll;
       });
-
-      // $(window).scroll(function(event) {
-      //     var scroll = $(this).scrollTop();
-      //     if (scroll > previousScroll) {
-      //         console.log('Down');
-      //         $(".main").addClass("hide-nav");
-      //     } else {
-      //         console.log('Up');
-      //         $(".main").removeClass("hide-nav");
-      //     }
-      //     previousScroll = scroll;
-      // });
-
   });
