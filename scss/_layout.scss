@@ -53,6 +53,7 @@ $left-width: 45vw;
         opacity: 0;
         left: 0;
         bottom: -10%;
+        width: 95%;
 
         @include breakpoint(tablet) {
             bottom: 0;

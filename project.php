@@ -2,7 +2,8 @@
 	include('header.php');
 ?>
 
-<div class="left projectHeader projectOne">
+
+<div class="left projectHeader" style="background-image:url(img/cat1.jpg)">
 	<div class="projectMeta">
 		<h1>Heading Alpha</h1>
 		<h3>interaction design, data visualization, code</h3>

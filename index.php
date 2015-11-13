@@ -7,34 +7,9 @@
 		
 		<!-- images should same as project page -->
 		<!-- meta data -->
-		<a href="project.php?pid=2" class="featureImg" style="background-image:url(img/cat1.jpg)">
-			<figcaption>
-			<h2>Data visualization</h2>
-			<h6>interaction design, motion graphics, data visualization</h6>
-			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius.</span>
-			</figcaption>
-		</a>
-		<a href="project.html" class="featureImg" style="background-image:url(img/cat2.jpg)">
-			<figcaption>
-			<h2>Data visualization</h2>
-			<h6>interaction design, motion graphics, data visualization</h6>
-			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius.</span>
-			</figcaption>
-		</a>
-		<a href="project.html" class="featureImg" style="background-image:url(img/cat3.jpg)">
-			<figcaption>
-			<h2>Data visualization</h2>
-			<h6>interaction design, motion graphics, data visualization</h6>
-			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius.</span>
-			</figcaption>
-		</a>
-		<a href="project.html" class="featureImg" style="background-image:url(img/cat4.jpg)">
-			<figcaption>
-			<h2>Data visualization</h2>
-			<h6>interaction design, motion graphics, data visualization</h6>
-			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius.</span>
-			</figcaption>
-		</a>
+		<?php
+		include('project_descr.php');
+		?>
 	</div>
 </div>
 
@@ -49,7 +24,6 @@
 		<p>Suspendisse nec mollis nulla. Curabitur augue tellus, ullamcorper ac vestibulum at, ullamcorper at quam. Maecenas elit erat, finibus id consectetur a, rhoncus vulputate ipsum. Suspendisse ac erat tincidunt, feugiat ipsum ac, vehicula eros. Curabitur porta massa et facilisis ultricies. Phasellus ac mollis est. Praesent dui elit, aliquam ut interdum et, gravida mattis nibh. Sed eu neque aliquet, vehicula elit id, pellentesque lorem. Vestibulum efficitur facilisis pellentesque. Nam tempus blandit auctor. Fusce interdum nulla eget tristique lobortis. Donec velit nisi, tempor nec ante eget, tempor commodo ipsum. Nam non massa vel quam sollicitudin euismod ac ut tellus. Nullam faucibus mauris at porta interdum. Donec consectetur maximus aliquam.</p>
 	</div>
 </div>
-
 <?php
 	include('footer.php');
 ?>

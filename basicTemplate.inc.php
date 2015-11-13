@@ -3,23 +3,25 @@
 ini_set('display_errors', '1');
 error_reporting(E_ALL);
 
-if(isset( $_GET['pid']))
-{
-	$pageID= $_GET['pid'];
-}else{
-	$pageID=1;
-}
+// if(isset( $_GET['pid']))
+// {
+// 	$pageID= $_GET['pid'];
+// }else{
+// 	$pageID=1;
+// }
+
+$pageName = basename($_SERVER['PHP_SELF'], ".php");
 
 function getMenuButton() {
-	global $pageID;
+	// global $pageID;
+
+	global $pageName;
 
 	$rightMenuButton= '<button id="showRightPush" class="align_right menu-button">
 		<div class="nav-toggle"><span></span></div>
 		</button>';
 
-	if ($pageID == '1') {
-		return ($rightMenuButton);
-	} else {
+	if ($pageName == 'project') {
 		return ('<button id="showLeftPush" class="align_left menu-button">
                 <div class="nav-toggle"><span></span></div>
                 </button>
@@ -27,11 +29,13 @@ function getMenuButton() {
                 <button id="showRightPush" class="align_right menu-button">
                 <div class="nav-toggle"><span></span></div>
                 </button>');
+	} else {
+		return ($rightMenuButton);
 	}
 }
 
 function getScripts() {
-	global $pageID;
+	global $pageName;
 
 	$leftMenuScript = "<script>
             var menuLeft = document.getElementById('cbp-spmenu-s1'),
@@ -44,7 +48,7 @@ function getScripts() {
             };
         </script>";
 
-	if (!($pageID == '1')) {
+	if ($pageName == 'project') {
 		return ($leftMenuScript);
 	}
 }

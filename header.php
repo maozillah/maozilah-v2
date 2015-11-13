@@ -12,8 +12,10 @@
     <body class="cbp-spmenu-push">
         <div id="preloader"></div>
 
-<?php include('menu.php'); ?>
 <?php include('basicTemplate.inc.php'); ?>
+<?php include('projTemplate.inc.php'); ?>
+
+<?php include('menu.php'); ?>
 
 <div class="main">
     <section class="buttonset">

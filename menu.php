@@ -17,36 +17,9 @@
         <a href="http://maozillah.tumblr.com/" target=_blank><i class="fa fa-tumblr-square fa-2x"></i></a>
     </div>
 </nav>
-
 <!-- only if projects page -->
 <nav class="cbp-spmenu sidemenu cbp-spmenu-left leftmenu" id="cbp-spmenu-s1">
-            <!-- everything from main projects -->
-            <a href="project.html" class="featureImg">
-                <figcaption>
-                <h2>Data visualization</h2>
-                <h6>interaction design, motion graphics, data visualization</h6>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius.</span>
-                </figcaption>
-            </a>
-            <a href="project.html" class="featureImg">
-                <figcaption>
-                <h2>Data visualization</h2>
-                <h6>interaction design, motion graphics, data visualization</h6>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius.</span>
-                </figcaption>
-            </a>
-            <a href="project.html" class="featureImg">
-                <figcaption>
-                <h2>Data visualization</h2>
-                <h6>interaction design, motion graphics, data visualization</h6>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius.</span>
-                </figcaption>
-            </a>
-            <a href="project.html" class="featureImg">
-                <figcaption>
-                <h2>Data visualization</h2>
-                <h6>interaction design, motion graphics, data visualization</h6>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius.</span>
-                </figcaption>
-            </a>
-        </nav>
+    <?php
+    include('project_descr.php');
+    ?>
+</nav>
