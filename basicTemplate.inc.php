@@ -3,13 +3,6 @@
 ini_set('display_errors', '1');
 error_reporting(E_ALL);
 
-// if(isset( $_GET['pid']))
-// {
-// 	$pageID= $_GET['pid'];
-// }else{
-// 	$pageID=1;
-// }
-
 $pageName = basename($_SERVER['PHP_SELF'], ".php");
 
 function getMenuButton() {
@@ -50,42 +43,6 @@ function getScripts() {
 
 	if ($pageName == 'project') {
 		return ($leftMenuScript);
-	}
-}
-
-function GetTitle() {
-	global $pageID;
-
-	switch($pageID){
-		case '1':
-			return ('Main Menu');
-			break;
-		case '2':
-			return ('About us');
-			break;
-		case '3':
-			return ('Contact info');
-			break;
-		default:
-			return('Make a selection');
-	}
-}
-
-function GetContent() {
-	global $pageID;
-
-	switch($pageID){
-		case '1':
-			return ('<p>blachblah</p>');
-			break;
-		case '2':
-			return ('<p>about us</p>');
-			break;
-		case '3':
-			return ('<p>contact lalalala</p>');
-			break;
-		default:
-			return('...');
 	}
 }
 
