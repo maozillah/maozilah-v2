@@ -1,12 +1,18 @@
 <?php
 ini_set('display_errors', '1');
 error_reporting(E_ALL);
+
 if(isset( $_GET['pid']))
 {
 	$projID= $_GET['pid'];
-}else{
-	$projID=1;
-}
+	require 'projects/'.$projID. '.php';
+} 
+
+// count number of projects in projects directory
+$dir = "./projects/";
+$fi = new FilesystemIterator($dir, FilesystemIterator::SKIP_DOTS);
+$fileCount = iterator_count($fi);
+
 function GetProjectDescr($pid, $projectTitle, $projectTypes, $shortDescr, $imgUrl) {
 	return ('<a href="project.php?pid='.$pid.'" class="featureImg" style="background-image:url(img/'.$imgUrl.')">
 					<figcaption>
@@ -18,39 +24,12 @@ function GetProjectDescr($pid, $projectTitle, $projectTypes, $shortDescr, $imgUr
 }
 
 function displayProjectDescr() {
-	$x = 1;
+	global $fileCount;
 
-	for ($i = 1; $i <= 4; $i++) {
+	for ($i = 1; $i <= $fileCount; $i++) {
     include 'projects/'.$i.'.php';
     echo GetProjectDescr($pid, $projectTitle, $projectTypes, $shortDescr, $imgUrl);
 	}
-	// while($x <= 2) {
-		// include 'projects/'.$x.'.php';
-		// echo GetProjectDescr($pid, $projectTitle, $projectTypes, $shortDescr, $imgUrl);
-		// echo $pid, $projectTitle, $projectTypes, $shortDescr, $imgUrl;
-	// }
-}
-
-function displayProjectDescr2() {
-	$x = 2;
-	// while($x <= 2) {
-		include 'projects/'.$x.'.php';
-		echo GetProjectDescr($pid, $projectTitle, $projectTypes, $shortDescr, $imgUrl);
-	// }
-}
-
-switch($projID){
-	case '1':
-		include 'projects/1.php';
-		break;
-	case '2':
-		include 'projects/about.php';
-		break;
-	case '3':
-		include 'projects/about.php';
-		break;
-	default:
-		header('Location: index.php');
 }
 
 ?>

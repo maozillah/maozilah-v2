@@ -10,7 +10,7 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
     </head>
     <body class="cbp-spmenu-push">
-        <div id="preloader"></div>
+        <!-- <div id="preloader"></div> -->
 
 <?php include('basicTemplate.inc.php'); ?>
 <?php include('projTemplate.inc.php'); ?>
