@@ -2,13 +2,6 @@
 	include('header.php');
 ?>
 
-<!-- if project page, show both menus -->
-<div class="main">
-	<section class="buttonset">
-		<?php echo getMenuButton(); ?>
-	</section>
-</div>
-
 <div class="left projectHeader projectOne">
 	<div class="projectMeta">
 		<h1>Heading Alpha</h1>

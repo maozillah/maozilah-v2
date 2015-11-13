@@ -14,3 +14,9 @@
 
 <?php include('menu.php'); ?>
 <?php include('basicTemplate.inc.php'); ?>
+
+<div class="main">
+    <section class="buttonset">
+        <?php echo getMenuButton(); ?>
+    </section>
+</div>

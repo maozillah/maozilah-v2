@@ -1,14 +1,14 @@
 #hideScroll {
-  width: -webkit-calc(45vw - 16px);
-  width: -moz-calc(45vw - 16px);
-  width: calc(45vw - 16px);
-  overflow: hidden;
-  float: left;
-  height: 100vh;
+    width: -webkit-calc(45vw - 16px);
+    width: -moz-calc(45vw - 16px);
+    width: calc(45vw - 16px);
+    overflow: hidden;
+    float: left;
+    height: 100vh;
 
-  @include breakpoint(tablet) {
-      width: 100vw;
-  }
+    @include breakpoint(tablet) {
+        width: 100vw;
+    }
 }
 
 $left-width: 45vw;
@@ -17,6 +17,8 @@ $left-width: 45vw;
     @include breakpoint(tablet) {
         width: 100vw;
     }
+
+
     width: $left-width;
     overflow: auto;
 
@@ -73,29 +75,8 @@ $left-width: 45vw;
         }
     }
 
-    &:nth-child(1) {
-        background: image-url("cat1.jpg") no-repeat;
-
-        @include backgrounds;
-    }
-
-    &:nth-child(2) {
-        background: image-url("cat2.jpg") no-repeat;
-
-        @include backgrounds;
-    }
-
-    &:nth-child(3) {
-        background: image-url("cat3.jpg") no-repeat;
-
-        @include backgrounds;
-    }
-
-    &:nth-child(4) {
-        background: image-url("cat4.jpg") no-repeat;
-
-        @include backgrounds;
-    }
+    background: no-repeat;
+    @include backgrounds;
 
     &:hover {
         @include background-size(105%);

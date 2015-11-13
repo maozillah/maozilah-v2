@@ -30,46 +30,24 @@ function getMenuButton() {
 	}
 }
 
-// function getScripts() {
-// 	global $pageID;
+function getScripts() {
+	global $pageID;
 
-// 	$scripts = '<script src="js/jquery.js"></script>
-//         <script src="js/classie.js"></script>
-//         <script src="js/maozillah.js"></script>';
+	$leftMenuScript = "<script>
+            var menuLeft = document.getElementById('cbp-spmenu-s1'),
+            showLeftPush = document.getElementById('showLeftPush');
+            showLeftPush.onclick = function() {
+            classie.toggle(this, 'active');
+            classie.toggle(body, 'cbp-spmenu-push-toright');
+            classie.toggle(menuLeft, 'cbp-spmenu-open');
+            disableOther('showLeftPush');
+            };
+        </script>";
 
-//     $leftMenuScript = '<script>
-//             // left menu
-//             var menuLeft = document.getElementById('cbp-spmenu-s1'),
-//             showLeftPush = document.getElementById('showLeftPush');
-//             showLeftPush.onclick = function() {
-//             classie.toggle(this, 'active');
-//             classie.toggle(body, 'cbp-spmenu-push-toright');
-//             classie.toggle(menuLeft, 'cbp-spmenu-open');
-//             disableOther('showLeftPush');
-//             };
-//         </script>';
-
-// 	if ($pageID == '1') {
-// 		return ('<script src="js/jquery.js"></script>
-//         <script src="js/classie.js"></script>
-//         <script src="js/maozillah.js"></script>');
-// 	} else {
-// 		return ('<script src="js/jquery.js"></script>
-//         <script src="js/classie.js"></script>
-//         <script src="js/maozillah.js"></script>
-//         <script>
-//             // left menu
-//             var menuLeft = document.getElementById('cbp-spmenu-s1'),
-//             showLeftPush = document.getElementById('showLeftPush');
-//             showLeftPush.onclick = function() {
-//             classie.toggle(this, 'active');
-//             classie.toggle(body, 'cbp-spmenu-push-toright');
-//             classie.toggle(menuLeft, 'cbp-spmenu-open');
-//             disableOther('showLeftPush');
-//             };
-//         </script>');
-// 	}
-// }
+	if (!($pageID == '1')) {
+		return ($leftMenuScript);
+	}
+}
 
 function GetTitle() {
 	global $pageID;
@@ -107,3 +85,4 @@ function GetContent() {
 	}
 }
 
+?>

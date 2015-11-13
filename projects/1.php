@@ -7,28 +7,28 @@
 		
 		<!-- images should same as project page -->
 		<!-- meta data -->
-		<a href="project.php?pid=2" class="featureImg" style="background-image:url(img/cat1.jpg)">
+		<a href="project.php?pid=2" class="featureImg">
 			<figcaption>
 			<h2>Data visualization</h2>
 			<h6>interaction design, motion graphics, data visualization</h6>
 			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius.</span>
 			</figcaption>
 		</a>
-		<a href="project.html" class="featureImg" style="background-image:url(img/cat2.jpg)">
+		<a href="project.html" class="featureImg">
 			<figcaption>
 			<h2>Data visualization</h2>
 			<h6>interaction design, motion graphics, data visualization</h6>
 			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius.</span>
 			</figcaption>
 		</a>
-		<a href="project.html" class="featureImg" style="background-image:url(img/cat3.jpg)">
+		<a href="project.html" class="featureImg">
 			<figcaption>
 			<h2>Data visualization</h2>
 			<h6>interaction design, motion graphics, data visualization</h6>
 			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius.</span>
 			</figcaption>
 		</a>
-		<a href="project.html" class="featureImg" style="background-image:url(img/cat4.jpg)">
+		<a href="project.html" class="featureImg">
 			<figcaption>
 			<h2>Data visualization</h2>
 			<h6>interaction design, motion graphics, data visualization</h6>
