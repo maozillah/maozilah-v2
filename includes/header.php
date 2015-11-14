@@ -11,8 +11,8 @@
     <body class="cbp-spmenu-push">
         <div id="preloader"></div>
 
-<?php include('includes/basicTemplate.inc.php'); ?>
-<?php include('includes/projTemplate.inc.php'); ?>
+<?php include('basicTemplate.inc.php'); ?>
+<?php include('projTemplate.inc.php'); ?>
 
 <?php include('menu.php'); ?>
 
