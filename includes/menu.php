@@ -2,10 +2,10 @@
     <div class="margin">
         
         <ul>
-            <li><a href="#" class="block">Home</a></li>
-            <li><a href="#" class="block">About</a></li>
-            <li><a href="http://roar.maozillah.com" alt="blog" target="_blank" class="block">Blog</a></li>
-            <li><a href="#" class="block">CV</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="http://roar.maozillah.com" alt="blog" target=_blank>Blog</a></li>
+            <li><a href="#">CV</a></li>
         </ul>
         <h3>Get in touch</h3>
         roar@maozillah.com

@@ -1,5 +1,5 @@
 <?php
-	include('header.php');
+	include('includes/header.php');
 
 echo (
 '<div class="left projectHeader" style="background-image:url(img/'.$imgUrl.')">
@@ -20,5 +20,5 @@ echo (
 	</nav>'
 );
 
-	include('footer.php');
+	include('includes/footer.php');
 ?>

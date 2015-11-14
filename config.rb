@@ -9,7 +9,7 @@ images_dir = "img"
 javascripts_dir = "js" 
 # output_style = :expanded 
 relative_assets = true 
-line_comments = true
+line_comments = false
 
 # You can select your preferred output style here (can be overridden via the command line):
 output_style = :compressed

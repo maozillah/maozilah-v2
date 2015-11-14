@@ -112,7 +112,8 @@
     background: #fafafa;
     position: fixed;
     overflow-y: auto;
-    font-family: "Source Sans Pro", sans-serif;
+
+    // font-family: "Source Sans Pro", sans-serif;
     -ms-overflow-style: none;
 
     &::-webkit-scrollbar {
@@ -191,8 +192,11 @@ $leftmenu-size: 35vw;
 
     a {
         text-transform: uppercase;
-        display: block;
     }
+}
+
+.block {
+        display: block;
 }
 
 .leftmenu {

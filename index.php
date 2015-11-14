@@ -1,5 +1,5 @@
 <?php
-	include('header.php');
+	include('includes/header.php');
 ?>
 
 <div id="hideScroll">
@@ -8,7 +8,7 @@
 		<!-- images should same as project page -->
 		<!-- meta data -->
 		<?php
-		include('project_descr.php');
+		include('includes/project_descr.php');
 		?>
 	</div>
 </div>
@@ -25,5 +25,5 @@
 	</div>
 </div>
 <?php
-	include('footer.php');
+	include('includes/footer.php');
 ?>

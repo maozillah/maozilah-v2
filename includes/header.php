@@ -7,13 +7,12 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-        <link rel="shortcut icon" href="http://maozillah.com/favicon.ico" />
     </head>
     <body class="cbp-spmenu-push">
         <div id="preloader"></div>
 
-<?php include('basicTemplate.inc.php'); ?>
-<?php include('projTemplate.inc.php'); ?>
+<?php include('includes/basicTemplate.inc.php'); ?>
+<?php include('includes/projTemplate.inc.php'); ?>
 
 <?php include('menu.php'); ?>
 
