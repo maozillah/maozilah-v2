@@ -20,12 +20,13 @@
   var lastTop;
       function stopScrolling() {
           lastTop = $(window).scrollTop();      
-          $('.overflow').addClass( 'noscroll' )          
-               .css( { top: -lastTop } );            
+          $('html').addClass( 'noscroll' )         
+               .css( { top: -lastTop } );  
+          $('.main').css( { top: 0 } );          
       }
 
       function continueScrolling() {                    
-          $('.overflow').removeClass( 'noscroll' );      
+          $('html').removeClass( 'noscroll' );      
           $(window).scrollTop( lastTop );       
       }   
 
