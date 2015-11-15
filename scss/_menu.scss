@@ -285,7 +285,7 @@ $leftmenu-size: 35vw;
 }
 
 .cbp-spmenu-push-toright {
-    position: fixed;
+    // position: fixed;
     @include breakpoint(mobileonly) {
         left: $mobilemenu-size;
     }
@@ -302,7 +302,7 @@ $leftmenu-size: 35vw;
 }
 
 .cbp-spmenu-push-toleft {
-    position: fixed;
+    // position: fixed;
     @include breakpoint(mobileonly) {
         left: -$mobilemenu-size;
     }

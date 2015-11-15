@@ -4,5 +4,6 @@
         <script src="js/maozillah.js"></script>
 
         <?php echo getScripts(); ?>
+        </div>
     </body>
 </html>

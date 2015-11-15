@@ -9,6 +9,8 @@
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     </head>
     <body class="cbp-spmenu-push">
+
+    <div class="overflow">  
         <div id="preloader"></div>
 
 <?php include('basicTemplate.inc.php'); ?>

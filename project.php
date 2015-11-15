@@ -2,7 +2,7 @@
 	include('includes/header.php');
 
 echo (
-'<div class="overflow">
+'
 <div class="left projectHeader" style="background-image:url(img/'.$imgUrl.')">
 	<div class="projectMeta">
 		<h1>'.$projectTitle.'</h1>
@@ -19,7 +19,7 @@ echo (
 		<div class="align_left padding-left"><a href="">&#8592; Previous</a> </div>
 		<div class="align_right padding-right"><a href="">Next &#8594;</a></div>
 	</nav>
-	</div>'
+	'
 );
 
 	include('includes/footer.php');

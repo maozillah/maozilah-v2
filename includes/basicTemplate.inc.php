@@ -39,6 +39,15 @@ function getScripts() {
             classie.toggle(body, 'cbp-spmenu-push-toright');
             classie.toggle(menuLeft, 'cbp-spmenu-open');
             disableOther('showLeftPush');
+
+            scroll =!scroll;
+
+            if (scroll) {
+			stopScrolling();
+			} else {
+			continueScrolling();
+			}
+			
             };
         </script>";
 
