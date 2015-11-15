@@ -38,7 +38,7 @@
           $(this).toggleClass("active");
       });
 
-      Hide on scroll down
+      // Hide on scroll down
       var previousScroll = 0;
       $('.right').add(window).scroll(function(event) {
           var scroll = $(this).scrollTop();
