@@ -113,7 +113,6 @@
     position: fixed;
     overflow-y: auto;
 
-    // font-family: "Source Sans Pro", sans-serif;
     -ms-overflow-style: none;
 
     &::-webkit-scrollbar {
@@ -245,6 +244,7 @@ $leftmenu-size: 35vw;
     @include breakpoint(laptop) {
         left: -$leftmenu-size;
     }
+    
 }
 
 .cbp-spmenu-right {
@@ -280,7 +280,7 @@ $leftmenu-size: 35vw;
 
 .cbp-spmenu-push {
     overflow-x: hidden;
-    position: relative !important;
+    position: relative  ;
     left: 0;
 }
 
@@ -296,8 +296,9 @@ $leftmenu-size: 35vw;
 
 
     @include breakpoint(laptop) {
-        left: $leftmenu-size !important;
+        left: $leftmenu-size;
     }
+    right: -$leftmenu-size;
 }
 
 .cbp-spmenu-push-toleft {
@@ -317,7 +318,7 @@ $leftmenu-size: 35vw;
 
 
     @include breakpoint(desktop) {
-        left: (-$largemenu-size) !important;
+        left: (-$largemenu-size)  ;
     }
 }
 

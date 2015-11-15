@@ -33,6 +33,7 @@ function getScripts() {
 	$leftMenuScript = "<script>
             var menuLeft = document.getElementById('cbp-spmenu-s1'),
             showLeftPush = document.getElementById('showLeftPush');
+
             showLeftPush.onclick = function() {
             classie.toggle(this, 'active');
             classie.toggle(body, 'cbp-spmenu-push-toright');
