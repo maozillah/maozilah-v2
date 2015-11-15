@@ -10,7 +10,6 @@
     </head>
     <body class="cbp-spmenu-push">
 
-    <div class="overflow">  
         <div id="preloader"></div>
 
 <?php include('basicTemplate.inc.php'); ?>

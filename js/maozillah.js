@@ -40,12 +40,6 @@
           });
       });
 
-
-      // $('.leftmenu').on('touchmove', function(e)
-      // {
-      //     stopScrolling();
-      // });          
-
      // menu animation
       $(".nav-toggle").click(function() {
           $(this).toggleClass("active");

@@ -7,9 +7,7 @@
 		
 		<!-- images should same as project page -->
 		<!-- meta data -->
-		<?php
-		include('includes/project_descr.php');
-		?>
+		<?php echo displayProjectDescr(); ?>
 	</div>
 </div>
 

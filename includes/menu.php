@@ -19,7 +19,5 @@
 </nav>
 <!-- only if projects page -->
 <nav class="cbp-spmenu sidemenu cbp-spmenu-left leftmenu" id="cbp-spmenu-s1">
-    <?php
-    include('project_descr.php');
-    ?>
+    <?php echo displayProjectDescr(); ?>
 </nav>

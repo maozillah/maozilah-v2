@@ -15,12 +15,10 @@ echo (
 		'.$content.'
 	</div>
 </div>
-	<nav class="projects">
-		<div class="align_left padding-left"><a href="">&#8592; Previous</a> </div>
-		<div class="align_right padding-right"><a href="">Next &#8594;</a></div>
-	</nav>
-	'
-);
+<nav class="projects">');
+
+echo projNavigation();
+echo ('</nav>');
 
 	include('includes/footer.php');
 ?>
