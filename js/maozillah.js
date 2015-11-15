@@ -25,20 +25,20 @@
           });
       });
 
-      $('.left, .sidemenu').bind('mousewheel DOMMouseScroll', function(e) {   
-          var e0 = e.originalEvent,    
-              delta = e0.wheelDelta || -e0.detail;   
+      // $('.left, .leftmenu').bind('mousewheel DOMMouseScroll', function(e) {   
+      //     var e0 = e.originalEvent,    
+      //         delta = e0.wheelDelta || -e0.detail;   
    
-          this.scrollTop += (delta < 0 ? 1 : -1) * 30;   
-          e.preventDefault();    
-       });
+      //     this.scrollTop += (delta < 0 ? 1 : -1) * 30;   
+      //     e.preventDefault();    
+      //  });
 
       // menu animation
       $(".nav-toggle").click(function() {
           $(this).toggleClass("active");
       });
 
-      // Hide on scroll down
+      Hide on scroll down
       var previousScroll = 0;
       $('.right').add(window).scroll(function(event) {
           var scroll = $(this).scrollTop();

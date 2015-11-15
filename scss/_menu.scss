@@ -298,7 +298,6 @@ $leftmenu-size: 35vw;
     @include breakpoint(laptop) {
         left: $leftmenu-size;
     }
-    right: -$leftmenu-size;
 }
 
 .cbp-spmenu-push-toleft {
