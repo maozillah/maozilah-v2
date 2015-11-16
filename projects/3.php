@@ -1,11 +1,12 @@
 <?php
-$pid = 1;
-$projectTitle = 'Data visualization test test';
-$projectTypes = 'interaction design, motion graphics, data visualizatio';
-$shortDescr = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius.';
-$imgUrl = 'cat1.jpg';
-$descrImgUrl = 'proj1_descr.jpg';
+$pid = 3;
+$projectTitle = 'Oktoberfest App';
+$projectTypes = 'interaction design, UI design, front end development';
+$shortDescr = 'Mobile application for Oktoberfest to help festival goers choose where to eat.';
+$imgUrl = 'Oktoberfest/lrg_img.jpg';
+$descrImgUrl = 'Oktoberfest/sml_img.jpg';
 
-$date = 'winter 2015';
+$date = 'spring 2014';
+
 $content = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius.';
 ?>

@@ -35,7 +35,8 @@ function projNavigation() {
 }
 
 function GetProjectDescr($pid, $projectTitle, $projectTypes, $shortDescr, $descrImgUrl) {
-	return ('<a href="project.php?pid='.$pid.'" class="featureImg" style="background-image:url(img/'.$descrImgUrl.')">
+	return ('<a href="project.php?pid='.$pid.'" class="featureImg">
+		<div style="background-image:url(img/'.$descrImgUrl.')"></div>
 					<figcaption>
 					<h2>'.$projectTitle.'</h2>
 					<h6>'.$projectTypes.'</h6>

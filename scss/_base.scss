@@ -15,8 +15,6 @@
 @mixin backgrounds {
     @include background-size(cover);
 
-    @include background-size(100%);
-
     background-position: center;
 }
 
@@ -61,14 +59,13 @@ html, body {
 
     img {
         max-width: 100%;
-        padding: 1em;
 
         @include breakpoint(tablet) {
             text-align: center;
             display: block;
             margin-left: auto;
             margin-right: auto;
-            padding: 1em 0 1em 0;
+            padding: 0.5em 0 0 0;
             float: initial !important;
         }
 

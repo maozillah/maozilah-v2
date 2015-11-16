@@ -43,6 +43,20 @@ $left-width: 45vw;
     overflow: hidden;
     position: relative;
 
+    div {
+        @include scale (1,1);
+        @include transition;
+
+        background: no-repeat;
+        width: 100%;
+        height: 100%;
+        @include backgrounds;
+
+        &:hover {
+            @include scale (1.05,1.05);
+        }
+    }   
+
     @include transition;
 
     figcaption {
@@ -75,11 +89,8 @@ $left-width: 45vw;
         }
     }
 
-    background: no-repeat;
-    @include backgrounds;
-
     &:hover {
-        @include background-size(105%);
+        // @include background-size(105%);
 
         color: white;
 
