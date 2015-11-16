@@ -1,5 +1,5 @@
 .noscroll {
-    position:fixed;
+    position: fixed;
 }
 
 .projectMeta {
@@ -17,7 +17,9 @@
         height: 90vh;
     }
 
+
     background: no-repeat;
+
     @include projectBg;
 
     &:before {
@@ -67,6 +69,27 @@ a:hover {
     padding: 0 8% 8% 0;
 }
 
+.thumbnail {
+  position: relative;
+  width: 49.7%;
+  height: 200px;
+  overflow: hidden;
+  display: inline-block;
+}
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  max-width: initial;
+  @include translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
+
 .projects {
     width: $left-width;
     position: absolute;
@@ -77,6 +100,7 @@ a:hover {
         position: static;
     }
 
+
     a {
         text-transform: uppercase;
         color: white;
@@ -84,6 +108,7 @@ a:hover {
         @include breakpoint(tablet) {
             color: black;
         }
+
 
         &:hover {
             @extend a:hover;

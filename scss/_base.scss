@@ -72,16 +72,15 @@ html, body {
             float: initial !important;
         }
 
+        // &:nth-child(odd) {
+        //     float: left;
+        //     padding-left: 0;
+        // }
 
-        &:nth-child(odd) {
-            float: left;
-            padding-left: 0;
-        }
-
-        &:nth-child(even) {
-            float: right;
-            padding-right: 0;
-        }
+        // &:nth-child(even) {
+        //     float: right;
+        //     padding-right: 0;
+        // }
     }
 }
 

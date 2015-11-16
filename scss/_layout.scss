@@ -1,15 +1,15 @@
-#hideScroll {
-    width: -webkit-calc(45vw - 16px);
-    width: -moz-calc(45vw - 16px);
-    width: calc(45vw - 16px);
-    overflow: hidden;
-    float: left;
-    height: 100vh;
+// #hideScroll {
+//     width: -webkit-calc(45vw - 16px);
+//     width: -moz-calc(45vw - 16px);
+//     width: calc(45vw - 16px);
+//     overflow: hidden;
+//     float: left;
+//     height: 100vh;
 
-    @include breakpoint(tablet) {
-        width: 100vw;
-    }
-}
+//     @include breakpoint(tablet) {
+//         width: 100vw;
+//     }
+// }
 
 $left-width: 45vw;
 

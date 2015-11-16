@@ -2,14 +2,14 @@
 	include('includes/header.php');
 ?>
 
-<div id="hideScroll">
+<!-- <div id="hideScroll"> -->
 	<div class="left">
 		
 		<!-- images should same as project page -->
 		<!-- meta data -->
 		<?php echo displayProjectDescr(); ?>
 	</div>
-</div>
+<!-- </div> -->
 
 <!-- if home then mobile hide class -->
 <div class="right mobileHide">

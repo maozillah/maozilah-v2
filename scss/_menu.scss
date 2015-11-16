@@ -25,13 +25,15 @@
     padding: 10px 25px 0 0;
 }
 
+$menu-color: #4d4d4d;
+
 .menu-button {
     span {
         cursor: pointer;
         border-radius: 1px;
         height: 6px;
         width: 35px;
-        background: #262626;
+        background: $menu-color;
         position: absolute;
         display: block;
         content: '';
@@ -41,7 +43,7 @@
             border-radius: 1px;
             height: 6px;
             width: 35px;
-            background: #262626;
+            background: $menu-color;
             position: absolute;
             display: block;
             content: '';

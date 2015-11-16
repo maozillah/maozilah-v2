@@ -34,8 +34,8 @@ function projNavigation() {
 	}
 }
 
-function GetProjectDescr($pid, $projectTitle, $projectTypes, $shortDescr, $imgUrl) {
-	return ('<a href="project.php?pid='.$pid.'" class="featureImg" style="background-image:url(img/'.$imgUrl.')">
+function GetProjectDescr($pid, $projectTitle, $projectTypes, $shortDescr, $descrImgUrl) {
+	return ('<a href="project.php?pid='.$pid.'" class="featureImg" style="background-image:url(img/'.$descrImgUrl.')">
 					<figcaption>
 					<h2>'.$projectTitle.'</h2>
 					<h6>'.$projectTypes.'</h6>
@@ -49,7 +49,7 @@ function displayProjectDescr() {
 
 	for ($i = 1; $i <= $fileCount; $i++) {
     include 'projects/'.$i.'.php';
-    echo GetProjectDescr($pid, $projectTitle, $projectTypes, $shortDescr, $imgUrl);
+    echo GetProjectDescr($pid, $projectTitle, $projectTypes, $shortDescr, $descrImgUrl);
 	}
 }
 
