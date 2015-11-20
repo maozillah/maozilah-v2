@@ -2,7 +2,7 @@
     <div class="margin">
         
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="http://roar.maozillah.com" alt="blog" target=_blank>Blog</a></li>
             <li><a href="#">CV</a></li>

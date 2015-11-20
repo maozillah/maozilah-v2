@@ -31,7 +31,7 @@
         left: 0;
         width: $left-width;
 
-        @include background-image(linear-gradient(rgba(white, 0.1) 10%, rgba(white, 0), rgba(black, 0.4) 85%));
+        @include background-image(linear-gradient(rgba(black, 0.8) 20%), rgba(white, 0), rgba(black, 0.4) 85%));
 
         @include breakpoint(tablet) {
             width: 100vw;
@@ -57,6 +57,12 @@ a:hover {
     @include transition;
 }
 
+.nolinkstyle {
+    a {
+        border-bottom: none !important;
+    }
+}
+
 .type a {
     border-bottom: 2px solid red;
 }
@@ -70,33 +76,40 @@ a:hover {
 }
 
 .thumbnail {
-  position: relative;
-  width: 49.7%;
-  height: 200px;
-  overflow: hidden;
-  display: inline-block;
-  background-color: darkgrey;
+    position: relative;
+    width: 120%;
+    margin-left: -10%;
+    height: 400px;
+    overflow: hidden;
+    display: inline-block;
+    background-color: darkgrey;
+
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: auto;
+        max-width: initial;
+        margin-left: 0;
+
+        @include translate(-50%, -50%);
+    }
 }
-.thumbnail img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: auto;
-  width: 100%;
-  max-width: initial;
-  @include translate(-50%,-50%);
-}
+
 .thumbnail img.portrait {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .videoWrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+
+    /* 16:9 */
     padding-top: 25px;
     height: 0;
 }
+
 .videoWrapper iframe {
     position: absolute;
     top: 0;

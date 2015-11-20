@@ -26,7 +26,6 @@ $content = '
 <h2>Process</h2>
 
 <h4>Tools</h4>
-
 <ul>
 <li>Premiere pro</li>
 <li>After effects</li>

@@ -55,10 +55,18 @@ html, body {
         overflow: hidden;
         height: initial;
     }
-
-
+    figcaption {
+        width: 116%;
+        background: #f9f9f9;
+        margin: -7px 0 2% -10%;
+        color: grey;
+        font-size: 0.9em;
+        padding: 2%;
+        font-style: italic;
+    }
     img {
-        max-width: 100%;
+        width: 120%;
+        margin-left: -10%;
 
         @include breakpoint(tablet) {
             text-align: center;

@@ -27,16 +27,18 @@ $content = '
 
 <h2>Process</h2>
 
-<h3>Built with</h3>
+<h3>Tools</h3>
 <ul>
 <li>HTML, CSS</li>
 <li>Javascript, Three.js library</li>
 <li>Python</li>
 </ul>
 
+<div class="imgwidth">	
 <div class="thumbnail">
 <a href="img/proj1/p1.jpg"> <img src="img/proj1/p1.jpg" alt=""></a>
 </div>
+
 <div class="thumbnail">
 <a href="img/proj1/p2.jpg"> <img src="img/proj1/p2.jpg" alt=""></a>
 </div>
@@ -54,6 +56,7 @@ $content = '
 </div>
 <div class="thumbnail">
 <a href="img/proj1/p7.jpg"> <img src="img/proj1/p7.jpg" alt=""></a>
+</div>
 </div>
 ';
 ?>
