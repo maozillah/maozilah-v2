@@ -56,17 +56,23 @@ html, body {
         height: initial;
     }
     figcaption {
-        width: 116%;
-        background: #f9f9f9;
-        margin: -7px 0 2% -10%;
+        width: 126%;
+
+        margin: -10px 0 4% -15%;
         color: grey;
+
+        background: #f9f9f9;
+        border: solid 1px #eee;
+
         font-size: 0.9em;
         padding: 2%;
         font-style: italic;
     }
     img {
-        width: 120%;
-        margin-left: -10%;
+        width: 130%;
+        margin-left: -15%;
+        margin-bottom: 0.2em;
+        border: 1px solid #E2E2E2;
 
         @include breakpoint(tablet) {
             text-align: center;

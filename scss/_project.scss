@@ -31,13 +31,13 @@
         left: 0;
         width: $left-width;
 
-        @include background-image(linear-gradient(rgba(black, 0.8) 20%), rgba(white, 0), rgba(black, 0.4) 85%));
+        @include background-image(linear-gradient(rgba(black, 0.4) 15%, rgba(white, 0), rgba(black, 0.4) 85%));
 
         @include breakpoint(tablet) {
             width: 100vw;
             bottom: 10vh;
 
-            @include background-image(linear-gradient(rgba(white, 0.1) 5%, rgba(white, 0), rgba(black, 0.4) 65%));
+            background: rgba(black, 0.2);
         }
     }
 }
@@ -77,12 +77,13 @@ a:hover {
 
 .thumbnail {
     position: relative;
-    width: 120%;
-    margin-left: -10%;
+    width: 130%;
+    margin-left: -15%;
     height: 400px;
     overflow: hidden;
     display: inline-block;
     background-color: darkgrey;
+    border: 1px solid #E2E2E2;
 
     img {
         position: absolute;

@@ -31,7 +31,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .right {
-    h1, h2, h3, h4, h5, h6 { margin: 0.5em 0 0.1em 0;}
+    h1 { margin: 1.5em 0 0.3em 0;}
+
+    h2, h3, h4, h5, h6 {margin: 1em 0 0.3em 0;}
+
+    h1:first-child {
+    margin-top: 0;
+}
 }
 
 .left, .leftmenu {
@@ -106,10 +112,8 @@ h6 {
 p {
     line-height: 1.5;
     margin: 0 0 1em;
-    word-break: break-all;
 
     /* Non standard for webkit */
-    word-break: break-word;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
@@ -122,6 +126,14 @@ p:first-child {
     text-indent: 2em;
 }
 
+.box {
+        display: block;
+    background: #f9f9f9;
+    border: solid 1px #eee;
+    padding: 0 1.5em 1em 1.5em;
+    margin-bottom: 1em;
+}
+
 code,
 pre {
     font-family: monospace, serif;
@@ -131,9 +143,8 @@ pre {
 blockquote {
     background: #f9f9f9;
     border-left: 10px solid red;
-    margin: 1.5em 10px;
-    padding: 2em;
-    quotes: "ÔÇ£" "ÔÇØ" "ÔÇÿ" "ÔÇÖ";
+    margin: 1em 0;
+    padding: 1em 2em;
 }
 
 blockquote:before {

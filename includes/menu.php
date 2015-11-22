@@ -1,6 +1,7 @@
 <nav class="cbp-spmenu sidemenu cbp-spmenu-right" id="cbp-spmenu-s2">
     <div class="margin">
-        
+        <br>
+        <h1>Maozillah</h1>
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="#">About</a></li>
@@ -15,6 +16,8 @@
         <a href="github" alt="blog" target=_blank><i class="fa fa-github fa-2x"></i></a>
         <a href="https://www.facebook.com/maozillah" target=_blank><i class="fa fa-facebook-square fa-2x"></i></a>
         <a href="http://maozillah.tumblr.com/" target=_blank><i class="fa fa-tumblr-square fa-2x"></i></a>
+
+        <br><br>Kaye Mao © 2015
     </div>
 </nav>
 <!-- only if projects page -->
