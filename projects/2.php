@@ -1,46 +1,76 @@
 <?php
 $pid = 2;
-$projectTitle = 'iCook';
-$projectTypes = 'interaction design, UI design, motion graphics';
-$shortDescr = 'A concept for a more streamlined futuristic cooking experience.';
-$imgUrl = 'icook/lrg_img.jpg';
-$descrImgUrl = 'icook/sml_img.jpg';
+$projectTitle = 'Zenith';
+$projectTypes = 'front end development, data visualization';
+$shortDescr = 'An interactive application for viewing constellations in 3D on the web.';
+$imgUrl = 'proj1/lrg_img.jpg';
+$descrImgUrl = 'proj1/sml_img.jpg';
 
 $content = '
-<div class="videowrapper">
-<iframe src="https://player.vimeo.com/video/90088036" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
-
 <h1>Background</h1>
+
 <div class="box">
 <h4>Tools</h4>
-Premiere pro, after effects
+HTML, CSS, Javascript, Three.js, Python
 </div>
 
-<p>A lot of time is wasted prepping and referring to recipes during the cooking process. iCook explores the concept of a futurisitc cooking interface that integrates the cooking process seamlessly.</p>
-<div class="nolinkstyle">
+<p><strong><a href="http://maozillah.github.io/zenith/">experience zenith &#8594;</a></strong></p>
+
+<p>Constellations have shaped humanity\'s culture, lore, and science. Yet, they are still just a human invention; dots in the sky joined together based on our desire for order. It\'s easy to forget that these stars exist in three dimensional space (ehe) when one looks at the night sky from earth.</p>
+
+<p>The goal of Zenith is to reframe the familiar view of constellations in a new perspective by using the capabilities of webGL to allow people to explore the constellations in 3D. </p>
+
+<p>The stars are modelled to scale in size and distance from earth using data from the <a href="http://astronexus.com/hyg">HYG database</a>. </p>
+
+
 <h1>Highlights</h1>
-<p>Interact with the iCook in a variety of ways, including voice commands when you\'re busy cooking away.</p>
-<img src="img/icook/h4.jpg" alt="alt text" title="" />
+<img src="img/proj1/video.gif" alt="alt text" title="" />
+<img src="img/proj1/h_3.jpg" alt="alt text" title="" />
 
-<h2>Nutrient detection</h2>
-<p>Place your hand on the iCook so that it can analyze the nutrient levels in your body. iCook then tailors recipes to supplement nutritional deficiencies.</p>
-<img src="img/icook/h1.jpg" alt="alt text" title="" />
-<h2>Smart recipes search</h2>
-<p>iCook provides a cohesive recipe browsing experience by searching and displaying recipes from all major cooking sites. It allows you to easily adjust portion sizes and make ingredient substitutions based on what\'s available in the fridge.</p>
-<img src="img/icook/h2.jpg" alt="alt text" title="" />
+<h2>Embrace a different perspective</h2>
+<p>Explore the constellations from different perspectives by using your mouse. Drag to navigate, scroll to zoom.</p>
+<div class="nolinkstyle">
+<img src="img/proj1/h_1.jpg" alt="alt text" title="" />
+<a href="img/proj1/h_5.png"><img src="img/proj1/h_5.png" alt="alt text" title="" /></a>
+<a href="img/proj1/h_9.png"><img src="img/proj1/h_9.png" alt="alt text" title="" /></a>
+<a href="img/proj1/h_6.png"><img src="img/proj1/h_6.png" alt="alt text" title="" /></a>
+</div>
 
-<h2>Ingredients storage & preparation</h2>
-<p>iCook combines the fridge and pantry to store ingredients and keep track of expiration dates so you never find forgotten molded food in the corner again. It can also prep your food (washing, chopping, peeling, etc) so that you can focus on cooking.</p>
-<img src="img/icook/h3.jpg" alt="alt text" title="" />
+<h2>Learn the lore</h2>
+<p>Click on constellations to read the associated Greek lore</p>
+<div class="nolinkstyle">
+<img src="img/proj1/h_2.jpg" alt="alt text" title="" />
+<a href="img/proj1/h_7.png"><img src="img/proj1/h_7.png" alt="alt text" title="" /></a>
+</div>
 
 <h1>Process</h1>
-<div class="thumbnail">
-<a href="img/icook/p1.jpg"> <img src="img/icook/p1.jpg" class="portrait" alt=""></a>
-</div>
-<figcaption>Storyboard sketches</figcaption>
-<a href="img/icook/p5.jpg"> <img src="img/icook/p5.jpg" alt=""></a>
-<figcaption>The green screening process</figcaption>
+
+<div class="nolinkstyle">
+<h2>Conceptualization</h2>
+<p>My initital concept was to build an interactive planetarium that would let the user browse the night sky on the web. However that idea was scrapped when I realized it didn\'t really take advantage of the affordances of 3D.</p>
+<a href="img/proj1/p1.jpg"> <img src="img/proj1/p1.jpg" alt=""></a>
+<a href="img/proj1/p2.jpg"> <img src="img/proj1/p2.jpg" alt=""></a>
+<figcaption>Second concept leveraged the affordance of 3D by allowing people to view and explore the stars from space.</figcaption>
+
+<a href="img/proj1/p3.jpg"> <img src="img/proj1/p3.jpg" alt=""></a>
+<figcaption>Zenith user experience flowchart</figcaption>
+
+<h2>Building</h2>
+<p>This project taught me a lot about project management and how to develop an entire application from scratch. By listing all of the features and forcing myself to prioritize, I was able to arrive at a minimally viable product (MVP); something that I could successfully implement within the given timeline.</p>
+<a href="img/proj1/p4.jpg"> <img src="img/proj1/p4.jpg" alt=""></a>
+<figcaption>First attempt. Stars are represented by spheres using Three.js</figcaption>
+<p>
+I knew that I needed to start small so I tried to map the stars of a single constellation. During that time, I made sure to keep scalability in mind as I wanted to be able to map all 12 constellations eventually.</p>
+
+<a href="img/proj1/p5.jpg"> <img src="img/proj1/p5.jpg" alt=""></a>
+<figcaption>Starting to connect the lines of the constellation and implementing collision detection of the mouse with the stars. Boy it\'s a lot harder to detect mouse hovers in 3 space.</figcaption>
+<p>Along the way I learned about the value of compromise and hacking it a little bit. Don\'t have time to implement a unique render engine to give the stars some sparkle? Just use a transparent png to give the stars their glow. </p>
+
+<a href="img/proj1/p6.jpg"> <img src="img/proj1/p6.jpg" alt=""></a>
+
+<p>Half of the battle was sanitizing and organizing the star location data into a format that my web application could read. I learned that python could be used to accomplish that task so with a little help from a friend, learned just enough to extract all of data I needed from the HYG database.</p>
+<a href="img/proj1/p7.jpg"> <img src="img/proj1/p7.jpg" alt=""></a>
+<figcaption>Stars for all the constellations are in place. Wooo!</figcaption>
 </div>
 ';
 ?>

@@ -14,7 +14,7 @@ function getMenuButton() {
 		<div class="nav-toggle"><span></span></div>
 		</button>';
 
-	if ($pageName == 'project') {
+	if ($pageName !== 'index') {
 		return ('<button id="showLeftPush" class="align_left menu-button">
                 <div class="nav-toggle"><span></span></div>
                 </button>
@@ -51,7 +51,7 @@ function getScripts() {
             };
         </script>";
 
-	if ($pageName == 'project') {
+	if ($pageName !== 'index') {
 		return ($leftMenuScript);
 	}
 }

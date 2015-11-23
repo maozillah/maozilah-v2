@@ -1,57 +1,69 @@
 <?php
 $pid = 5;
-$projectTitle = 'Home Inspections Booking App';
-$projectTypes = 'interaction design';
-$shortDescr = 'Mobile application that saves realtors time by allowing them to book home inspections efficiently.';
-$imgUrl = 'realtor/lrg_img.jpg';
-$descrImgUrl = 'realtor/sml_img.jpg';
+$projectTitle = 'Oktoberfest App';
+$projectTypes = 'interaction design, UI design, front end development';
+$shortDescr = 'Mobile application for Oktoberfest to help festival goers choose where to eat.';
+$imgUrl = 'Oktoberfest/lrg_img.jpg';
+$descrImgUrl = 'Oktoberfest/sml_img.jpg';
 
-$content = '
-<h1>Background</h1>
-<h3>Team</h3>
-<ul>
-<li>Matt Nish-Lapidus</li>
-<li>Cassandra Cappello</li>
-<li>Ken Leung</li>
-</ul>
+$content = '<h1>Background</h1>
+
+<p>Oktoberfest is a German festival consisting of good food, beer, and revelry that takes over several city blocks for a few days. It attracts hordes of people as well as food vendors and is generally a good time for everyone.</p>
 
 <h2>Problem</h2>
-<p>Real estate agents must book a home inspection everytime they sell a house. To do so, they had to engage in lengthy phone call in order to coordinate around the schedules of the various parties and communicate all the information about the house.</p>
+<p>One of the first world problems at festivals like Oktoberfest is choosing a place to eat. Festival goers are usually unaware of the food options available or may have specific food needs. Groups of people may also have varying food preferences.</p>
 
 <h2>Solution</h2>
-<p>The home inspections app integrates with the agents\' calendar as well as the inspectors\' so that inspections can be booked with the schedules of all parties in mind. It also allows agents to save information about the home so they can finalize their appointment after they get all the required info. </p>
+<p>The Wheel of food app simplifies the food selection process for individuals and groups by providing suggestions through a game of spin the bottle. It also includes a directory of the food vendors available at the festival so that people may plan ahead or browse the options.</p>
 
 <h1>Highlights</h1>
+<h2>Food preferences</h2>
+<img src="img/oktoberfest/h1.jpg" alt="alt text" title="" />
 
+<h2>Browse vendors</h2>
+<p>Browse and favorite vendors and menus ahead of time so that you waste no time deciding what to eat. See other people\'s comments and ratings about particular vendors to inform your decision.</p>
+<img src="img/oktoberfest/h2.jpg" alt="alt text" title="" />
 
-<div class="nolinkstyle">
-<h2>Check availability</h2>
-<p>Check which days and times inspectors are available for inspections. See at a glance conflicts with your calendar.</p>
-<a href="img/realtor/h1.jpg"><img src="img/realtor/h1.jpg" alt="alt text" title="" /></a>
-
-<h2>See all bookings</h2>
-<p>See the status of current bookings without having to call in.</p>
-<a href="img/realtor/h2.jpg"><img src="img/realtor/h2.jpg" alt="alt text" title="" /></a>
-
-<h2>Reserve appointments</h2>
-<p>Realtors don\'t always have all of the house information when they\'re booking the inspection. Through the app they can reserve appointments first and fill in additional home information later.</p>
-<a href="img/realtor/h3.jpg"><img src="img/realtor/h3.jpg" alt="alt text" title="" /></a>
-</div>
+<h2>Earn free beers</h2>
+<p>Collect tokens by buying food from vendors and use it to redeem free drinks.</p>
+<img src="img/oktoberfest/h3.jpg" alt="alt text" title="" />
 
 <h1>Process</h1>
-<div class="nolinkstyle">
-<h2>Research</h2>
-<a href="img/realtor/p1.jpg"> <img src="img/realtor/p1.jpg" class="portrait" alt=""></a>
-<h2>Conceptualization</h2>
-<a href="img/realtor/p2.jpg"> <img src="img/realtor/p2.jpg" class="portrait" alt=""></a>
-<a href="img/realtor/p3.jpg"> <img src="img/realtor/p3.jpg" class="portrait" alt=""></a>
-<a href="img/realtor/p4.jpg"> <img src="img/realtor/p4.jpg" alt=""></a>
-<figcaption>App flowchart</figcaption>
 
-<h2>Wireframes</h2>
-<a href="img/realtor/p5.jpg"> <img src="img/realtor/p5.jpg" alt=""></a>
-<a href="img/realtor/p6.jpg"> <img src="img/realtor/p6.jpg" alt=""></a>
-<a href="img/realtor/p7.jpg"> <img src="img/realtor/p7.jpg" alt=""></a>
+<h2>Ethnographic study, affordances</h2>
+<a href="img/oktoberfest/process1.pdf">Download the full document</a><br><br>
+
+<div class="nolinkstyle">
+<a href="img/oktoberfest/1/p1.jpg"> <img src="img/oktoberfest/1/p1.jpg" alt=""></a>
+
+<a href="img/oktoberfest/1/p3.jpg"> <img src="img/oktoberfest/1/p3.jpg" alt=""></a>
+
+<h2>Personas & Scenarios</h2>
+<p>Three main personas were identified. These included mothers who wanted their family to eat healthy at festivals, teenager who is price conscious, and eaters with specific needs such as vegetarian or gluten free foods.</p>
+
+<a href="img/oktoberfest/1/p4.jpg"> <img src="img/oktoberfest/1/p4.jpg" alt=""></a>
+
+<a href="img/oktoberfest/1/p7.jpg"> <img src="img/oktoberfest/1/p7.jpg" alt=""></a>
 </div>
+
+<h2>Competitive Analysis</h2>
+<a href="img/oktoberfest/process2.pdf">Download the full document</a><br><br>
+<div class="nolinkstyle">
+<a href="img/oktoberfest/2/p1.jpg"> <img src="img/oktoberfest/2/p1.jpg" alt=""></a>
+
+<h2>Prototyping & User Testing</h2>
+<p>Paper prototypes of the application was tested with fellow classmates. Some of the major comments included reducing the complexity of the application by removing or combining certain views.</p>
+<a href="img/oktoberfest/2/p2.jpg"> <img src="img/oktoberfest/2/p2.jpg" alt=""></a>
+
+<a href="img/oktoberfest/2/p3.jpg"> <img src="img/oktoberfest/2/p3.jpg" alt=""></a>
+
+<a href="img/oktoberfest/2/p4.jpg"> <img src="img/oktoberfest/2/p4.jpg" alt=""></a>
+
+<div class="thumbnail" class="portrait">
+<a href="img/oktoberfest/2/p5.jpg"> <img src="img/oktoberfest/2/p5.jpg" alt=""></a>
+</div>
+<figcaption>App flowchart</figcaption>
+</div>
+
 ';
 ?>

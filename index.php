@@ -14,12 +14,33 @@
 <!-- if home then mobile hide class -->
 <div class="right mobileHide">
 	<div class="type">
-		<h1>Heading Alpha</h1>
+	  	<h1>My Design Process</h1>
+	  	<blockquote>
+	  		If you’re going to love <em>something</em> it needs to be the <strong>process</strong> of coming up with a solution. If you’re going to love <em>two</em> things, the other one should be that you’ve actually <strong>solved the problem</strong>. If you’re going to love <em>three</em> things, love the <strong>people you’re trying to help</strong>. <br><br>
+	  		&mdash; <a href="https://deardesignstudent.com/trust-nothing-murder-most-dcd512b28889#.e1ev2p7de" target="_blank">Mike Monteiro</a>
+	  	</blockquote>
+	  	<h2>1. Strategize</h2>
+		<p>Before I begin 'doing' anything, I outline my goals and break down the project into general steps. Then I plan out my process; taking into consideration time, resources, and scope.</p>
+
+		<h2>2. Explore</h2>
+		<p>Next: <strong>Research</strong>. The people who will be using the product, the competition, other designers, tutorials, anything and everything. I want to learn as much as I can about the brief.
+
+	<p>
+		At this stage I define my <strong>context & design problem</strong>; potentially creating design artifacts to help me empathize and understand the target users.</strong> </p>
+
+		<h2>3. Ideate</h2>
+		<p>Research and thoughts become <strong>mind maps & brainstorms.</strong> Ideas are scribbled down and sketches are small and drawn in rapid successions. </p>
+		
+		<p>Concepts are <em>reviewed, evaluated, & tossed</em>. A few rough gems of concepts are selected as the seed for further ideation until a final concept is chosen. Then it's cue <strong>wireframes.</strong></p>
+
+		<h2>4. Execute</h2>
+		<p>The chosen concept is executed and polished with the appropriate tool(s), be it photoshop, code, or pen and paper; <strong>the idea dictates the strategy and tools. </strong></p>
+		
 		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum justo ante, a scelerisque lorem faucibus varius. Proin quis auctor odio. Donec consectetur massa nec ante finibus, id ultrices velit posuere. Sed efficitur quam in est ullamcorper tempor. Nam suscipit accumsan erat, nec aliquet massa iaculis id. Duis faucibus, risus quis bibendum maximus, libero elit sagittis sem, quis convallis quam augue vitae nibh. Fusce id mi nunc. Nulla facilisi.</p>
-		<p>Nunc ultrices euismod mattis. Etiam et eros faucibus, maximus dui consequat, blandit enim. Quisque nec fringilla felis. Duis vulputate posuere neque, sit amet imperdiet nibh ornare quis. Etiam mattis felis vitae neque maximus, et posuere sapien finibus. Etiam facilisis condimentum justo, ut facilisis leo suscipit non. Proin blandit justo nec tempus aliquam.</p>
-		<p>Quisque porta nisi non quam placerat sollicitudin. Phasellus eleifend enim a lectus blandit, in varius neque pretium. Sed eget dolor malesuada, facilisis est quis, malesuada diam. Nam aliquet nunc in ex interdum, id suscipit mauris fringilla. Nulla commodo velit quis purus finibus aliquet. Suspendisse rhoncus diam vitae dui malesuada bibendum. Donec id bibendum neque. Integer a vulputate ligula. Quisque hendrerit risus mauris, id dictum ante gravida et. Proin sit amet est pellentesque diam egestas ultrices in vel dui. Pellentesque odio risus, blandit quis auctor sed, luctus et urna. Mauris tempor tellus at lectus tincidunt, et mattis erat ullamcorper. In sit amet tincidunt felis. Sed ac turpis suscipit, luctus magna vitae, eleifend lacus. Nulla sit amet purus rhoncus, lacinia est ut, porttitor eros.</p>
-		<p>Suspendisse nec mollis nulla. Curabitur augue tellus, ullamcorper ac vestibulum at, ullamcorper at quam. Maecenas elit erat, finibus id consectetur a, rhoncus vulputate ipsum. Suspendisse ac erat tincidunt, feugiat ipsum ac, vehicula eros. Curabitur porta massa et facilisis ultricies. Phasellus ac mollis est. Praesent dui elit, aliquam ut interdum et, gravida mattis nibh. Sed eu neque aliquet, vehicula elit id, pellentesque lorem. Vestibulum efficitur facilisis pellentesque. Nam tempus blandit auctor. Fusce interdum nulla eget tristique lobortis. Donec velit nisi, tempor nec ante eget, tempor commodo ipsum. Nam non massa vel quam sollicitudin euismod ac ut tellus. Nullam faucibus mauris at porta interdum. Donec consectetur maximus aliquam.</p>
+		<em>I do whatever I need to do to get it done.</em> Whether that means spending a night on Lynda, calling a friend, or hitting the library, there are no excuses.
+
+		</p>
+		
 	</div>
 </div>
 <?php

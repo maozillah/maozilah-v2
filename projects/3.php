@@ -1,69 +1,75 @@
 <?php
 $pid = 3;
-$projectTitle = 'Oktoberfest App';
-$projectTypes = 'interaction design, UI design, front end development';
-$shortDescr = 'Mobile application for Oktoberfest to help festival goers choose where to eat.';
-$imgUrl = 'Oktoberfest/lrg_img.jpg';
-$descrImgUrl = 'Oktoberfest/sml_img.jpg';
+$projectTitle = 'On the Grow App';
+$projectTypes = 'interaction design, research';
+$shortDescr = 'Mobile app that provides a convenient way for city dwellers to share or sell produce from their gardens.';
+$imgUrl = 'onthegrow/lrg_img.jpg';
+$descrImgUrl = 'onthegrow/lrg_img.jpg';
 
-$content = '<h1>Background</h1>
+$content = '
+<h1>Background</h1>
 
-<p>Oktoberfest is a German festival consisting of good food, beer, and revelry that takes over several city blocks for a few days. It attracts hordes of people as well as food vendors and is generally a good time for everyone.</p>
+<h2>Team</h2>
+
+<ul>
+<li>Ruth Tupe</li>
+<li>Rakshit Shukla</li>
+<li>Timur Borkhodoev</li>
+</ul>
+
+<p>On the Grow was designed and developed at <a href="https://2014.battlehack.org/">Battlehack Toronto</a>, a hackathon sponsored by Paypal. The single requirement was that all ideas had to integrate digital payment. </p>
 
 <h2>Problem</h2>
-<p>One of the first world problems at festivals like Oktoberfest is choosing a place to eat. Festival goers are usually unaware of the food options available or may have specific food needs. Groups of people may also have varying food preferences.</p>
+<p>People in the city are increasingly attentive to healthy eating and organic produce. Many city goers were growing their own produce but often produced more than they needed. </p>
 
 <h2>Solution</h2>
-<p>The Wheel of food app simplifies the food selection process for individuals and groups by providing suggestions through a game of spin the bottle. It also includes a directory of the food vendors available at the festival so that people may plan ahead or browse the options.</p>
+<p>A digital marketplace for people to find and buy fresh produce from their neighbors as well as sell or donate their excess produce.</p>
 
 <h1>Highlights</h1>
-<h2>Food preferences</h2>
-<img src="img/oktoberfest/h1.jpg" alt="alt text" title="" />
+<img src="img/onthegrow/appmap.jpg" alt="alt text" title="" />
 
-<h2>Browse vendors</h2>
-<p>Browse and favorite vendors and menus ahead of time so that you waste no time deciding what to eat. See other people\'s comments and ratings about particular vendors to inform your decision.</p>
-<img src="img/oktoberfest/h2.jpg" alt="alt text" title="" />
+<h2>Find produce</h2>
+<p>Locate fresh produce close to you, meet up, and pay easily with paypal.</p>
+<img src="img/onthegrow/h1.jpg" alt="alt text" title="" />
+<img src="img/onthegrow/h3.jpg" alt="alt text" title="" />
 
-<h2>Earn free beers</h2>
-<p>Collect tokens by buying food from vendors and use it to redeem free drinks.</p>
-<img src="img/oktoberfest/h3.jpg" alt="alt text" title="" />
+<h2>Sell produce</h2>
+<p>Sell or donate your extra produce.</p>
+<img src="img/onthegrow/h2.jpg" alt="alt text" title="" />
 
 <h1>Process</h1>
+<h2>User research</h2>
+<p>We noticed how many people had personal vegetable gardens in the Kensington Market neighborhood and it got us thinking...</p>
+<div class="thumbnail">
+<a href="img/onthegrow/p2.jpg"> <img src="img/onthegrow/p2.jpg" class="portrait" alt=""></a>
+</div>
 
-<h2>Ethnographic study, affordances</h2>
-<a href="img/oktoberfest/process1.pdf">Download the full document</a><br><br>
+<div class="thumbnail">
+<a href="img/onthegrow/p3.jpg"> <img src="img/onthegrow/p3.jpg" class="portrait" alt=""></a>
+</div>
+<figcaption>Old ladies selling fresh vegetables from their gardens in China town</figcaption>
 
+<p>As part of our problem definition, we talked to people shopping for produce in Kensington market about their relationship to food. People shared how much they cared about eating organic produce. </p>
+
+<p>When we shared our idea with them, they highlighted that convenience and the quality of the produce were major factors when they grocery shopped.</p>
+<div class="thumbnail">
+<a href="img/onthegrow/p1.jpg"> <img src="img/onthegrow/p1.jpg" class="portrait" alt=""></a>
+</div>
+
+<h2>Conceptualization</h2>
+<p>We addressed convenience by prioritizing the location of produce in relation to the user. We also incorporated the concern for produce quality by allowing the seller to provide details about the freshness of the produce.</p>
+<div class="thumbnail">
+<a href="img/onthegrow/p4.jpg"> <img src="img/onthegrow/p4.jpg" alt=""></a>
+</div>
+
+<h2>Wireframming</h2>
+<div class="thumbnail">
+<a href="img/onthegrow/p5.jpg"> <img src="img/onthegrow/p5.jpg" alt=""></a>
+</div>
+
+<h2>Team photo</h2>
 <div class="nolinkstyle">
-<a href="img/oktoberfest/1/p1.jpg"> <img src="img/oktoberfest/1/p1.jpg" alt=""></a>
-
-<a href="img/oktoberfest/1/p3.jpg"> <img src="img/oktoberfest/1/p3.jpg" alt=""></a>
-
-<h2>Personas & Scenarios</h2>
-<p>Three main personas were identified. These included mothers who wanted their family to eat healthy at festivals, teenager who is price conscious, and eaters with specific needs such as vegetarian or gluten free foods.</p>
-
-<a href="img/oktoberfest/1/p4.jpg"> <img src="img/oktoberfest/1/p4.jpg" alt=""></a>
-
-<a href="img/oktoberfest/1/p7.jpg"> <img src="img/oktoberfest/1/p7.jpg" alt=""></a>
+<a href="img/onthegrow/p6.jpg"> <img src="img/onthegrow/p6.jpg" alt=""></a>
 </div>
-
-<h2>Competitive Analysis</h2>
-<a href="img/oktoberfest/process2.pdf">Download the full document</a><br><br>
-<div class="nolinkstyle">
-<a href="img/oktoberfest/2/p1.jpg"> <img src="img/oktoberfest/2/p1.jpg" alt=""></a>
-
-<h2>Prototyping & User Testing</h2>
-<p>Paper prototypes of the application was tested with fellow classmates. Some of the major comments included reducing the complexity of the application by removing or combining certain views.</p>
-<a href="img/oktoberfest/2/p2.jpg"> <img src="img/oktoberfest/2/p2.jpg" alt=""></a>
-
-<a href="img/oktoberfest/2/p3.jpg"> <img src="img/oktoberfest/2/p3.jpg" alt=""></a>
-
-<a href="img/oktoberfest/2/p4.jpg"> <img src="img/oktoberfest/2/p4.jpg" alt=""></a>
-
-<div class="thumbnail" class="portrait">
-<a href="img/oktoberfest/2/p5.jpg"> <img src="img/oktoberfest/2/p5.jpg" alt=""></a>
-</div>
-<figcaption>App flowchart</figcaption>
-</div>
-
 ';
 ?>
