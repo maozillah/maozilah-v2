@@ -3,10 +3,7 @@
 
 echo (
 '
-<div class="left projectHeader" style="background-image:url(img/)">
-	<div class="projectMeta">
-		<h1>About me</h1>
-	</div>
+<div class="left projectHeader" style="background-image:url(img/self.jpg)">
 </div>
 <div class="right">
 	<div class="type">
@@ -14,7 +11,7 @@ echo (
 					<p> 
 						My name is <strong>Kaye Mao</strong> and I\'m a third year <a href="http://www.sheridancollege.ca/academics/programs-and-courses/bachelor-of-interaction-design.aspx" target="_blank">Interaction Design</a> student at Sheridan College. 
 						<br><br>
-						I believe in the power of design to <em>change the world</em> and in humanity to be receptive. I believe in <strong>endless learning, in failing hard, in critiques.</strong> And I believe that if you are going to do something, then <strong>do it well.</strong>
+						I believe in the power of design to <em>change the world</em> and in humanity to be receptive. I believe in <strong>endless learning, in failure, and in critiques.</strong> And I believe that if you are going to do something, then <strong>do it well.</strong>
 						<br><br>
 						I\'m currently interested in
 <strong>interaction design, data
