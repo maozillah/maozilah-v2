@@ -24,13 +24,15 @@ HTML, CSS, Javascript, Three.js, Python
 
 
 <h1>Highlights</h1>
-<img src="img/proj1/video.gif" alt="alt text" title="" />
-<img src="img/proj1/h_3.jpg" alt="alt text" title="" />
+<div class="nolinkstyle">
+<a href="img/proj1/video.gif"><img src="img/proj1/video.gif" alt="alt text" title="" /></a>
+<a href="img/proj1/h_3.jpg"><img src="img/proj1/h_3.jpg" alt="alt text" title="" /></a>
+</div>
 
 <h2>Embrace a different perspective</h2>
 <p>Explore the constellations from different perspectives by using your mouse. Drag to navigate, scroll to zoom.</p>
 <div class="nolinkstyle">
-<img src="img/proj1/h_1.jpg" alt="alt text" title="" />
+<a href="img/proj1/h_1.jpg"><img src="img/proj1/h_1.jpg" alt="alt text" title="" /></a>
 <a href="img/proj1/h_5.png"><img src="img/proj1/h_5.png" alt="alt text" title="" /></a>
 <a href="img/proj1/h_9.png"><img src="img/proj1/h_9.png" alt="alt text" title="" /></a>
 <a href="img/proj1/h_6.png"><img src="img/proj1/h_6.png" alt="alt text" title="" /></a>

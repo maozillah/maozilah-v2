@@ -21,21 +21,21 @@ $content = '
 
 <h2>Problem</h2>
 <p>People in the city are increasingly attentive to healthy eating and organic produce. Many city goers were growing their own produce but often produced more than they needed. </p>
-
+<div class="nolinkstyle">
 <h2>Solution</h2>
 <p>A digital marketplace for people to find and buy fresh produce from their neighbors as well as sell or donate their excess produce.</p>
 
 <h1>Highlights</h1>
-<img src="img/onthegrow/appmap.jpg" alt="alt text" title="" />
+<a href="img/onthegrow/appmap.jpg"><img src="img/onthegrow/appmap.jpg" alt="alt text" title="" /></a>
 
 <h2>Find produce</h2>
 <p>Locate fresh produce close to you, meet up, and pay easily with paypal.</p>
-<img src="img/onthegrow/h1.jpg" alt="alt text" title="" />
-<img src="img/onthegrow/h3.jpg" alt="alt text" title="" />
+<a href="img/onthegrow/h1.jpg"><img src="img/onthegrow/h1.jpg" alt="alt text" title="" /></a>
+<a href="img/onthegrow/h3.jpg"><img src="img/onthegrow/h3.jpg" alt="alt text" title="" /></a>
 
 <h2>Sell produce</h2>
 <p>Sell or donate your extra produce.</p>
-<img src="img/onthegrow/h2.jpg" alt="alt text" title="" />
+<a href="img/onthegrow/h2.jpg"><img src="img/onthegrow/h2.jpg" alt="alt text" title="" /></a>
 
 <h1>Process</h1>
 <h2>User research</h2>
@@ -68,7 +68,6 @@ $content = '
 </div>
 
 <h2>Team photo</h2>
-<div class="nolinkstyle">
 <a href="img/onthegrow/p6.jpg"> <img src="img/onthegrow/p6.jpg" alt=""></a>
 </div>
 ';

@@ -67,6 +67,17 @@ html, body {
         font-size: 0.9em;
         padding: 2%;
         font-style: italic;
+
+        @include breakpoint(tablet) {
+             width: 116%;
+             margin-left: -10%;
+        }
+
+        @include breakpoint(mobileonly) {
+             width: 100%;
+             margin-left: -4%;
+             margin-top: -8px;
+        }
     }
     img {
         width: 130%;
@@ -75,11 +86,12 @@ html, body {
         border: 1px solid #E2E2E2;
 
         @include breakpoint(tablet) {
+            width: 120%;
             text-align: center;
             display: block;
-            margin-left: auto;
+            margin-left: -10%;
             margin-right: auto;
-            padding: 0.5em 0 0 0;
+            // padding: 0.5em 0 0 0;
             float: initial !important;
         }
 
@@ -104,9 +116,14 @@ html, body {
 .type {
     max-width: 650px;
     margin: auto;
+    padding: 4em 2em 4em 2em;
 
-    @include breakpoint(mintablet) {
-        padding: 4em 2em 4em 2em;
+    @include breakpoint(tablet) {
+        padding: 1em 2em 4em 2em;
+    }
+
+    @include breakpoint(mobileonly) {
+        padding: 1em 0 1em 0;
     }
 }
 

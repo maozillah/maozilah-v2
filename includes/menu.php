@@ -6,7 +6,7 @@
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="about.php">About me</a></li>
-            <li><a href="http://roar.maozillah.com" alt="blog" target=_blank>Blog</a></li>
+            <li><a href="http://roar.maozillah.com" alt="blog" target="_blank">Blog</a></li>
             <li><a href="kayemao_resume.pdf">Resume</a></li>
         </ul>
         <h3>Get in touch</h3>

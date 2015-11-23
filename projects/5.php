@@ -18,15 +18,17 @@ $content = '<h1>Background</h1>
 
 <h1>Highlights</h1>
 <h2>Food preferences</h2>
-<img src="img/oktoberfest/h1.jpg" alt="alt text" title="" />
+<div class="nolinkstyle">
+<a href="img/oktoberfest/h1.jpg"><img src="img/oktoberfest/h1.jpg" alt="alt text" title="" /></a>
 
 <h2>Browse vendors</h2>
 <p>Browse and favorite vendors and menus ahead of time so that you waste no time deciding what to eat. See other people\'s comments and ratings about particular vendors to inform your decision.</p>
-<img src="img/oktoberfest/h2.jpg" alt="alt text" title="" />
+<a href="img/oktoberfest/h2.jpg"><img src="img/oktoberfest/h2.jpg" alt="alt text" title="" /></a>
 
 <h2>Earn free beers</h2>
 <p>Collect tokens by buying food from vendors and use it to redeem free drinks.</p>
-<img src="img/oktoberfest/h3.jpg" alt="alt text" title="" />
+<a href="img/oktoberfest/h3.jpg"><img src="img/oktoberfest/h3.jpg" alt="alt text" title="" /></a>
+</div>
 
 <h1>Process</h1>
 

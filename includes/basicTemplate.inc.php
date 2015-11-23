@@ -16,7 +16,12 @@ function getMenuButton() {
 
 	if ($pageName !== 'index') {
 		return ('<button id="showLeftPush" class="align_left menu-button">
-                <div class="nav-toggle"><span></span></div>
+				
+				<div class="projectButton">
+					<div id="folder"><i class="fa fa-folder fa-3x"></i></div>
+					<div id="open_folder"><i class="fa fa-folder-open fa-3x"></i></div>
+                </div>
+                
                 </button>
                 
                 <button id="showRightPush" class="align_right menu-button">

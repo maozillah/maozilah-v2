@@ -13,6 +13,15 @@
 
 $left-width: 45vw;
 
+iframe {
+    width: 100%;
+    height: 350px;
+    
+@include breakpoint(mobileonly) {
+        height: 200px;
+    }
+}
+
 .left {
     @include breakpoint(tablet) {
         width: 100vw;

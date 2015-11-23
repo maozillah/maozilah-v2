@@ -27,8 +27,28 @@
 
 $menu-color: #4d4d4d;
 
+.projectButton {
+    @include transition;
+
+    color: #4d4d4d;
+
+    &:hover {
+        color: red;
+    }
+}
+
 .menu-button {
+    &:hover span {
+        background: red;
+
+        &:before, &:after {
+            background: red;
+        }
+    }
+
     span {
+        @include transition;
+
         cursor: pointer;
         border-radius: 1px;
         height: 6px;
@@ -100,9 +120,13 @@ $menu-color: #4d4d4d;
 }
 
 .hide-nav {
+    @include breakpoint(tablet) {
+    
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity = 0);
     opacity: 0;
+
+    }
 }
 
 .main > section button.disabled {
@@ -114,7 +138,6 @@ $menu-color: #4d4d4d;
     background: #fafafa;
     position: fixed;
     overflow-y: auto;
-
     -ms-overflow-style: none;
 
     &::-webkit-scrollbar {
@@ -197,7 +220,7 @@ $leftmenu-size: 35vw;
 }
 
 .block {
-        display: block;
+    display: block;
 }
 
 .leftmenu {
@@ -246,7 +269,6 @@ $leftmenu-size: 35vw;
     @include breakpoint(laptop) {
         left: -$leftmenu-size;
     }
-    
 }
 
 .cbp-spmenu-right {
@@ -282,7 +304,7 @@ $leftmenu-size: 35vw;
 
 .cbp-spmenu-push {
     overflow-x: hidden;
-    position: relative  ;
+    position: relative;
     left: 0;
 }
 
@@ -321,7 +343,7 @@ $leftmenu-size: 35vw;
 
 
     @include breakpoint(desktop) {
-        left: (-$largemenu-size)  ;
+        left: -$largemenu-size;
     }
 }
 
