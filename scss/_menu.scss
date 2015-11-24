@@ -30,7 +30,11 @@ $menu-color: #4d4d4d;
 .projectButton {
     @include transition;
 
-    color: #4d4d4d;
+    color: white;
+
+    @include breakpoint(tablet) {
+        color: $menu-color;
+    }
 
     &:hover {
         color: red;

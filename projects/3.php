@@ -17,7 +17,7 @@ $content = '
 <li>Timur Borkhodoev</li>
 </ul>
 
-<p>On the Grow was designed and developed at <a href="https://2014.battlehack.org/">Battlehack Toronto</a>, a hackathon sponsored by Paypal. The single requirement was that all ideas had to integrate digital payment. </p>
+<p>On the Grow was designed and developed at <a href="https://2014.battlehack.org/" target="_blank">Battlehack Toronto</a>, a hackathon sponsored by Paypal. The single requirement was that all ideas had to integrate digital payment. </p>
 
 <h2>Problem</h2>
 <p>People in the city are increasingly attentive to healthy eating and organic produce. Many city goers were growing their own produce but often produced more than they needed. </p>
@@ -26,26 +26,26 @@ $content = '
 <p>A digital marketplace for people to find and buy fresh produce from their neighbors as well as sell or donate their excess produce.</p>
 
 <h1>Highlights</h1>
-<a href="img/onthegrow/appmap.jpg"><img src="img/onthegrow/appmap.jpg" alt="alt text" title="" /></a>
+<a href="img/onthegrow/appmap.jpg" target="_blank"><img src="img/onthegrow/appmap.jpg" alt="alt text" title="" /></a>
 
 <h2>Find produce</h2>
 <p>Locate fresh produce close to you, meet up, and pay easily with paypal.</p>
-<a href="img/onthegrow/h1.jpg"><img src="img/onthegrow/h1.jpg" alt="alt text" title="" /></a>
-<a href="img/onthegrow/h3.jpg"><img src="img/onthegrow/h3.jpg" alt="alt text" title="" /></a>
+<a href="img/onthegrow/h1.jpg" target="_blank"><img src="img/onthegrow/h1.jpg" alt="alt text" title="" /></a>
+<a href="img/onthegrow/h3.jpg" target="_blank"><img src="img/onthegrow/h3.jpg" alt="alt text" title="" /></a>
 
 <h2>Sell produce</h2>
 <p>Sell or donate your extra produce.</p>
-<a href="img/onthegrow/h2.jpg"><img src="img/onthegrow/h2.jpg" alt="alt text" title="" /></a>
+<a href="img/onthegrow/h2.jpg" target="_blank"><img src="img/onthegrow/h2.jpg" alt="alt text" title="" /></a>
 
 <h1>Process</h1>
 <h2>User research</h2>
 <p>We noticed how many people had personal vegetable gardens in the Kensington Market neighborhood and it got us thinking...</p>
 <div class="thumbnail">
-<a href="img/onthegrow/p2.jpg"> <img src="img/onthegrow/p2.jpg" class="portrait" alt=""></a>
+<a href="img/onthegrow/p2.jpg" target="_blank"> <img src="img/onthegrow/p2.jpg" class="portrait" alt=""></a>
 </div>
 
 <div class="thumbnail">
-<a href="img/onthegrow/p3.jpg"> <img src="img/onthegrow/p3.jpg" class="portrait" alt=""></a>
+<a href="img/onthegrow/p3.jpg" target="_blank"> <img src="img/onthegrow/p3.jpg" class="portrait" alt=""></a>
 </div>
 <figcaption>Old ladies selling fresh vegetables from their gardens in China town</figcaption>
 
@@ -53,22 +53,22 @@ $content = '
 
 <p>When we shared our idea with them, they highlighted that convenience and the quality of the produce were major factors when they grocery shopped.</p>
 <div class="thumbnail">
-<a href="img/onthegrow/p1.jpg"> <img src="img/onthegrow/p1.jpg" class="portrait" alt=""></a>
+<a href="img/onthegrow/p1.jpg" target="_blank"> <img src="img/onthegrow/p1.jpg" class="portrait" alt=""></a>
 </div>
 
 <h2>Conceptualization</h2>
 <p>We addressed convenience by prioritizing the location of produce in relation to the user. We also incorporated the concern for produce quality by allowing the seller to provide details about the freshness of the produce.</p>
 <div class="thumbnail">
-<a href="img/onthegrow/p4.jpg"> <img src="img/onthegrow/p4.jpg" alt=""></a>
+<a href="img/onthegrow/p4.jpg" target="_blank"> <img src="img/onthegrow/p4.jpg" alt=""></a>
 </div>
 
 <h2>Wireframming</h2>
 <div class="thumbnail">
-<a href="img/onthegrow/p5.jpg"> <img src="img/onthegrow/p5.jpg" alt=""></a>
+<a href="img/onthegrow/p5.jpg" target="_blank"> <img src="img/onthegrow/p5.jpg" alt=""></a>
 </div>
 
 <h2>Team photo</h2>
-<a href="img/onthegrow/p6.jpg"> <img src="img/onthegrow/p6.jpg" alt=""></a>
+<a href="img/onthegrow/p6.jpg" target="_blank"> <img src="img/onthegrow/p6.jpg" alt=""></a>
 </div>
 ';
 ?>

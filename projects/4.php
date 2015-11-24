@@ -9,7 +9,7 @@ $descrImgUrl = 'bus/h1.jpg';
 $content = '
 <div class="box">
 <h4>Recognition</h4>
-<i class="fa fa-trophy"></i> Semi-finalist in the <a href="https://www.adobeawards.com/us">Adobe Design Achievement Awards</a> in the category of <strong>Information Design</strong>
+<i class="fa fa-trophy"></i> Semi-finalist in the <a href="https://www.adobeawards.com/us"  target="_blank">Adobe Design Achievement Awards</a> in the category of <strong>Information Design</strong>
 </div>
 
 <h1>Background</h1>
@@ -26,7 +26,7 @@ $content = '
 
 <h1>Highlights</h1>
 <div class="nolinkstyle">
-<a href="img/bus/h1.jpg"><img src="img/bus/h1.jpg" alt="alt text" title="" /></a>
+<a href="img/bus/h1.jpg" target="_blank"><img src="img/bus/h1.jpg" alt="alt text" title="" /></a>
 
 <h2>General summary</h2>
 <ul>
@@ -35,7 +35,7 @@ $content = '
 <li>Generally more females commute than males at this particular Sheridan college bus stop</li>
 </ul>
 
-<a href="img/bus/h3.jpg"><img src="img/bus/h3.jpg" alt="alt text" title="" /></a>
+<a href="img/bus/h3.jpg" target="_blank"><img src="img/bus/h3.jpg" alt="alt text" title="" /></a>
 
 <h2>Distribution of persons</h2>
 <p>This visualization focuses on the distribution and location of males and females around the bus stop space as well as their various activities. Only the data for the 5 most populous days were analyzed to produce this visualization.</p>
@@ -45,31 +45,31 @@ $content = '
 <li>Popular areas are those that afford leaning and sitting like the front of the enclosed shelter and the railings near the back</li>
 <li>Females tend to sit more while males lean and pace more</li>
 </ul>
-<a href="img/bus/h2.jpg"><img src="img/bus/h2.jpg" alt="alt text" title="" /></a>
+<a href="img/bus/h2.jpg" target="_blank"><img src="img/bus/h2.jpg" alt="alt text" title="" /></a>
 </div>
 
 <h1>Process</h1>
 <h2>Data collection</h2>
 <p>Data was collected using a map of the bus stop area and marking down an <strong>x</strong> for male, or <strong>v</strong> for female. Detailed notes were also recorded about the actions and interactions of the people in the space.</p>
 <div class="thumbnail">
-<a href="img/bus/p2.jpg"> <img src="img/bus/p2.jpg" class="portrait" alt=""></a>
+<a href="img/bus/p2.jpg" target="_blank"> <img src="img/bus/p2.jpg" class="portrait" alt=""></a>
 </div>
 
 <h2>Conceptualization</h2>
 <div class="thumbnail">
-<a href="img/bus/p1.jpg"> <img src="img/bus/p1.jpg" class="portrait" alt=""></a>
+<a href="img/bus/p1.jpg" target="_blank"> <img src="img/bus/p1.jpg" class="portrait" alt=""></a>
 </div>
 <figcaption>Initial sketches for visualizations</figcaption>
 
 <h2>Data processing</h2>
 <p>A grid was drawn over the maps to synthesize the location data collected.</p>
 <div class="thumbnail">
-<a href="img/bus/p3.jpg"> <img src="img/bus/p3.jpg" class="portrait" alt=""></a>
+<a href="img/bus/p3.jpg" target="_blank"> <img src="img/bus/p3.jpg" class="portrait" alt=""></a>
 </div>
 
 <p>The data was transferred to excel where it was ordered and calculations performed.</p>
 <div class="thumbnail">
-<a href="img/bus/p4.jpg"> <img src="img/bus/p4.jpg" alt=""></a>
+<a href="img/bus/p4.jpg" target="_blank"> <img src="img/bus/p4.jpg" alt=""></a>
 </div>
 <figcaption>Table containing the synthesized data</figcaption>
 ';

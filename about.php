@@ -18,9 +18,9 @@ echo (
 visualization, and front-end
 development.</strong>
 
-<p>	If you\'d like to learn more about how I think, check out my <a href="http://roar.maozillah.com/"> blog</a>.</p>
+<p>	If you\'d like to learn more about how I think, check out my <a href="http://roar.maozillah.com/" target="_blank"> blog</a>.</p>
 					</p>
-					<p><a href="kayemao_resume.pdf">Download my resume</a></p>
+					<p><a href="kayemao_resume.pdf" target="_blank">Download my resume</a></p>
 
 		<h2>My story</h2>
 		<p>How exactly did I end up here? Studying Interaction Design when most people have no idea what it is.</p>
@@ -35,7 +35,7 @@ development.</strong>
 					<li>Cello. I decided to learn it at the ripe old age of 17.</li>
 					<li>Baking & cooking. I make a mean butter tart.</li>
 					<li>Reading literature from different parts of the world. There seem to be distinct styles of writing among writers from the same country. E.g. Russian writers vs Japanese writers</li>
-					<li>Drawing. At one point I thought I wanted to be an animator. You can check out some embarrasingly <a href="http://duplicitious.deviantart.com/gallery/?catpath=/">old artwork here</a></li>
+					<li>Drawing. At one point I thought I wanted to be an animator. You can check out some embarrasingly <a href="http://duplicitious.deviantart.com/gallery/?catpath=/" target="_blank">old artwork here</a></li>
 					<li>Running. Because who doesn\'t like the feeling of not being able to breath?</li>
 					</ul>
 
@@ -44,7 +44,7 @@ development.</strong>
 
 					<div class="nolinkstyle">					<a href="https://www.linkedin.com/in/maozillah" target=_blank><i class="fa fa-linkedin-square fa-2x"></i></a>
         <a href="https://twitter.com/Maozillah" target=_blank><i class="fa fa-twitter-square fa-2x"></i></a>
-        <a href="github" alt="blog" target=_blank><i class="fa fa-github fa-2x"></i></a>
+        <a href="https://github.com/maozillah" alt="blog" target=_blank><i class="fa fa-github fa-2x"></i></a>
         <a href="http://maozillah.tumblr.com/" target=_blank><i class="fa fa-tumblr-square fa-2x"></i></a>
         <a href="https://www.facebook.com/maozillah" target=_blank><i class="fa fa-facebook-square fa-2x"></i></a>
 </div>	

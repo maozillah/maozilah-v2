@@ -47,6 +47,7 @@ html, body {
     width: 53vw;
     overflow: auto;
     height: 100vh;
+    
 
     @include breakpoint(tablet) {
         width: 90%;

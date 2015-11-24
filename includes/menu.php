@@ -7,14 +7,14 @@
             <li><a href="index.php">Home</a></li>
             <li><a href="about.php">About me</a></li>
             <li><a href="http://roar.maozillah.com" alt="blog" target="_blank">Blog</a></li>
-            <li><a href="kayemao_resume.pdf">Resume</a></li>
+            <li><a href="kayemao_resume.pdf" target="_blank">Resume</a></li>
         </ul>
         <h3>Get in touch</h3>
         roar@maozillah.com
         <h3>Social</h3>
         <a href="https://www.linkedin.com/in/maozillah" target=_blank><i class="fa fa-linkedin-square fa-2x"></i></a>
         <a href="https://twitter.com/Maozillah" target=_blank><i class="fa fa-twitter-square fa-2x"></i></a>
-        <a href="github" alt="blog" target=_blank><i class="fa fa-github fa-2x"></i></a>
+        <a href="https://github.com/maozillah" alt="blog" target=_blank><i class="fa fa-github fa-2x"></i></a>
         <a href="http://maozillah.tumblr.com/" target=_blank><i class="fa fa-tumblr-square fa-2x"></i></a>
         <a href="https://www.facebook.com/maozillah" target=_blank><i class="fa fa-facebook-square fa-2x"></i></a>
 

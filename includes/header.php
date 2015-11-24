@@ -3,7 +3,10 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Maozillah V2</title>
+        <title>Maozillah</title>
+        <meta name="description" content="Kaye Mao's Interaction Design Portfolio" />
+        <meta name="keywords" content="portfolio, maozillah, kaye, mao, designer, interaction, ux, design" />
+        <meta name="author" content="Kaye Mao" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
