@@ -45,7 +45,8 @@ html, body {
 .right {
     float: right;
     width: 53vw;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     height: 100vh;
     
 
@@ -69,6 +70,11 @@ html, body {
         padding: 2%;
         font-style: italic;
 
+        @include breakpoint(maxdesktop) {
+            width: 96%;
+            margin-left: 0;
+        }
+
         @include breakpoint(tablet) {
              width: 116%;
              margin-left: -10%;
@@ -86,25 +92,19 @@ html, body {
         margin-bottom: 0.2em;
         border: 1px solid #E2E2E2;
 
+        @include breakpoint(maxdesktop) {
+            width: 100%;
+            margin-left: 0;
+        }
+
         @include breakpoint(tablet) {
             width: 120%;
             text-align: center;
             display: block;
             margin-left: -10%;
             margin-right: auto;
-            // padding: 0.5em 0 0 0;
             float: initial !important;
         }
-
-        // &:nth-child(odd) {
-        //     float: left;
-        //     padding-left: 0;
-        // }
-
-        // &:nth-child(even) {
-        //     float: right;
-        //     padding-right: 0;
-        // }
     }
 }
 
@@ -117,10 +117,10 @@ html, body {
 .type {
     max-width: 650px;
     margin: auto;
-    padding: 4em 2em 4em 1em;
+    padding: 4em 2em 4em 0;
 
     @include breakpoint(tablet) {
-        padding: 1em 2em 4em 1em;
+        padding: 1em 2em 4em 0;
     }
 
     @include breakpoint(mobileonly) {

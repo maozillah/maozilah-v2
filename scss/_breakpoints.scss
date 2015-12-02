@@ -3,6 +3,11 @@ BREAKPOINTS
 *********************/
 
 @mixin breakpoint($point) {
+    @if $point == maxdesktop {
+        @media (max-width: 1700px) {
+            @content;
+        }
+    }
     @if $point == desktop {
         @media (min-width: 1224px) {
             @content;
