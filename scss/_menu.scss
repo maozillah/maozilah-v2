@@ -182,6 +182,10 @@ $menu-color: #4d4d4d;
 
     .margin {
         padding: 0em 2em;
+
+        @include breakpoint(mobileonly) {
+        padding: 0em 1.5em;
+        }
     }
 }
 
@@ -190,29 +194,30 @@ $menu-color: #4d4d4d;
 $menu-size: 25vw;
 $largemenu-size: 20vw;
 $mobilemenu-size: 80vw;
-$tabletmenu-size: 40vw;
+$tabletmenu-size: 50vw;
 $leftmenu-size: 35vw;
 
 .sidemenu {
-    @include breakpoint(mobileonly) {
-        width: $mobilemenu-size;
-    }
-
 
     @include breakpoint(mintablet) {
         width: $tabletmenu-size;
     }
 
-
-    @include breakpoint(laptop) {
-        width: $menu-size;
+    @include breakpoint(tablet) {
+        width: $tabletmenu-size;
     }
 
+    @include breakpoint(mobileonly) {
+        width: $mobilemenu-size;
+    }
+
+@include breakpoint(laptop) {
+        width: $menu-size;
+    }
 
     @include breakpoint(desktop) {
         width: $largemenu-size;
     }
-
 
     height: 100vh;
     top: 0;
@@ -232,12 +237,6 @@ $leftmenu-size: 35vw;
         color: white;
     }
 
-    @include breakpoint(mobileonly) {
-        // why does it slide and get larger? 
-        // width: 44.5%;
-        width: $mobilemenu-size;
-    }
-
 
     @include breakpoint(mintablet) {
         width: $tabletmenu-size;
@@ -247,6 +246,13 @@ $leftmenu-size: 35vw;
         }
     }
 
+     @include breakpoint(tablet) {
+        width: $tabletmenu-size;
+
+        span {
+            display: none;
+        }
+    }
 
     @include breakpoint(laptop) {
         width: $leftmenu-size;
@@ -255,33 +261,40 @@ $leftmenu-size: 35vw;
             display: initial;
         }
     }
+
+    @include breakpoint(mobileonly) {
+         width: $mobilemenu-size;
+    }
 }
 
 /* Vertical menu that slides from the left or right */
 
 .cbp-spmenu-left {
-    @include breakpoint(mobileonly) {
-        left: -$mobilemenu-size;
-    }
-
 
     @include breakpoint(mintablet) {
         left: -$tabletmenu-size;
     }
 
+    @include breakpoint(tablet) {
+        left: -$tabletmenu-size;
+    }
 
     @include breakpoint(laptop) {
         left: -$leftmenu-size;
     }
+
+    @include breakpoint(mobileonly) {
+        left: -$mobilemenu-size;
+    }
 }
 
 .cbp-spmenu-right {
-    @include breakpoint(mobileonly) {
-        right: -$mobilemenu-size;
-    }
-
 
     @include breakpoint(mintablet) {
+        right: -$tabletmenu-size;
+    }
+
+     @include breakpoint(tablet) {
         right: -$tabletmenu-size;
     }
 
@@ -293,6 +306,10 @@ $leftmenu-size: 35vw;
 
     @include breakpoint(desktop) {
         right: -$largemenu-size;
+    }
+
+    @include breakpoint(mobileonly) {
+        right: -$mobilemenu-size;
     }
 }
 

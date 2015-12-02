@@ -117,10 +117,10 @@ html, body {
 .type {
     max-width: 650px;
     margin: auto;
-    padding: 4em 2em 4em 2em;
+    padding: 4em 2em 4em 1em;
 
     @include breakpoint(tablet) {
-        padding: 1em 2em 4em 2em;
+        padding: 1em 2em 4em 1em;
     }
 
     @include breakpoint(mobileonly) {
