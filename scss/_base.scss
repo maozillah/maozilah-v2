@@ -6,21 +6,17 @@
 
 @mixin transition {
     @include transition-property(all);
-
     @include transition-duration(0.5s);
-
     @include transition-timing-function(ease);
 }
 
 @mixin backgrounds {
     @include background-size(cover);
-
     background-position: center;
 }
 
 @mixin projectBg {
     @include background-size(cover);
-
     background-position: center;
 }
 
@@ -48,7 +44,6 @@ html, body {
     overflow-y: auto;
     overflow-x: hidden;
     height: 100vh;
-    
 
     @include breakpoint(tablet) {
         width: 90%;

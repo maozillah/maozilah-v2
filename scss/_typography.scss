@@ -1,10 +1,15 @@
 @font-face {
     font-family: 'roboto_slabregular';
-    src: url('../fonts/RobotoSlab-Regular-webfont.eot');
-    src: url('../fonts/RobotoSlab-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/RobotoSlab-Regular-webfont.woff') format('woff'),
-         url('../fonts/RobotoSlab-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/RobotoSlab-Regular-webfont.svg#roboto_slabregular') format('svg');
+    src: url("../fonts/RobotoSlab-Regular-webfont.eot");
+    src: url("../fonts/RobotoSlab-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab-Regular-webfont.woff") format("woff"), url("../fonts/RobotoSlab-Regular-webfont.ttf") format("truetype"), url("../fonts/RobotoSlab-Regular-webfont.svg#roboto_slabregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url("../fonts/sourcesanspro-regular-webfont.eot");
+    src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro-regular-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -21,7 +26,7 @@ button {
 }
 
 html {
-    font: 120%/1.5 "Source Sans Pro", sans-serif;
+    font: 120%/1.5 "source_sans_proregular", sans-serif;
     color: #262626;
 }
 
@@ -31,11 +36,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .right {
-
-    h1, h2, h3, h4, h5, h6 {margin: 1em 0 0.3em 0;}
+    h1, h2, h3, h4, h5, h6 {
+        margin: 1em 0 0.3em 0;
+    }
 
     h1:first-child {
-    margin-top: 0;
+        margin-top: 0;
     }
 }
 
@@ -126,7 +132,7 @@ p:first-child {
 }
 
 .box {
-        display: block;
+    display: block;
     background: #f9f9f9;
     border: solid 1px #eee;
     padding: 0 1.5em 1em 1.5em;
@@ -158,27 +164,4 @@ blockquote:before {
 
 blockquote p {
     display: inline;
-}
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important;
-
-        /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-
-        /* http://css-tricks.com/almanac/properties/o/orphans/ */
-        widows: 3;
-
-        /* http://css-tricks.com/almanac/properties/w/widows/ */
-        page-break-after: avoid;
-    }
 }

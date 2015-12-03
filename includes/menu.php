@@ -4,10 +4,10 @@
         <h1>Maozillah</h1>
         
         <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About me</a></li>
-            <li><a href="http://roar.maozillah.com" alt="blog" target="_blank">Blog</a></li>
-            <li><a href="kayemao_resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="index.php" class="block">Home</a></li>
+            <li><a href="about.php" class="block">About me</a></li>
+            <li><a href="http://roar.maozillah.com" alt="blog" target="_blank" class="block">Blog</a></li>
+            <li><a href="kayemao_resume.pdf" target="_blank" class="block">Resume</a></li>
         </ul>
         <h3>Get in touch</h3>
         roar@maozillah.com

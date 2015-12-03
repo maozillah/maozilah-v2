@@ -1,3 +1,11 @@
+ // preloader
+
+  $(window).load(function() {
+      $('#preloader').fadeOut('slow', function() {
+          $(this).remove();
+      });
+  });
+
   var menuRight = document.getElementById('cbp-spmenu-s2'),
       showRightPush = document.getElementById('showRightPush'),
       body = document.body;
@@ -16,7 +24,6 @@
   }
 
   var scroll = false;
-
   var lastTop;
 
   function stopScrolling() {
@@ -35,24 +42,7 @@
       $(window).scrollTop(lastTop);
   }
 
-  // prevent scrolling
-  // $('.cbp-spmenu').bind('mousewheel DOMMouseScroll', function(e) {
-  //     var e0 = e.originalEvent,
-  //         delta = e0.wheelDelta || -e0.detail;
-
-  //     this.scrollTop += (delta < 0 ? 1 : -1) * 30;
-  //     e.preventDefault();
-  // });
-
   $(document).ready(function() {
-
-      // preloader
-
-      $(window).load(function() {
-          $('#preloader').fadeOut('slow', function() {
-              $(this).remove();
-          });
-      });
 
       // menu animation
       $(".nav-toggle").click(function() {
@@ -72,10 +62,8 @@
       $('.right').add(window).scroll(function(event) {
           var scroll = $(this).scrollTop();
           if (scroll > previousScroll) {
-              // console.log('Down');
               $(".main").addClass("hide-nav");
           } else {
-              // console.log('Up');
               $(".main").removeClass("hide-nav");
           }
           previousScroll = scroll;

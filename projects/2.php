@@ -33,16 +33,16 @@ HTML, CSS, Javascript, Three.js, Python
 <p>Explore the constellations from different perspectives by using your mouse. Drag to navigate, scroll to zoom.</p>
 <div class="nolinkstyle">
 <a href="img/proj1/h_1.jpg" target="_blank"><img src="img/proj1/h_1.jpg" alt="alt text" title="" /></a>
-<a href="img/proj1/h_5.png" target="_blank"><img src="img/proj1/h_5.png" alt="alt text" title="" /></a>
-<a href="img/proj1/h_9.png" target="_blank"><img src="img/proj1/h_9.png" alt="alt text" title="" /></a>
-<a href="img/proj1/h_6.png" target="_blank"><img src="img/proj1/h_6.png" alt="alt text" title="" /></a>
+<a href="img/proj1/h_5.jpg" target="_blank"><img src="img/proj1/h_5.jpg" alt="alt text" title="" /></a>
+<a href="img/proj1/h_9.jpg" target="_blank"><img src="img/proj1/h_9.jpg" alt="alt text" title="" /></a>
+<a href="img/proj1/h_6.jpg" target="_blank"><img src="img/proj1/h_6.jpg" alt="alt text" title="" /></a>
 </div>
 
 <h2>Learn the lore</h2>
 <p>Click on constellations to read the associated Greek lore</p>
 <div class="nolinkstyle">
 <a href="img/proj1/h_2.jpg" target="_blank"><img src="img/proj1/h_2.jpg" alt="alt text" title="" /></a>
-<a href="img/proj1/h_7.png" target="_blank"><img src="img/proj1/h_7.png" alt="alt text" title="" /></a>
+<a href="img/proj1/h_7.jpg" target="_blank"><img src="img/proj1/h_7.jpg" alt="alt text" title="" /></a>
 </div>
 
 <h1>Process</h1>
@@ -66,7 +66,7 @@ I knew that I needed to start small so I tried to map the stars of a single cons
 
 <a href="img/proj1/p5.jpg" target="_blank"> <img src="img/proj1/p5.jpg" alt=""></a>
 <figcaption>Starting to connect the lines of the constellation and implementing collision detection of the mouse with the stars. Boy it\'s a lot harder to detect mouse hovers in 3 space.</figcaption>
-<p>Along the way I learned about the value of compromise and hacking it a little bit. Don\'t have time to implement a unique render engine to give the stars some sparkle? Just use a transparent png to give the stars their glow. </p>
+<p>Along the way I learned about the value of compromise and hacking it a little bit. Don\'t have time to implement a unique render engine to give the stars some sparkle? Just use a transparent jpg to give the stars their glow. </p>
 
 <a href="img/proj1/p6.jpg" target="_blank"> <img src="img/proj1/p6.jpg" alt=""></a>
 
