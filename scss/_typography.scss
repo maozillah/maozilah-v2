@@ -6,13 +6,13 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'source_sans_proregular';
-    src: url("../fonts/sourcesanspro-regular-webfont.eot");
-    src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro-regular-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'source_sans_proregular';
+//     src: url("../fonts/sourcesanspro-regular-webfont.eot");
+//     src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro-regular-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular") format("svg");
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
 body {
     text-rendering: optimizeLegibility;
@@ -26,7 +26,7 @@ button {
 }
 
 html {
-    font: 120%/1.5 "source_sans_proregular", sans-serif;
+    font: 120%/1.5 'Source Sans Pro', sans-serif;
     color: #262626;
 }
 

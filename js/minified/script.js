@@ -29,4 +29,82 @@ return d.join("&").replace(xc,"+")},_.fn.extend({serialize:function(){return _.p
 (function(window){'use strict';function classReg(className){return new RegExp("(^|\\s+)"+className+"(\\s+|$)");}var hasClass,addClass,removeClass;if('classList'in document.documentElement){hasClass=function(elem,c){return elem.classList.contains(c);};addClass=function(elem,c){elem.classList.add(c);};removeClass=function(elem,c){elem.classList.remove(c);};}else{hasClass=function(elem,c){return classReg(c).test(elem.className);};addClass=function(elem,c){if(!hasClass(elem,c)){elem.className=elem.className+' '+c;}};removeClass=function(elem,c){elem.className=elem.className.replace(classReg(c),' ');};}function toggleClass(elem,c){var fn=hasClass(elem,c)?removeClass:addClass;fn(elem,c);}window.classie={hasClass:hasClass,addClass:addClass,removeClass:removeClass,toggleClass:toggleClass,has:hasClass,add:addClass,remove:removeClass,toggle:toggleClass};})(window);
 
 //maozillah
-function disableOther(o){"showRightPush"!==o&&classie.toggle(showRightPush,"disabled")}function stopScrolling(){lastTop=$(window).scrollTop(),$("html").addClass("noscroll").css({top:-lastTop}),$(".main").css({top:0})}function continueScrolling(){$("html").removeClass("noscroll"),$(window).scrollTop(lastTop)}$(window).load(function(){$("#preloader").fadeOut("slow",function(){$(this).remove()})});var menuRight=document.getElementById("cbp-spmenu-s2"),showRightPush=document.getElementById("showRightPush"),body=document.body;showRightPush.onclick=function(){classie.toggle(this,"active"),classie.toggle(body,"cbp-spmenu-push-toleft"),classie.toggle(menuRight,"cbp-spmenu-open"),disableOther("showRightPush")};var scroll=!1,lastTop;$(document).ready(function(){$(".nav-toggle").click(function(){$(this).toggleClass("active")}),$("#open_folder").hide(),$("#showLeftPush").click(function(){$("#folder").toggle(),$("#open_folder").toggle()});var o=0;$(".right").add(window).scroll(function(s){var t=$(this).scrollTop();t>o?$(".main").addClass("hide-nav"):$(".main").removeClass("hide-nav"),o=t})});
+ // preloader
+
+function init() {
+var imgDefer = document.getElementsByTagName('img');
+for (var i=0; i<imgDefer.length; i++) {
+if(imgDefer[i].getAttribute('data-src')) {
+imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+} } }
+window.onload = init;
+
+  $(window).load(function() {
+      $('#preloader').fadeOut('slow', function() {
+          $(this).remove();
+      });
+  });
+
+  var menuRight = document.getElementById('cbp-spmenu-s2'),
+      showRightPush = document.getElementById('showRightPush'),
+      body = document.body;
+
+  showRightPush.onclick = function() {
+      classie.toggle(this, 'active');
+      classie.toggle(body, 'cbp-spmenu-push-toleft');
+      classie.toggle(menuRight, 'cbp-spmenu-open');
+      disableOther('showRightPush');
+  }
+
+  function disableOther(button) {
+      if (button !== 'showRightPush') {
+          classie.toggle(showRightPush, 'disabled');
+      }
+  }
+
+  var scroll = false;
+  var lastTop;
+
+  function stopScrolling() {
+      lastTop = $(window).scrollTop();
+      $('html').addClass('noscroll')
+          .css({
+              top: -lastTop
+          });
+      $('.main').css({
+          top: 0
+      });
+  }
+
+  function continueScrolling() {
+      $('html').removeClass('noscroll');
+      $(window).scrollTop(lastTop);
+  }
+
+  $(document).ready(function() {
+
+      // menu animation
+      $(".nav-toggle").click(function() {
+          $(this).toggleClass("active");
+      });
+
+      // project menu animation
+      $("#open_folder").hide();
+
+      $("#showLeftPush").click(function() {
+          $("#folder").toggle();
+          $("#open_folder").toggle();
+      });
+
+      // Hide on scroll down
+      var previousScroll = 0;
+      $('.right').add(window).scroll(function(event) {
+          var scroll = $(this).scrollTop();
+          if (scroll > previousScroll) {
+              $(".main").addClass("hide-nav");
+          } else {
+              $(".main").removeClass("hide-nav");
+          }
+          previousScroll = scroll;
+      });
+  });

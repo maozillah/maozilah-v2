@@ -27,6 +27,8 @@ $content = '
 <div class="nolinkstyle">
 <h2>Check availability</h2>
 <p>Check which days and times inspectors are available for inspections. See at a glance conflicts with your calendar.</p>
+
+
 <a href="img/realtor/h1.jpg" target="_blank"><img src="img/realtor/h1.jpg" alt="alt text" title="" /></a>
 
 <h2>See all bookings</h2>

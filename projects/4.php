@@ -8,7 +8,7 @@ $descrImgUrl = 'bus/h1.jpg';
 
 $content = '
 <div class="box">
-<h4>Recognition</h4>
+<br>
 <i class="fa fa-trophy"></i> Semi-finalist in the <a href="https://www.adobeawards.com/us"  target="_blank">Adobe Design Achievement Awards</a> in the category of <strong>Information Design</strong>
 </div>
 
