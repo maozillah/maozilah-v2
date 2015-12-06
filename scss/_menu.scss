@@ -36,6 +36,7 @@ $menu-color: #4d4d4d;
         color: $menu-color;
     }
 
+
     &:hover {
         color: red;
     }
@@ -125,11 +126,9 @@ $menu-color: #4d4d4d;
 
 .hide-nav {
     @include breakpoint(tablet) {
-    
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity = 0);
-    opacity: 0;
-
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity = 0);
+        opacity: 0;
     }
 }
 
@@ -184,7 +183,7 @@ $menu-color: #4d4d4d;
         padding: 0em 2em;
 
         @include breakpoint(mobileonly) {
-        padding: 0em 1.5em;
+            padding: 0em 1.5em;
         }
     }
 }
@@ -198,26 +197,30 @@ $tabletmenu-size: 50vw;
 $leftmenu-size: 35vw;
 
 .sidemenu {
-
     @include breakpoint(mintablet) {
         width: $tabletmenu-size;
     }
+
 
     @include breakpoint(tablet) {
         width: $tabletmenu-size;
     }
 
+
     @include breakpoint(mobileonly) {
         width: $mobilemenu-size;
     }
 
-@include breakpoint(laptop) {
+
+    @include breakpoint(laptop) {
         width: $menu-size;
     }
+
 
     @include breakpoint(desktop) {
         width: $largemenu-size;
     }
+
 
     height: 100vh;
     top: 0;
@@ -237,7 +240,6 @@ $leftmenu-size: 35vw;
         color: white;
     }
 
-
     @include breakpoint(mintablet) {
         width: $tabletmenu-size;
 
@@ -246,13 +248,15 @@ $leftmenu-size: 35vw;
         }
     }
 
-     @include breakpoint(tablet) {
+
+    @include breakpoint(tablet) {
         width: $tabletmenu-size;
 
         span {
             display: none;
         }
     }
+
 
     @include breakpoint(laptop) {
         width: $leftmenu-size;
@@ -262,26 +266,29 @@ $leftmenu-size: 35vw;
         }
     }
 
+
     @include breakpoint(mobileonly) {
-         width: $mobilemenu-size;
+        width: $mobilemenu-size;
     }
 }
 
 /* Vertical menu that slides from the left or right */
 
 .cbp-spmenu-left {
-
     @include breakpoint(mintablet) {
         left: -$tabletmenu-size;
     }
+
 
     @include breakpoint(tablet) {
         left: -$tabletmenu-size;
     }
 
+
     @include breakpoint(laptop) {
         left: -$leftmenu-size;
     }
+
 
     @include breakpoint(mobileonly) {
         left: -$mobilemenu-size;
@@ -289,12 +296,12 @@ $leftmenu-size: 35vw;
 }
 
 .cbp-spmenu-right {
-
     @include breakpoint(mintablet) {
         right: -$tabletmenu-size;
     }
 
-     @include breakpoint(tablet) {
+
+    @include breakpoint(tablet) {
         right: -$tabletmenu-size;
     }
 
@@ -307,6 +314,7 @@ $leftmenu-size: 35vw;
     @include breakpoint(desktop) {
         right: -$largemenu-size;
     }
+
 
     @include breakpoint(mobileonly) {
         right: -$mobilemenu-size;
@@ -330,7 +338,11 @@ $leftmenu-size: 35vw;
 }
 
 .cbp-spmenu-push-toright {
-    // position: fixed;
+    @include breakpoint(tablet) {
+        left: $tabletmenu-size;
+    }
+
+
     @include breakpoint(mobileonly) {
         left: $mobilemenu-size;
     }
@@ -347,7 +359,11 @@ $leftmenu-size: 35vw;
 }
 
 .cbp-spmenu-push-toleft {
-    // position: fixed;
+    @include breakpoint(tablet) {
+        left: -$tabletmenu-size;
+    }
+
+
     @include breakpoint(mobileonly) {
         left: -$mobilemenu-size;
     }

@@ -5,6 +5,7 @@ $projectTypes = 'interaction design, UI design, front end development';
 $shortDescr = 'Mobile application for Oktoberfest to help festival goers choose where to eat.';
 $imgUrl = 'oktoberfest/lrg_img.jpg';
 $descrImgUrl = 'oktoberfest/sml_img.jpg';
+$projectDate = 'Winter 2014';
 
 $content = '<h1>Background</h1>
 

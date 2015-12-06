@@ -7,6 +7,7 @@ echo (
 	<div class="projectMeta">
 		<h1>'.$projectTitle.'</h1>
 		<h3>'.$projectTypes.'</h3>
+		<b>'.$projectDate.'</b>
 	</div>
 </div>
 <div class="right">

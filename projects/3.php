@@ -5,6 +5,7 @@ $projectTypes = 'interaction design, research';
 $shortDescr = 'Mobile app that provides a convenient way for city dwellers to share or sell produce from their gardens.';
 $imgUrl = 'onthegrow/lrg_img.jpg';
 $descrImgUrl = 'onthegrow/lrg_img.jpg';
+$projectDate = 'Summer 2014';
 
 $content = '
 <h1>Background</h1>

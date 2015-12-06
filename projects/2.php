@@ -5,6 +5,7 @@ $projectTypes = 'front end development, data visualization';
 $shortDescr = 'An interactive application for viewing constellations in 3D on the web.';
 $imgUrl = 'proj1/lrg_img.jpg';
 $descrImgUrl = 'proj1/sml_img.jpg';
+$projectDate = 'Winter 2014';
 
 $content = '
 <h1>Background</h1>

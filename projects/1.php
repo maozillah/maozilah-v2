@@ -5,6 +5,7 @@ $projectTypes = 'interaction design';
 $shortDescr = 'Mobile application that saves realtors time by allowing them to book home inspections efficiently.';
 $imgUrl = 'realtor/lrg_img.jpg';
 $descrImgUrl = 'realtor/sml_img.jpg';
+$projectDate = 'Summer 2014';
 
 $content = '
 <h1>Background</h1>

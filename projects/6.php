@@ -5,6 +5,7 @@ $projectTypes = 'interaction design, UI design, motion graphics';
 $shortDescr = 'A concept for a more streamlined futuristic cooking experience.';
 $imgUrl = 'icook/lrg_img.jpg';
 $descrImgUrl = 'icook/sml_img.jpg';
+$projectDate = 'Winter 2014';
 
 $content = '
 <div class="videowrapper">

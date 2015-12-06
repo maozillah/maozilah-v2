@@ -21,14 +21,6 @@ development.</strong>
 <p>	If you\'d like to learn more about how I think, check out my <a href="http://roar.maozillah.com/" target="_blank"> blog</a>.</p>
 					</p>
 					<p><a href="kayemao_resume.pdf" target="_blank">Download my resume</a></p>
-
-		<h2>My story</h2>
-		<p>How exactly did I end up here? Studying Interaction Design when most people have no idea what it is.</p>
-		<p>Well. The story goes something like this. I had a senior year crisis in Grade 12 trying to figure out what I wanted to well, <em>do with my life</em>. I\'d been brought up very academically focused and everyone around me was going into Biology or Engineering or Business. I knew that I wasn\'t passionate enough about any of those areas to pursue them but I was afraid of becoming a <strong>starving artist</strong> by pursuing a creative career.</p>
-		<p>I was drawing a lot at that time and happened to come across the infamous Sheridan Animation program. I applied, confident that I was going to be accepted. <strong>I was rejected.</strong> But the college slipped in a footnote to my rejection: <em>"pssst we have a new program and you should apply to it"</em>.</p>
-
-		<p>I had no idea what interaction design was but my parents encouraged me to study at the college that intrigued me so much. So I did. I had designed and developed websites as a hobby as a young teen but I had never thought about pursuing a career in it. The program rekindled that passion and it turned out that Interaction Design and was <strong>exactly what I want to do.</strong></p>
-
 		
 					<h2>Interests</h2>
 					<ul>	

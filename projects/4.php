@@ -5,6 +5,7 @@ $projectTypes = 'data visualization, research';
 $shortDescr = 'A visualization of what people do while waiting for the bus.';
 $imgUrl = 'bus/h1.jpg';
 $descrImgUrl = 'bus/h1.jpg';
+$projectDate = 'Winter 2014';
 
 $content = '
 <div class="box">
@@ -26,7 +27,7 @@ $content = '
 
 <h1>Highlights</h1>
 <div class="nolinkstyle">
-<a href="img/bus/h1.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/bus/h1.jpg"></a>
+<a href="img/bus/h1.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/bus/h1_small.jpg"></a>
 
 <h2>General summary</h2>
 <ul>

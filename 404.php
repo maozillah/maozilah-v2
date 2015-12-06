@@ -1,22 +1,18 @@
 <?php
 	include('includes/header.php');
-
 echo (
 '<div class="left projectHeader" style="background-image:url(img/self.jpg)">');
-
-echo displayProjectDescr(); 
-
+	echo displayProjectDescr();
 echo ('</div>
-
 <div class="right">
-	<div class="type">
-			<h1>Error 404</h1>
-					
-		<p>I had no idea what interaction design was but my parents encouraged me to study at the college that intrigued me so much. So I did. I had designed and developed websites as a hobby as a young teen but I had never thought about pursuing a career in it. The program rekindled that passion and it turned out that Interaction Design and was <strong>exactly what I want to do.</strong></p>
-
+		<div class="type">
+					<h1>Oh noe! Four oh four!</h1>
+					<p>The page you\'re looking for isn\'t here D:</p>
+					<img src="img/derpcat.jpg" alt="">
+					<p>Perhaps you can be a good samaritan and report it to me by emailing <strong>roar@maozillah.com</strong></p>
+					<p>In the meantime, why not check out some of my projects?</p>
 		</div>
 </div>
 <nav class="projects">');
-
-	include('includes/footer.php');
-?>
+		include('includes/footer.php');
+?>	
