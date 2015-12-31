@@ -1,77 +1,77 @@
 <?php
 $pid = 4;
-$projectTitle = 'Bus Stop Observations';
-$projectTypes = 'data visualization, research';
-$shortDescr = 'A visualization of what people do while waiting for the bus.';
-$imgUrl = 'bus/h1.jpg';
-$descrImgUrl = 'bus/h1.jpg';
-$projectDate = 'Winter 2014';
+$projectTitle = 'On the Grow App';
+$projectTypes = 'interaction design, research';
+$shortDescr = 'Mobile app that provides a convenient way for city dwellers to share or sell produce from their gardens.';
+$imgUrl = 'onthegrow/lrg_img.jpg';
+$descrImgUrl = 'onthegrow/lrg_img.jpg';
+$projectDate = 'Summer 2014';
 
 $content = '
-<div class="box">
-<br>
-<i class="fa fa-trophy"></i> Semi-finalist in the <a href="https://www.adobeawards.com/us"  target="_blank">Adobe Design Achievement Awards</a> in the category of <strong>Information Design</strong>
-</div>
-
 <h1>Background</h1>
-<p>What do people do while they wait for the bus? This question was addressed by observing the Oakville college inter-city bus stop at 6:00PM over the span of approximately 6 weeks. Close attention was paid to the locations of commuters and their interactions with their <strong>environment, people, and technology.</strong></p>
+<p>On the Grow was designed and developed at <a href="https://2014.battlehack.org/" target="_blank">Battlehack Toronto</a>, a hackathon sponsored by Paypal. The single requirement was that all ideas had to integrate digital payment. </p>
 
-<h2>Research questions</h2>
-<p>Specific questions that were of interest while observing people waiting for the bus included:</p>
+<h2>Team</h2>
+
 <ul>
-<li>How much <strong>social interaction</strong> do people waiting for the bus engage in? What forms do these interactions take? e.g. technology, other people</li>
-<li>Are there differences between the behaviour of <strong>males and females</strong>?</li>
-<li>How did people address <strong>personal space</strong>?</li>
-<li>What areas of the bus stop were popular/unpopular?</li>
+<li>Ruth Tupe</li>
+<li>Rakshit Shukla</li>
+<li>Timur Borkhodoev</li>
 </ul>
+
+<h3>My Role</h3>
+I was responsible for conceptualization, conducting user research, and designing the user flow and wireframes.
+
+<h2>Problem</h2>
+<p>People in the city are increasingly attentive to healthy eating and organic produce. Many city goers were growing their own produce but often produced more than they needed. </p>
+<div class="nolinkstyle">
+<h2>Solution</h2>
+<p>A digital marketplace for people to find and buy fresh produce from their neighbors as well as sell or donate their excess produce.</p>
 
 <h1>Highlights</h1>
-<div class="nolinkstyle">
-<a href="img/bus/h1.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/bus/h1_small.jpg"></a>
+<a href="img/onthegrow/appmap.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/onthegrow/appmap.jpg"></a>
 
-<h2>General summary</h2>
-<ul>
-<li>Commuters are generally standing</li>
-<li>People made many phone calls but still engaged in many conversations with people</li>
-<li>Generally more females commute than males at this particular Sheridan college bus stop</li>
-</ul>
+<h2>Find produce</h2>
+<p>Locate fresh produce close to you, meet up, and pay easily with paypal.</p>
+<a href="img/onthegrow/h1.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/onthegrow/h1.jpg"></a>
+<a href="img/onthegrow/h3.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/onthegrow/h3.jpg"></a>
 
-<a href="img/bus/h3.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/bus/h3.jpg"></a>
-
-<h2>Distribution of persons</h2>
-<p>This visualization focuses on the distribution and location of males and females around the bus stop space as well as their various activities. Only the data for the 5 most populous days were analyzed to produce this visualization.</p>
-<ul>
-<li>Personal bubbles seem to be around 1.5m</li>
-<li>Groups seem to be limited to 2-3 persons before they break off into smaller groups</li>
-<li>Popular areas are those that afford leaning and sitting like the front of the enclosed shelter and the railings near the back</li>
-<li>Females tend to sit more while males lean and pace more</li>
-</ul>
-<a href="img/bus/h2.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/bus/h2.jpg"></a>
-</div>
+<h2>Sell produce</h2>
+<p>Sell or donate your extra produce.</p>
+<a href="img/onthegrow/h2.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/onthegrow/h2.jpg"></a>
 
 <h1>Process</h1>
-<h2>Data collection</h2>
-<p>Data was collected using a map of the bus stop area and marking down an <strong>x</strong> for male, or <strong>v</strong> for female. Detailed notes were also recorded about the actions and interactions of the people in the space.</p>
+<h2>User research</h2>
+<p>We noticed how many people had personal vegetable gardens in the Kensington Market neighborhood and it got us thinking...</p>
 <div class="thumbnail">
-<a href="img/bus/p2.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/bus/p2.jpg" class="portrait"></a>
+<a href="img/onthegrow/p2.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/onthegrow/p2.jpg" class="portrait"></a>
+</div>
+
+<div class="thumbnail">
+<a href="img/onthegrow/p3.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/onthegrow/p3.jpg" class="portrait"></a>
+</div>
+<figcaption>Old ladies selling fresh vegetables from their gardens in China town</figcaption>
+
+<p>As part of our problem definition, we talked to people shopping for produce in Kensington market about their relationship to food. People shared how much they cared about eating organic produce. </p>
+
+<p>When we shared our idea with them, they highlighted that convenience and the quality of the produce were major factors when they grocery shopped.</p>
+<div class="thumbnail">
+<a href="img/onthegrow/p1.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/onthegrow/p1.jpg" class="portrait"></a>
 </div>
 
 <h2>Conceptualization</h2>
+<p>We addressed convenience by prioritizing the location of produce in relation to the user. We also incorporated the concern for produce quality by allowing the seller to provide details about the freshness of the produce.</p>
 <div class="thumbnail">
-<a href="img/bus/p1.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/bus/p1.jpg" class="portrait"></a>
-</div>
-<figcaption>Initial sketches for visualizations</figcaption>
-
-<h2>Data processing</h2>
-<p>A grid was drawn over the maps to synthesize the location data collected.</p>
-<div class="thumbnail">
-<a href="img/bus/p3.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/bus/p3.jpg" class="portrait"></a>
+<a href="img/onthegrow/p4.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/onthegrow/p4.jpg"></a>
 </div>
 
-<p>The data was transferred to excel where it was ordered and calculations performed.</p>
+<h2>Wireframming</h2>
 <div class="thumbnail">
-<a href="img/bus/p4.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/bus/p4.jpg"></a>
+<a href="img/onthegrow/p5.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/onthegrow/p5.jpg"></a>
 </div>
-<figcaption>Table containing the synthesized data</figcaption>
+
+<h2>Team photo</h2>
+<a href="img/onthegrow/p6.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/onthegrow/p6.jpg"></a>
+</div>
 ';
 ?>

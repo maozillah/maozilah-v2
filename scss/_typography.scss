@@ -37,13 +37,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .right {
     h1, h2, h3, h4, h5, h6 {
-        margin: 1em 0 0.3em 0;
+        margin: 1.4em 0 0.3em 0;
     }
 
-    h1:first-child {
+    h2, h3, h4, h5, h6  {
+        margin-top: 1.2em;
+    }
+
+}
+
+.type > h1:first-of-type {
         margin-top: 0;
     }
-}
 
 .left, .leftmenu {
     h1 {
