@@ -1,5 +1,4 @@
 <?php
-$pid = 4;
 $projectTitle = 'On the Grow App';
 $projectTypes = 'interaction design, research';
 $shortDescr = 'Mobile app that provides a convenient way for city dwellers to share or sell produce from their gardens.';

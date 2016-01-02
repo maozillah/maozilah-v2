@@ -1,5 +1,4 @@
 <?php
-$pid = 5;
 $projectTitle = 'Bus Stop Observations';
 $projectTypes = 'data visualization, research';
 $shortDescr = 'A visualization of what people do while waiting for the bus.';

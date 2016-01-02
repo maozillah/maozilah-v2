@@ -1,5 +1,4 @@
 <?php
-$pid = 2;
 $projectTitle = 'Home Inspections Booking App';
 $projectTypes = 'interaction design';
 $shortDescr = 'Mobile application that saves realtors time by allowing them to book home inspections efficiently.';

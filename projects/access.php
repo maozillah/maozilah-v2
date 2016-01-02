@@ -1,5 +1,4 @@
 <?php
-$pid = 1;
 $projectTitle = 'Access Installation';
 $projectTypes = 'interaction design, experience design, 3D design';
 $shortDescr = 'Conceptual installation that creates empathy and understanding for the importance of digital accessibility.';

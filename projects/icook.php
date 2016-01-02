@@ -1,5 +1,4 @@
 <?php
-$pid = 7;
 $projectTitle = 'iCook';
 $projectTypes = 'interaction design, UI design, motion graphics';
 $shortDescr = 'A concept for a more streamlined futuristic cooking experience.';

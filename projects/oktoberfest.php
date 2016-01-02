@@ -1,5 +1,4 @@
 <?php
-$pid = 6;
 $projectTitle = 'Oktoberfest App';
 $projectTypes = 'interaction design, UI design, front end development';
 $shortDescr = 'Mobile application for Oktoberfest to help festival goers choose where to eat.';

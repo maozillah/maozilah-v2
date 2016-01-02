@@ -1,5 +1,4 @@
 <?php
-$pid = 3;
 $projectTitle = 'Zenith';
 $projectTypes = 'front end development, data visualization';
 $shortDescr = 'An interactive application for viewing constellations in 3D on the web.';

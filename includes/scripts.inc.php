@@ -102,10 +102,11 @@ function GetProjectDescr($pid, $projectTitle, $projectTypes, $shortDescr, $descr
 
 function displayProjectDescr() {
 	global $fileCount;
+	$projects = array ("aqichina","access","realtor","zenith","otg","busvis","oktoberfest","icook");
 
-	for ($i = 1; $i <= $fileCount; $i++) {
-    include 'projects/'.$i.'.php';
-    echo GetProjectDescr($pid, $projectTitle, $projectTypes, $shortDescr, $descrImgUrl);
+	for ($i = 0; $i <= ($fileCount-1); $i++) {
+	    include 'projects/'.$projects[$i].'.php';
+	    echo GetProjectDescr($projects[$i], $projectTitle, $projectTypes, $shortDescr, $descrImgUrl);
 	}
 }
 
