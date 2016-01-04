@@ -15,7 +15,7 @@ $content = '
 <h1>Background</h1>
 <p>What do people do while they wait for the bus? This question was addressed by observing the Oakville college inter-city bus stop at 6:00PM over the span of approximately 6 weeks. Close attention was paid to the locations of commuters and their interactions with their <strong>environment, people, and technology.</strong></p>
 
-<h2>Research questions</h2>
+<h2>Research Objectives</h2>
 <p>Specific questions that were of interest while observing people waiting for the bus included:</p>
 <ul>
 <li>How much <strong>social interaction</strong> do people waiting for the bus engage in? What forms do these interactions take? e.g. technology, other people</li>

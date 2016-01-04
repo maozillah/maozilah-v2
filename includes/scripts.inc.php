@@ -63,29 +63,31 @@ if(isset( $_GET['pid']))
 	require 'projects/'.$projID. '.php';
 } 
 
+$projects = array ("aqichina","access","realtor","zenith","otg","busvis","oktoberfest","icook");
+// $projects = array ("access","realtor","zenith","otg","busvis","oktoberfest","icook");
+
+
 // count number of projects in projects directory
 $dir = "./projects/";
 $fi = new FilesystemIterator($dir, FilesystemIterator::SKIP_DOTS);
 $fileCount = iterator_count($fi);
 
 function projNavigation() {
-	global $projID;
-	global $fileCount;
+	global $projID, $fileCount, $projects;
 
-	$next_page = $projID + 1;
-	$prev_page = $projID - 1;
+	$projectId = array_search($projID, $projects);
 
-	$next = '<div class="align_right padding-right"><a href="project.php?pid='.$next_page.'">Next &#8594;</a></div>';
-	$previous = '<div class="align_left padding-left"><a href="project.php?pid='.$prev_page.'">&#8592; Previous</a> </div>';
+	$next_page = $projectId + 1;
+	$prev_page = $projectId - 1;
 
 	// check if first page
-	if 	($prev_page == 0) {
-	 	return ($next);
+	if 	($prev_page == -1) {
+	 	return ('<div class="align_right padding-right"><a href="project.php?pid='.$projects[$next_page].'">Next &#8594;</a></div>');
 	 // check if last page
-	} elseif ($next_page > $fileCount) {
-		return ($previous);
+	} elseif ($next_page > ($fileCount-1)) {
+		return ('<div class="align_left padding-left"><a href="project.php?pid='.$projects[$prev_page].'">&#8592; Previous</a> </div>');
 	} else {
-		return ($next . $previous);
+		return ('<div class="align_right padding-right"><a href="project.php?pid='.$projects[$next_page].'">Next &#8594;</a></div>' . '<div class="align_left padding-left"><a href="project.php?pid='.$projects[$prev_page].'">&#8592; Previous</a> </div>');
 	}
 }
 
@@ -101,8 +103,7 @@ function GetProjectDescr($pid, $projectTitle, $projectTypes, $shortDescr, $descr
 }
 
 function displayProjectDescr() {
-	global $fileCount;
-	$projects = array ("aqichina","access","realtor","zenith","otg","busvis","oktoberfest","icook");
+	global $fileCount, $projects;
 
 	for ($i = 0; $i <= ($fileCount-1); $i++) {
 	    include 'projects/'.$projects[$i].'.php';
