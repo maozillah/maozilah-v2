@@ -8,14 +8,16 @@
 	<div class="type">
 		<h1>Who I am</h1>
 		<p> 
-		Hi there! I'm <strong>Kaye Mao</strong>, a third year <a href="http://www.sheridancollege.ca/academics/programs-and-courses/bachelor-of-interaction-design.aspx" target="_blank">Interaction Design</a> student from Toronto. Welcome to my portfolio site.
+		I'm <strong>Kaye Mao</strong>, a third year <a href="http://www.sheridancollege.ca/academics/programs-and-courses/bachelor-of-interaction-design.aspx" target="_blank">Interaction Design</a> student from Toronto.</p>
+
+		<p>I revel in <em>dissecting complex problems</em> and <b>crafting elegant solutions</b> that integrate <b>seamlessly</b> into a person's life.</p>
 		
-		<br><br>
+		<p>
 		I'm currently seeking internship opportunities for the summer of 2016 with a focus on
 <strong>interaction design & data
 visualization.</strong><br><br>
 
-<a href="about.php">learn more &#8594;</a>
+<a href="about.php" class="button">learn more</a>
 </p>
 
   	<h1>My Design Process</h1>

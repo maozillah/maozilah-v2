@@ -12,11 +12,6 @@ $content = '
 </div>
 
 <h1>Background</h1>
-<div class="box">
-<h4>Tools</h4>
-Premiere pro, after effects
-</div>
-
 <p>A lot of time is wasted prepping and referring to recipes during the cooking process. iCook explores the concept of a futurisitc cooking interface that integrates the cooking process seamlessly.</p>
 <div class="nolinkstyle">
 <h1>Highlights</h1>

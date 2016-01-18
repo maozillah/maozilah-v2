@@ -8,15 +8,14 @@ $projectDate = 'Winter 2014';
 
 $content = '
 <h1>Background</h1>
-
+<a href="http://maozillah.github.io/zenith/" class="button" target="_blank">experience zenith</a>
+<br><br>
 <div class="box">
 <h4>Tools</h4>
 HTML, CSS, Javascript, Three.js, Python
 </div>
 
-<p><strong><a href="http://maozillah.github.io/zenith/" target="_blank">experience zenith &#8594;</a></strong></p>
-
-<p>Constellations have shaped humanity\'s culture, lore, and science. Yet, they are still just a human invention; dots in the sky joined together based on our desire for order. It\'s easy to forget that these stars exist in three dimensional space (ehe) when one looks at the night sky from earth.</p>
+<p>Constellations have shaped humanity\'s culture, lore, and science. Yet, they are still just a human invention; dots in the sky joined together based on our desire for order. It\'s easy to forget that these stars exist in three dimensional space when one looks at the night sky from earth.</p>
 
 <p>The goal of Zenith is to reframe the familiar view of constellations in a new perspective by using the capabilities of webGL to allow people to explore the constellations in 3D. </p>
 
@@ -30,7 +29,7 @@ HTML, CSS, Javascript, Three.js, Python
 </div>
 
 <h2>Embrace a different perspective</h2>
-<p>Explore the constellations from different perspectives by using your mouse. Drag to navigate, scroll to zoom.</p>
+<p>Explore the constellations from different perspectives by using your mouse. Drag to navigate, scroll to zoom. Hover for the constellation name.</p>
 <div class="nolinkstyle">
 <a href="img/proj1/h_1.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/proj1/h_1.jpg"></a>
 <a href="img/proj1/h_5.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/proj1/h_5.jpg"></a>
@@ -39,7 +38,7 @@ HTML, CSS, Javascript, Three.js, Python
 </div>
 
 <h2>Learn the lore</h2>
-<p>Click on constellations to read the associated Greek lore</p>
+<p>What makes the constellations fascinating is the history and culture that\'s intertwined with them. Click on constellations to read the associated Greek lore</p>
 <div class="nolinkstyle">
 <a href="img/proj1/h_2.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/proj1/h_2.jpg"></a>
 <a href="img/proj1/h_7.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/proj1/h_7.jpg"></a>
@@ -66,13 +65,19 @@ I knew that I needed to start small so I tried to map the stars of a single cons
 
 <a href="img/proj1/p5.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/proj1/p5.jpg"></a>
 <figcaption>Starting to connect the lines of the constellation and implementing collision detection of the mouse with the stars. Boy it\'s a lot harder to detect mouse hovers in 3 space.</figcaption>
-<p>Along the way I learned about the value of compromise and hacking it a little bit. Don\'t have time to implement a unique render engine to give the stars some sparkle? Just use a transparent jpg to give the stars their glow. </p>
+<p>Along the way I learned about the value of compromise and hacking it a little bit. Don\'t have time to implement a unique render engine to give the stars some sparkle? Just use a transparent png to give the stars their glow. </p>
 
 <a href="img/proj1/p6.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/proj1/p6.jpg"></a>
 
 <p>Half of the battle was sanitizing and organizing the star location data into a format that my web application could read. I learned that python could be used to accomplish that task so with a little help from a friend, learned just enough to extract all of data I needed from the HYG database.</p>
 <a href="img/proj1/p7.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/proj1/p7.jpg"></a>
 <figcaption>Stars for all the constellations are in place. Wooo!</figcaption>
+
+<h2>Learnings</h2>
+<ul>
+	<li>Conceptualize/design at a high level. Develop at a low level by defining the core components of the concept (MVP) and focus on that first. </li>
+	<li>Understand the medium and <strong>leverage the affordances of the medium</strong> in the design.</li>
+</ul>
 </div>
 ';
 ?>

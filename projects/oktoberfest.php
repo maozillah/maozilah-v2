@@ -33,7 +33,7 @@ $content = '<h1>Background</h1>
 <h1>Process</h1>
 
 <h2>Ethnographic study, affordances</h2>
-<a href="img/oktoberfest/process1.pdf" target="_blank"  target="_blank">Download the full document</a><br><br>
+<a href="img/oktoberfest/process1.pdf" target="_blank" class="button">Download the full document</a><br><br>
 
 <div class="nolinkstyle">
 <a href="img/oktoberfest/1/p1.jpg" target="_blank" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/oktoberfest/1/p1.jpg"></a>
@@ -49,7 +49,7 @@ $content = '<h1>Background</h1>
 </div>
 
 <h2>Competitive Analysis</h2>
-<a href="img/oktoberfest/process2.pdf" target="_blank">Download the full document</a><br><br>
+<a href="img/oktoberfest/process2.pdf" target="_blank" class="button">Download the full document</a><br><br>
 <div class="nolinkstyle">
 <a href="img/oktoberfest/2/p1.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/oktoberfest/2/p1.jpg"></a>
 

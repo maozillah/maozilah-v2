@@ -12,7 +12,7 @@
         </ul>
         <h3>Get in touch</h3>
         roar@maozillah.com
-        <h3>Social</h3>
+        <h3>On the Web</h3>
         <a href="https://www.linkedin.com/in/maozillah" target=_blank><i class="fa fa-linkedin-square fa-2x"></i></a>
         <a href="https://twitter.com/Maozillah" target=_blank><i class="fa fa-twitter-square fa-2x"></i></a>
         <a href="https://github.com/maozillah" alt="blog" target=_blank><i class="fa fa-github fa-2x"></i></a>

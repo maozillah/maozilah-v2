@@ -6,17 +6,21 @@
 
 @mixin transition {
     @include transition-property(all);
+
     @include transition-duration(0.5s);
+
     @include transition-timing-function(ease);
 }
 
 @mixin backgrounds {
     @include background-size(cover);
+
     background-position: center;
 }
 
 @mixin projectBg {
     @include background-size(cover);
+
     background-position: center;
 }
 
@@ -38,6 +42,32 @@ html, body {
     margin: 0;
 }
 
+.button {
+    padding: 15px;
+    border: 3px solid red !important;
+    background: red;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+
+    &::after {
+        content: " \2192";
+    }
+
+    @include breakpoint(mobileonly) {
+        font-size: 0.7rem;
+        letter-spacing: 0.1em;
+    }
+
+    &:hover {
+        color: white;
+    }
+}
+
 .right {
     float: right;
     width: 53vw;
@@ -52,15 +82,14 @@ html, body {
         overflow: hidden;
         height: initial;
     }
+
+
     figcaption {
         width: 126%;
-
         margin: -10px 0 4% -15%;
         color: grey;
-
         background: #f9f9f9;
         border: solid 1px #eee;
-
         font-size: 0.9em;
         padding: 2%;
         font-style: italic;
@@ -70,17 +99,20 @@ html, body {
             margin-left: 0;
         }
 
+
         @include breakpoint(tablet) {
-             width: 116%;
-             margin-left: -10%;
+            width: 116%;
+            margin-left: -10%;
         }
 
+
         @include breakpoint(mobileonly) {
-             width: 100%;
-             margin-left: -4%;
-             margin-top: -8px;
+            width: 100%;
+            margin-left: -4%;
+            margin-top: -8px;
         }
     }
+
     img {
         width: 130%;
         margin-left: -15%;
@@ -91,6 +123,7 @@ html, body {
             width: 100%;
             margin-left: 0;
         }
+
 
         @include breakpoint(tablet) {
             width: 120%;
@@ -110,7 +143,7 @@ html, body {
 }
 
 .mobileShow {
-    display:none;
+    display: none;
 
     @include breakpoint(tablet) {
         display: list-item;
@@ -125,6 +158,7 @@ html, body {
     @include breakpoint(tablet) {
         padding: 1em 2em 4em 2em;
     }
+
 
     @include breakpoint(mobileonly) {
         padding: 1em 0 1em 0;

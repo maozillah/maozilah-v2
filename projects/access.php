@@ -1,5 +1,5 @@
 <?php
-$projectTitle = 'Access Installation';
+$projectTitle = 'Access';
 $projectTypes = 'interaction design, experience design, 3D design';
 $shortDescr = 'Conceptual installation that creates empathy and understanding for the importance of digital accessibility.';
 $imgUrl = 'access/lrg_img.jpg';
@@ -39,6 +39,8 @@ $content = '
 <a href="img/access/h6.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/access/h6.jpg"></a>
 <figcaption>As the installation is conceptual, it does not address price constraints as Holopros are incredibly expensive.</figcaption>
 
+<p>The installation consists of <strong>modular</strong> pieces of glass panels to allow for easy transportation and setup.</p>
+
 <a href="img/access/h7.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/access/h7.jpg"></a>
 
 <a href="img/access/h8.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/access/h8.jpg"></a>
@@ -46,13 +48,25 @@ $content = '
 
 <a href="img/access/h9.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/access/h9.jpg"></a>
 
-
 <h1>Process</h1>
+<h2>Conceptualization</h2>
+<p>The goal of inclusive design is to allow people to do things by themselves. <strong>Objects or experiences discriminate when they are designed without thought for accessibility</strong>. I wanted to subject participants to discrimination and make them feel the <em>anger and frustration</em> related to it.
+</p>
 <a href="img/access/p1.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/access/p1.jpg"></a>
+<p>To do so I brainstormed different physical metaphors for discrimination such as closed doors, you must be this tall to ride signs, obstacle courses. 
+</p>
+
+<p>The concept of doors resonated with me because it is an everyday object and discrimination is an <strong>everyday occurrence</strong> for the disabled.  Doors also metaphorically symbolize <strong>opportunities</strong>.
+</p>
 
 <a href="img/access/p2.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/access/p2.jpg"></a>
-
+<p>Many ideas came to mind such as doors that wouldn\'t open or required lots of effort to open. As I looked for inspiration, I came across an installation that consisted of a maze with many doors. Each door required the person to solve a physical puzzle before it would open.
+</p>
 <a href="img/access/p4.jpg" target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/access/p4.jpg"></a>
+
+<p>This inspired me to integrate the door concept with a maze. The purpose of a maze is to make travelling from one point to another difficult. Whereas a door is often a barrier between one point and another. Abled people can easily get from point A to B because many doors are open to them. For the disabled, that door is inaccessible so they must traverse a maze to accomplish the same task. Such my concept was born.
+</p>
+
 </div>
 ';
 ?>

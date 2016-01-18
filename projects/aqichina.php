@@ -20,7 +20,7 @@ $content = '
 </ul>
 <h2>Data Source</h2>
 <p>Approximately 180,000 rows of data was analyzed from the <a href="http://datacenter.mep.gov.cn/report/air_daily/air_dairy.jsp" target="_blank">Chinese ministry of environmental protection database</a></strong></p>
-<p>You can also <a href="aqichina/China_cities_AQI_2014-2015.csv" target="_blank">download my dataset</a> to play with. It includes the city name in english, aqi, and date from 2014 to Dec 5, 2015. <em>I don\'t take any responsibility for the validaty or accuracy of this data and it may require further sanitation.</em></p>
+<p><a href="aqichina/China_cities_AQI_2014-2015.csv" target="_blank" class="button">download my dataset</a><br><br> It includes the city name in english, aqi, and date from 2014 to Dec 5, 2015. <em>I don\'t take any responsibility for the validaty or accuracy of this data and it may require further sanitation.</em></p>
 
 <div class="nolinkstyle">
 <h1>Highlights</h1>
@@ -66,7 +66,7 @@ $content = '
 </figcaption>
 </div>
 <h2>Data</h2>
-<p>As I was doing more research, I stumbled across the <a href="http://datacenter.mep.gov.cn/report/air_daily/air_dairy.jsp" target="_blank">Chinese ministry of environmental protection database</a>. It incldues a wealth of data including daily air quality index data per city per day since the 2000s. <em>Hallelujah.</em> I decided to pivot and work with this detailed data because it would afford me more freedom in analysis.</p>
+<p>As I was doing more research, I stumbled across the <a href="http://datacenter.mep.gov.cn/report/air_daily/air_dairy.jsp" target="_blank">Chinese ministry of environmental protection database</a>. It includes a wealth of data including daily air quality index data per city per day since the 2000s. <em>Hallelujah.</em> I decided to pivot and work with this detailed data because it would afford me more freedom in analysis.</p>
 <h3>Retrieval</h3>
 <p>There was approximately 150,000 rows of data from 2014 to 2015 but I needed it in a form that I could analyze like CSV. I knew I\'d have to either write a data scraping script or find one to get this data in a timely manner. Luckily I found <a href="https://github.com/Rudy1224/china-cities-air-quality" target="_blank">one</a>. </p>
 <p>Then I hit a few more bumps. Scraping the data took the course of a week due to slow speeds of accessing data from around the world and the server timing out on me every few hours. Sigh.</p>
