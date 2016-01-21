@@ -39,18 +39,18 @@ function getScripts() {
             showLeftPush = document.getElementById('showLeftPush');
 
             showLeftPush.onclick = function() {
-            classie.toggle(this, 'active');
-            classie.toggle(body, 'cbp-spmenu-push-toright');
-            classie.toggle(menuLeft, 'cbp-spmenu-open');
-            disableOther('showLeftPush');
+	            classie.toggle(this, 'active');
+	            classie.toggle(body, 'cbp-spmenu-push-toright');
+	            classie.toggle(menuLeft, 'cbp-spmenu-open');
+	            disableOther('showLeftPush');
 
-            scroll =!scroll;
+	            scroll =!scroll;
 
-            if (scroll) {
-			stopScrolling();
-			} else {
-			continueScrolling();
-			}
+	            if (scroll) {
+				stopScrolling();
+				} else {
+				continueScrolling();
+				}
 			
             };
         </script>");

@@ -122,14 +122,10 @@ h6 {
 p {
     line-height: 1.5;
     margin: 0 0 1em;
-
-    /* Non standard for webkit */
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
-
-    // text-indent: 2em;
 }
 
 p:first-child {

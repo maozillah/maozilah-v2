@@ -16,7 +16,7 @@ $content = '
 </ul>
 
 <h3>My Role</h3>
-This project was completed as part of my Interaction Design internship with <a href="http://www.normative.com/" target="_blank">Normative</a>. I was responsible for helping conceptualize, research, design the user flow, and produce wireframes.
+<p>This project was completed as part of my Interaction Design internship with <a href="http://www.normative.com/" target="_blank">Normative</a>. I was responsible for helping conceptualize, research, design the user flow, and produce wireframes.</p>
 
 <h2>Problem</h2>
 <p>Real estate agents must book a home inspection everytime they sell a house. To do so, they have to engage in lengthy phone calls in order to coordinate schedules and provide mandatory information about the house.</p>

@@ -142,6 +142,7 @@ $menu-color: #4d4d4d;
     position: fixed;
     overflow-y: auto;
     -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
 
     &::-webkit-scrollbar {
         display: none;

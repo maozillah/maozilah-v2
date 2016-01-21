@@ -27,13 +27,13 @@ visualization.</strong><br><br>
 	  	</blockquote>
 	  	
 	  	<h2>1. Strategize</h2>
-		<p>Before I begin 'doing' anything, I outline my goals and break down the project into general steps. Then I plan out my process; taking into consideration time, resources, and scope.
+		<p>Before I 'do' anything, I outline my goals and break down the project into general steps. Then I plan out my process; taking into consideration time, resources, and scope.
 		<br><br>
 		Designing solely for the end user* is naïve and impractical. Design should understand and balance the needs of the business, the users, and the people building it.
 		</p>
 
 		<h2>2. Explore</h2>
-		<p>Next: <strong>Research</strong>. The people who will be using the product, the competition, other designers, tutorials, anything and everything. I want to learn as much as I can about the problem space.
+		<p>Next: <strong>Research</strong>. The people who will be using the product, the competition, other designers, tutorials, anything and everything. I learn as much as I can about the problem space.
 
 	<p>
 		At this stage I define my <strong>context & design problem</strong>; potentially creating design artifacts to help me empathize and understand the target users.</strong> </p>
