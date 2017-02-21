@@ -12,15 +12,16 @@
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
     </head>
+    
     <body class="cbp-spmenu-push">
 
-        <div id="preloader"></div>
+    <div id="preloader"></div>
 
-<?php include('scripts.inc.php'); ?>
-<?php include('menu.php'); ?>
+    <?php include('scripts.inc.php'); ?>
+    <?php include('menu.php'); ?>
 
-<div class="main">
-    <section class="buttonset">
-        <?php echo getMenuButton(); ?>
-    </section>
-</div>
+    <div class="main">
+        <section class="buttonset">
+            <?php echo getMenuButton(); ?>
+        </section>
+    </div>

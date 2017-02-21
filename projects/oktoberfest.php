@@ -1,6 +1,6 @@
 <?php
 $projectTitle = 'Oktoberfest App';
-$projectTypes = 'interaction design, UI design, front end development';
+$projectTypes = 'interaction design, visual design, front end development';
 $shortDescr = 'Mobile application for Oktoberfest to help festival goers choose where to eat.';
 $imgUrl = 'oktoberfest/lrg_img.jpg';
 $descrImgUrl = 'oktoberfest/sml_img.jpg';

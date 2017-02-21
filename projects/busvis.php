@@ -1,6 +1,6 @@
 <?php
 $projectTitle = 'Bus Stop Observations';
-$projectTypes = 'data visualization, research';
+$projectTypes = 'data visualization, research, visual design';
 $shortDescr = 'A visualization of what people do while waiting for the bus.';
 $imgUrl = 'bus/h1.jpg';
 $descrImgUrl = 'bus/h1.jpg';

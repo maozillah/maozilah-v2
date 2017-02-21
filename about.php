@@ -9,7 +9,7 @@ echo (
 
 		<h1>I\'m Kaye Mao. Also known as Maozillah. Roar.</h1>
 
-<p>I thrive at the intersection of <strong>logic and creativity</strong>, at <em>pushing the boundaries</em> of my comfort zone, at pursuing <em>endless learning</em>. It is why I\'ve pursued opportunities to hone both my design and development skills with companies like <a href="http://www.normative.com/" target="_blank">Normative</a>, the <a href="http://idrc.ocadu.ca/" target="_blank">Inclusive Design Research Centre</a>, hackathons, various startups, and my own freelance work.</p>
+<p>I thrive at the intersection of <strong>logic and creativity</strong>, at <em>pushing the boundaries</em> of my comfort zone, at pursuing <em>endless learning</em>. It is why I\'ve pursued opportunities to hone both my design and development skills with companies like <a href="http://www.google.com/" target="_blank">Google</a>, <a href="http://www.normative.com/" target="_blank">Normative</a>, the <a href="http://idrc.ocadu.ca/" target="_blank">Inclusive Design Research Centre</a>, hackathons, various startups, and my own freelance work.</p>
 
 <p>I revel in <em>dissecting complex problems</em> and <strong>crafting elegant solutions</strong> that integrate <strong>seamlessly</strong> into a person\'s life. Solutions that make a positive impact on people\'s lives by having a <strong>holistic understanding</strong> of the way a person thinks and acts. I am especially intrigued by design that incites <em>behavioural change</em>, particularly within the <strong>healthcare, dating, finance, and productivity</strong> space.</p>
 
@@ -17,7 +17,7 @@ echo (
 
 <p>I believe that design and technology have the power to <strong>change the world</strong>. As a designer and developer, I want to do my part.</p>
 
-<h1>I\'m interested in more than just design</h1>
+<h1>I\'m interested in more than just design.</h1>
 
 <p>My favourite author is Haruki Murakami. His works feel like a long lost friend to me in the way they blur the lines between reality and the surreal.</p>
 
@@ -33,9 +33,9 @@ echo (
 
 <p>I have more perspective, am more empathetic, and more accepting of differences through my exposure to these two cultures. I can only imagine the impact travelling and living in more places will give me. </p>
 
-<p>That is why I\'m seeking opportunities all around the world as well as in Toronto. I\'m looking for a full-time <strong>interaction design</strong> internship for the <strong>summer of 2016</strong> with a focus on interaction design and if possible data visualization. If you think we\'re a good fit, or have an opportunity available, please email me at <strong>roar@maozillah.com</strong></p>
+<p>I\'m available for contract work in interaction design, UX design, data visualization, information architecture, visual design, and front-end development. If you think we\'re a good fit, or have an opportunity available, please email me at <strong>roar@maozillah.com</strong></p>
 
-<p>Not sure yet? Why not get to know me better by reading some of my <a href="http://roar.maozillah.com/" target="_blank">blog posts</a> or checking out my <a href="kayemao_resume.pdf" target="_blank">resume</a>.</p>
+<p>Not sure yet? Why not get to know me better by reading some of my <a href="http://roar.maozillah.com/" target="_blank">blog posts</a> or checking out my <a href="https://www.linkedin.com/in/maozillah" target="_blank">resume</a>.</p>
 					
 		<h1>On the web</h1>
 		<div class="nolinkstyle">					
@@ -43,7 +43,6 @@ echo (
 			<a href="https://twitter.com/Maozillah" target=_blank><i class="fa fa-twitter-square fa-2x"></i></a>
 			<a href="https://github.com/maozillah" alt="blog" target=_blank><i class="fa fa-github fa-2x"></i></a>
 			<a href="http://maozillah.tumblr.com/" target=_blank><i class="fa fa-tumblr-square fa-2x"></i></a>
-			<a href="https://www.facebook.com/maozillah" target=_blank><i class="fa fa-facebook-square fa-2x"></i></a>
 		</div>
 		</div>
 </div>

@@ -1,6 +1,6 @@
 <?php
 $projectTitle = 'China\'s Deadly Air';
-$projectTypes = 'data visualization, data analysis, research';
+$projectTypes = 'data visualization, visual design, research';
 $shortDescr = 'A visualization evaluating China\'s progress in improving their air quality by comparing 2014 and 2015.';
 $imgUrl = 'aqichina/lrg_img.jpg';
 $descrImgUrl = 'aqichina/sml_img.jpg';
@@ -8,9 +8,9 @@ $projectDate = 'Winter 2015';
 
 $content = '
 <h1>Background</h1>
-<p>The project brief was to research, analyze, and design a data visualization that told a narrative about a particular aspect of a country.
+<p>China\'s air quality has been a point of contention for a number of years. Almost all my family resides in China and I worry about the quality of air that they\'re exposed to. The goal of this project was to present data about China\'s efforts in addressing climate issues in a visualization that the general public could easily understand.</p>
+<p>The visualization provides an overview of changes to China\'s air quality as well as a detailed analysis of anomalies.
 </p>
-<p>I chose to focus on China\'s Air Quality. Almost all my family resides in China and I worry about the quality of air that they\'re exposed to. With this visualization, I hope to spread awareness about China\'s efforts in addressing climate issues such that they may be held accountable by the general public.</p>
 
 <h2>Research Objectives</h2>
 <ul>
@@ -44,6 +44,7 @@ $content = '
 </ul></p>
 
 <h1>Process</h1>
+<p>I took a very fluid approach with this project because I knew that the final result would be depend on the data and insights that revealed themselves through the process. </p>
 <p>Initially I could only find macro-level data regarding China\'s air quality such as the average yearly concentration of the fine particle PM2.5 per province.</p>
 <h2>Exploration</h2>
 

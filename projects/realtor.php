@@ -1,6 +1,6 @@
 <?php
 $projectTitle = 'Home Inspections Booking App';
-$projectTypes = 'interaction design';
+$projectTypes = 'interaction design, research';
 $shortDescr = 'Mobile application that saves realtors time by allowing them to book home inspections efficiently.';
 $imgUrl = 'realtor/lrg_img.jpg';
 $descrImgUrl = 'realtor/sml_img.jpg';

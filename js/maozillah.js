@@ -1,112 +1,116 @@
  // preloader
 
  function init() {
-var imgDefer = document.getElementsByTagName('img');
-for (var i=0; i<imgDefer.length; i++) {
-if(imgDefer[i].getAttribute('data-src')) {
-imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-} } }
-window.onload = init;
+     var imgDefer = document.getElementsByTagName('img');
+     for (var i = 0; i < imgDefer.length; i++) {
+         if (imgDefer[i].getAttribute('data-src')) {
+             imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+         }
+     }
 
-  $(window).load(function() {
-      $('#preloader').fadeOut('slow', function() {
-          $(this).remove();
-      });
-  });
+ }
 
-  var menuRight = document.getElementById('cbp-spmenu-s2'),
-      showRightPush = document.getElementById('showRightPush'),
-      body = document.body;
+ window.onload = init;
 
-  showRightPush.onclick = function() {
-      classie.toggle(this, 'active');
-      classie.toggle(body, 'cbp-spmenu-push-toleft');
-      classie.toggle(menuRight, 'cbp-spmenu-open');
-      disableOther('showRightPush');
-  }
+ $(window).load(function() {
+     $('#preloader').fadeOut('slow', function() {
+         $(this).remove();
+     });
+ });
 
-  function disableOther(button) {
-      if (button !== 'showRightPush') {
-          classie.toggle(showRightPush, 'disabled');
-      }
-  }
+ var menuRight = document.getElementById('cbp-spmenu-s2'),
+     showRightPush = document.getElementById('showRightPush'),
+     body = document.body;
 
-  var scroll = false;
-  var lastTop;
+ showRightPush.onclick = function() {
+     classie.toggle(this, 'active');
+     classie.toggle(body, 'cbp-spmenu-push-toleft');
+     classie.toggle(menuRight, 'cbp-spmenu-open');
+     disableOther('showRightPush');
+ }
 
-  function stopScrolling() {
-      lastTop = $(window).scrollTop();
-      $('html').addClass('noscroll')
-          .css({
-              top: -lastTop
-          });
-      $('.main').css({
-          top: 0
-      });
-  }
+ function disableOther(button) {
+     if (button !== 'showRightPush') {
+         classie.toggle(showRightPush, 'disabled');
+     }
+ }
 
-  function continueScrolling() {
-      $('html').removeClass('noscroll');
-      $(window).scrollTop(lastTop);
-  }
+ var scroll = false;
+ var lastTop;
 
-  $(document).ready(function() {
+ function stopScrolling() {
+     lastTop = $(window).scrollTop();
+     $('html').addClass('noscroll')
+         .css({
+             top: -lastTop
+         });
+     $('.main').css({
+         top: 0
+     });
+ }
 
-      // menu animation
-      $(".nav-toggle").click(function() {
-          $(this).toggleClass("active");
-      });
+ function continueScrolling() {
+     $('html').removeClass('noscroll');
+     $(window).scrollTop(lastTop);
+ }
 
-      // project menu animation
-      $("#open_folder").hide();
+ $(document).ready(function() {
 
-      $("#showLeftPush").click(function() {
-          $("#folder").toggle();
-          $("#open_folder").toggle();
-      });
+     // menu animation
+     $(".nav-toggle").click(function() {
+         $(this).toggleClass("active");
+     });
 
-      // Hide on scroll down
-      var previousScroll = 0;
-      $('.right').add(window).scroll(function(event) {
-          var scroll = $(this).scrollTop();
-          if (scroll > previousScroll) {
-              $(".main").addClass("hide-nav");
-          } else {
-              $(".main").removeClass("hide-nav");
-          }
-          previousScroll = scroll;
-      });
+     // project menu animation
+     $("#open_folder").hide();
 
-      $(document).click(function(event) { 
-      if ($( "#cbp-spmenu-s1" ).hasClass( "cbp-spmenu-open" )) {
-          if(!$(event.target).closest('#showLeftPush').length) {
-              classie.toggle(showLeftPush, 'active');
-                classie.toggle(body, 'cbp-spmenu-push-toright');
-                classie.toggle(menuLeft, 'cbp-spmenu-open');
-                disableOther('showLeftPush');
+     $("#showLeftPush").click(function() {
+         $("#folder").toggle();
+         $("#open_folder").toggle();
+     });
 
-                scroll =!scroll;
+     // Hide on scroll down
+     var previousScroll = 0;
+     $('.right').add(window).scroll(function(event) {
+         var scroll = $(this).scrollTop();
+         if (scroll > previousScroll) {
+             $(".main").addClass("hide-nav");
+         } else {
+             $(".main").removeClass("hide-nav");
+         }
+         previousScroll = scroll;
+     });
 
-                if (scroll) {
-          stopScrolling();
-          } else {
-          continueScrolling();
-          }
+     $(document).click(function(event) {
+         if ($("#cbp-spmenu-s1").hasClass("cbp-spmenu-open")) {
+             if (!$(event.target).closest('#showLeftPush').length) {
+                 classie.toggle(showLeftPush, 'active');
+                 classie.toggle(body, 'cbp-spmenu-push-toright');
+                 classie.toggle(menuLeft, 'cbp-spmenu-open');
+                 disableOther('showLeftPush');
 
-                $("#folder").toggle();
-              $("#open_folder").toggle();
-          }        
-      }
+                 scroll = !scroll;
 
-      if ($( "#cbp-spmenu-s2" ).hasClass( "cbp-spmenu-open" )) {
-          if(!$(event.target).closest('#showRightPush,.cbp-spmenu').length) {
+                 if (scroll) {
+                     stopScrolling();
+                 } else {
+                     continueScrolling();
+                 }
 
-              classie.toggle(showRightPush, 'active');
-              classie.toggle(body, 'cbp-spmenu-push-toleft');
-              classie.toggle(menuRight, 'cbp-spmenu-open');
-              disableOther('showRightPush');
-          }        
-      }
-    });
+                 $("#folder").toggle();
+                 $("#open_folder").toggle();
+             }
+         }
 
-  });
+         if ($("#cbp-spmenu-s2").hasClass("cbp-spmenu-open")) {
+             if (!$(event.target).closest('#showRightPush,.cbp-spmenu').length) {
+
+                 classie.toggle(showRightPush, 'active');
+                 classie.toggle(body, 'cbp-spmenu-push-toleft');
+                 classie.toggle(menuRight, 'cbp-spmenu-open');
+                 disableOther('showRightPush');
+             }
+         }
+     });
+
+ });

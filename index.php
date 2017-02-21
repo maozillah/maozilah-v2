@@ -8,14 +8,9 @@
 	<div class="type">
 		<h1>Who I am</h1>
 		<p> 
-		I'm <strong>Kaye Mao</strong>, a third year <a href="http://www.sheridancollege.ca/academics/programs-and-courses/bachelor-of-interaction-design.aspx" target="_blank">Interaction Design</a> student from Toronto.</p>
+		I'm <strong>Kaye Mao</strong>, a fourth year <a href="http://www.sheridancollege.ca/academics/programs-and-courses/bachelor-of-interaction-design.aspx" target="_blank">Interaction Design</a> student from Toronto with previous experience at <a href="http://www.google.com/" target="_blank">Google</a>, <a href="http://www.normative.com/" target="_blank">Normative</a>, and the <a href="http://idrc.ocadu.ca/" target="_blank">Inclusive Design Research Centre</a></p>
 
-		<p>I revel in <em>dissecting complex problems</em> and <b>crafting elegant solutions</b> that integrate <b>seamlessly</b> into a person's life.</p>
-		
-		<p>
-		I'm currently seeking internship opportunities for the summer of 2016 with a focus on
-<strong>interaction design & data
-visualization.</strong><br><br>
+		<p>I revel in <em>dissecting complex problems</em> and <strong>crafting elegant solutions</strong> that integrate <strong>seamlessly</strong> into a person's life. Solutions that make a positive impact on people's lives by having a <strong>holistic understanding</strong> of the way a person thinks and acts. I am especially intrigued by design that incites <em>behavioural change</em>, particularly within the <strong>healthcare, dating, finance, and productivity</strong> space.</p>
 
 <a href="about.php" class="button">learn more</a>
 </p>

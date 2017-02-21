@@ -1,6 +1,6 @@
 <?php
 $projectTitle = 'iCook';
-$projectTypes = 'interaction design, UI design, motion graphics';
+$projectTypes = 'interaction design, visual design, motion design';
 $shortDescr = 'A futuristic concept for a streamlined cooking experience.';
 $imgUrl = 'icook/lrg_img.jpg';
 $descrImgUrl = 'icook/sml_img.jpg';

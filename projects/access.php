@@ -1,6 +1,6 @@
 <?php
 $projectTitle = 'Access';
-$projectTypes = 'interaction design, experience design, 3D design';
+$projectTypes = 'interaction design, 3D design, visual design';
 $shortDescr = 'Conceptual installation that creates empathy and understanding for the importance of digital accessibility.';
 $imgUrl = 'access/lrg_img.jpg';
 $descrImgUrl = 'access/sml_img.jpg';

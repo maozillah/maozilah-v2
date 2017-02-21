@@ -63,8 +63,9 @@ if(isset( $_GET['pid']))
 	require 'projects/'.$projID. '.php';
 } 
 
-$projects = array ("aqichina","access","realtor","zenith","otg","busvis","oktoberfest","icook");
-// $projects = array ("access","realtor","zenith","otg","busvis","oktoberfest","icook");
+// choose which projects to display
+$projects = array ("aqichina","access","realtor","zenith","busvis");
+// $projects = array ("aqichina","access","realtor","zenith","otg","busvis","oktoberfest","icook");
 
 
 // count number of projects in projects directory
